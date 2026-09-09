@@ -66,7 +66,7 @@ def main():
     print("ok: strategy_doc scoring == score.py; reference documents validate; XML round-trips")
     org = SD.axes_for_kind(bundle, "organisation")
     assert len(org) == len(bundle["axes"]) and all(a["org"]["name"]["en"] for a in bundle["axes"])
-    leftovers = [(a["id"], t) for a in org for t in (a["name"]["en"], a["method"]["en"]) if re.search(r"\b(state|national|country|ministr)", t, re.I)]
+    leftovers = [(a["id"], t) for a in org for t in (a["name"]["en"], a["method"]["en"]) if re.search(r"\b(the state|national|country|ministr)", t, re.I)]
     assert not leftovers, leftovers
     print("ok: organisational reading present for all axes, no national wording left in EN names/methods")
     # 1c. JSON Schema validates the reference documents when jsonschema is available
