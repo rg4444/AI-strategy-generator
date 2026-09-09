@@ -123,6 +123,68 @@ axes:
       proc:
         label: {en: "procurement rules", lv: "iepirkuma noteikumi"}
         gives: {en: "The strongest lever management has. Sets terms once, for every purchase.", lv: "Spēcīgākais vadības rīks. Nosaka noteikumus vienreiz un visiem iepirkumiem."}
+  access:
+    name:
+      en: Employee access to AI
+      lv: Darbinieku piekļuve MI
+    method:
+      en: Whether the organisation has decided who gets general-purpose AI and who pays for it.
+        Individuals bring their own 1; training without tools 2; AI only inside internal systems 3;
+        licences for defined roles 4; general-purpose AI for every employee, paid by the organisation 5.
+      lv: Vai organizācija ir izlēmusi, kam ir piekļuve vispārējas nozīmes MI un kas par to maksā.
+        Katrs pats — 1; apmācība bez rīkiem — 2; MI tikai iekšējās sistēmās — 3; licences noteiktām
+        lomām — 4; vispārējas nozīmes MI visiem darbiniekiem par organizācijas līdzekļiem — 5.
+    options:
+      market:
+        label:
+          en: individuals bring their own
+          lv: katrs pats — darbinieki lieto, ko atrod
+        gives:
+          en: Nothing to fund; nothing to choose.
+          lv: Nav jāfinansē; nav jāizvēlas.
+        forecloses:
+          en: No control over which tools are used or where the data goes — shadow AI by default.
+          lv: Nav kontroles pār rīkiem un datu plūsmu — ēnu MI pēc noklusējuma.
+      skills:
+        label:
+          en: training without tools
+          lv: apmācība bez rīkiem
+        gives:
+          en: Cheap, quick, measurable.
+          lv: Lēti, ātri, mērāmi.
+        forecloses:
+          en: Skills without tools fade; people go back to whatever they can reach.
+          lv: Prasmes bez rīkiem izgaist; cilvēki atgriežas pie tā, kas sasniedzams.
+      services:
+        label:
+          en: AI only inside internal systems
+          lv: MI tikai iekšējās sistēmās
+        gives:
+          en: Concrete use inside controlled systems — assistant, search, document handling.
+          lv: Konkrēts lietojums kontrolētās sistēmās — asistents, meklēšana, dokumentu apstrāde.
+        forecloses:
+          en: General-purpose work still happens in personal tools the organisation cannot see.
+          lv: Vispārējas nozīmes darbs joprojām notiek personīgos rīkos, ko organizācija neredz.
+      targeted:
+        label:
+          en: licences for defined roles
+          lv: licences noteiktām lomām
+        gives:
+          en: The universal model's gains where they matter most, at a fraction of the cost.
+          lv: Universālā modeļa ieguvumi tur, kur tie visvairāk vajadzīgi, par daļu no izmaksām.
+        forecloses:
+          en: Who is in and who is out becomes a standing argument.
+          lv: Kam ir un kam nav — pastāvīgs strīds.
+      universal:
+        label:
+          en: general-purpose AI for every employee, paid by the organisation
+          lv: vispārējas nozīmes MI visiem darbiniekiem par organizācijas līdzekļiem
+        gives:
+          en: Equal access; control over which tools and where data goes; shadow AI loses its excuse.
+          lv: Vienlīdzīga piekļuve; kontrole pār rīkiem un datu plūsmu; ēnu MI zaudē attaisnojumu.
+        forecloses:
+          en: A permanent licence cost; the organisation picks the vendor for everyone.
+          lv: Pastāvīgas licenču izmaksas; organizācija izvēlas piegādātāju visiem.
   meas:
     options:
       trk:

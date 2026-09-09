@@ -1,4 +1,4 @@
-version: 1.0.0
+version: 1.1.0
 groups:
   A:
     kind: par
@@ -886,6 +886,93 @@ axes:
     forecloses:
       lv: Viens atteices punkts; atbalsts un uzticēšanās uz visiem laikiem paliek jūsu ziņā.
       en: Single point of failure; you own support and trust permanently.
+- id: access
+  group: A
+  name:
+    lv: Iedzīvotāju piekļuve MI
+    en: Citizen access to AI
+  method:
+    lv: Vērtē, ko valsts apņemas attiecībā uz iedzīvotāju piekļuvi vispārējas nozīmes MI — vai tā
+      ir tirgus jautājums, prasmju jautājums, valsts pakalpojumu sastāvdaļa vai sabiedriskais
+      pakalpojums, ko valsts finansē visiem. Tirgus — 1; prasmes — 2; MI valsts pakalpojumos — 3;
+      bezmaksas piekļuve mērķgrupām — 4; universāla bezmaksas piekļuve — 5.
+    en: What the state commits to on citizens' access to general-purpose AI — a market matter, a
+      skills matter, part of public services, or a public service the state funds for everyone.
+      Market 1; skills 2; AI inside public services 3; free access for target groups 4; universal
+      free access 5.
+  options:
+  - key: none
+    value: 0
+    label:
+      lv: nav norādīts
+      en: not stated
+    chosen_by: NO · CA · LV 2020
+    gives:
+      lv: —
+      en: —
+    forecloses:
+      lv: Jautājums, kas maksā par iedzīvotāju piekļuvi MI, paliek neatbildēts.
+      en: The question of who pays for citizens' access to AI stays unanswered.
+  - key: market
+    value: 1
+    label:
+      lv: tirgus nodrošina
+      en: market provides
+    chosen_by: —
+    gives:
+      lv: Nav jāfinansē; nav jāizvēlas uzvarētāji.
+      en: Nothing to fund; no winners to pick.
+    forecloses:
+      lv: Valstij nav sviras pār to, kādus MI produktus lieto iedzīvotāji un kur paliek dati.
+      en: The state has no lever over which AI products citizens use or where the data goes.
+  - key: skills
+    value: 2
+    label:
+      lv: prasmes un informēšana
+      en: skills and awareness
+    chosen_by: FI (Elements of AI) · EU (MI akta 4. p.) · UK · DK · IE · NL · SI · CZ · PT · LT · JP · LV draft
+    gives:
+      lv: Lēts, ātri uzsākams, mērāms — kursi, kampaņas, prasmju ietvari.
+      en: Cheap, quick to start, measurable — courses, campaigns, skills frameworks.
+    forecloses:
+      lv: Piekļuve paliek maksas un nevienlīdzīga; prasmes bez rīkiem izgaist.
+      en: Access stays paid and unequal; skills without tools fade.
+  - key: services
+    value: 3
+    label:
+      lv: MI valsts pakalpojumos
+      en: AI inside public services
+    chosen_by: EE (Bürokratt) · SG · AE · PPPA priekšlikums
+    gives:
+      lv: Konkrēts lietojums — sarunboti un aģenti iestāžu pakalpojumos, piesaistīti esošai infrastruktūrai.
+      en: Concrete use — assistants and agents inside public services, tied to existing infrastructure.
+    forecloses:
+      lv: Vispārējas nozīmes MI lietošana paliek komerciāla; valsts neietekmē, ar ko iedzīvotāji strādā ikdienā.
+      en: General-purpose AI use stays commercial; the state does not shape what citizens work with daily.
+  - key: targeted
+    value: 4
+    label:
+      lv: bezmaksas piekļuve mērķgrupām
+      en: free access for target groups
+    chosen_by: —
+    gives:
+      lv: Universālā modeļa ieguvumi tur, kur tie visvairāk vajadzīgi — skolēni, seniori, MVU — par daļu no izmaksām.
+      en: The universal model's gains where they matter most — students, seniors, SMEs — at a fraction of the cost.
+    forecloses:
+      lv: Universalitātes trūkums; robežas starp grupām ir pastāvīgs politisks strīds.
+      en: No universality; the boundaries between groups are a standing political fight.
+  - key: universal
+    value: 5
+    label:
+      lv: universāla bezmaksas piekļuve
+      en: universal free access
+    chosen_by: KR (AI for All, 2026)
+    gives:
+      lv: Vienlīdzīga piekļuve neatkarīgi no ienākumiem un prasmēm; virza lietojumu uz vietējiem modeļiem un datu suverenitāti; mērogs vietējai MI nozarei.
+      en: Equal access regardless of income or skills; steers use toward domestic models and data sovereignty; scale for the domestic AI industry.
+    forecloses:
+      lv: Pastāvīgas ekspluatācijas izmaksas valsts budžetā; valsts izvēlas operatorus un modeļus; atkarība no valsts, ja programma beidzas.
+      en: A permanent operating cost in the state budget; the state picks operators and models; dependence on the state if the programme ends.
 - id: meas
   group: A
   name:

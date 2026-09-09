@@ -42,6 +42,7 @@ coding:
   identity: pilot
   knowledge: mrec
   adopt: vou
+  access: skills
   meas: none
   eval: cat
   return: null
@@ -67,3 +68,5 @@ partial:
     plat: 2
   ambition:
     cap: 2
+low_confidence:
+- access

@@ -1,10 +1,10 @@
 {
  "bundle": "ai-strategy-axes",
- "version": "1.0.0",
+ "version": "1.1.0",
  "scoring_version": "1.0",
  "schema_version": "1.1",
- "source": "https://github.com/rg4444/AI-strategy-generator@e01d828",
- "generated_at": "2026-09-09T12:20:37Z",
+ "source": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+ "generated_at": "2026-09-09T14:04:17Z",
  "readings": [
   "national",
   "organisation"
@@ -2320,6 +2320,218 @@
    }
   },
   {
+   "id": "access",
+   "group": "A",
+   "name": {
+    "lv": "Iedzīvotāju piekļuve MI",
+    "en": "Citizen access to AI"
+   },
+   "method": {
+    "lv": "Vērtē, ko valsts apņemas attiecībā uz iedzīvotāju piekļuvi vispārējas nozīmes MI — vai tā ir tirgus jautājums, prasmju jautājums, valsts pakalpojumu sastāvdaļa vai sabiedriskais pakalpojums, ko valsts finansē visiem. Tirgus — 1; prasmes — 2; MI valsts pakalpojumos — 3; bezmaksas piekļuve mērķgrupām — 4; universāla bezmaksas piekļuve — 5.",
+    "en": "What the state commits to on citizens' access to general-purpose AI — a market matter, a skills matter, part of public services, or a public service the state funds for everyone. Market 1; skills 2; AI inside public services 3; free access for target groups 4; universal free access 5."
+   },
+   "options": [
+    {
+     "key": "none",
+     "value": 0,
+     "label": {
+      "lv": "nav norādīts",
+      "en": "not stated"
+     },
+     "chosen_by": "NO · CA · LV 2020",
+     "gives": {
+      "lv": "—",
+      "en": "—"
+     },
+     "forecloses": {
+      "lv": "Jautājums, kas maksā par iedzīvotāju piekļuvi MI, paliek neatbildēts.",
+      "en": "The question of who pays for citizens' access to AI stays unanswered."
+     }
+    },
+    {
+     "key": "market",
+     "value": 1,
+     "label": {
+      "lv": "tirgus nodrošina",
+      "en": "market provides"
+     },
+     "chosen_by": "—",
+     "gives": {
+      "lv": "Nav jāfinansē; nav jāizvēlas uzvarētāji.",
+      "en": "Nothing to fund; no winners to pick."
+     },
+     "forecloses": {
+      "lv": "Valstij nav sviras pār to, kādus MI produktus lieto iedzīvotāji un kur paliek dati.",
+      "en": "The state has no lever over which AI products citizens use or where the data goes."
+     }
+    },
+    {
+     "key": "skills",
+     "value": 2,
+     "label": {
+      "lv": "prasmes un informēšana",
+      "en": "skills and awareness"
+     },
+     "chosen_by": "FI (Elements of AI) · EU (MI akta 4. p.) · UK · DK · IE · NL · SI · CZ · PT · LT · JP · LV draft",
+     "gives": {
+      "lv": "Lēts, ātri uzsākams, mērāms — kursi, kampaņas, prasmju ietvari.",
+      "en": "Cheap, quick to start, measurable — courses, campaigns, skills frameworks."
+     },
+     "forecloses": {
+      "lv": "Piekļuve paliek maksas un nevienlīdzīga; prasmes bez rīkiem izgaist.",
+      "en": "Access stays paid and unequal; skills without tools fade."
+     }
+    },
+    {
+     "key": "services",
+     "value": 3,
+     "label": {
+      "lv": "MI valsts pakalpojumos",
+      "en": "AI inside public services"
+     },
+     "chosen_by": "EE (Bürokratt) · SG · AE · PPPA priekšlikums",
+     "gives": {
+      "lv": "Konkrēts lietojums — sarunboti un aģenti iestāžu pakalpojumos, piesaistīti esošai infrastruktūrai.",
+      "en": "Concrete use — assistants and agents inside public services, tied to existing infrastructure."
+     },
+     "forecloses": {
+      "lv": "Vispārējas nozīmes MI lietošana paliek komerciāla; valsts neietekmē, ar ko iedzīvotāji strādā ikdienā.",
+      "en": "General-purpose AI use stays commercial; the state does not shape what citizens work with daily."
+     }
+    },
+    {
+     "key": "targeted",
+     "value": 4,
+     "label": {
+      "lv": "bezmaksas piekļuve mērķgrupām",
+      "en": "free access for target groups"
+     },
+     "chosen_by": "—",
+     "gives": {
+      "lv": "Universālā modeļa ieguvumi tur, kur tie visvairāk vajadzīgi — skolēni, seniori, MVU — par daļu no izmaksām.",
+      "en": "The universal model's gains where they matter most — students, seniors, SMEs — at a fraction of the cost."
+     },
+     "forecloses": {
+      "lv": "Universalitātes trūkums; robežas starp grupām ir pastāvīgs politisks strīds.",
+      "en": "No universality; the boundaries between groups are a standing political fight."
+     }
+    },
+    {
+     "key": "universal",
+     "value": 5,
+     "label": {
+      "lv": "universāla bezmaksas piekļuve",
+      "en": "universal free access"
+     },
+     "chosen_by": "KR (AI for All, 2026)",
+     "gives": {
+      "lv": "Vienlīdzīga piekļuve neatkarīgi no ienākumiem un prasmēm; virza lietojumu uz vietējiem modeļiem un datu suverenitāti; mērogs vietējai MI nozarei.",
+      "en": "Equal access regardless of income or skills; steers use toward domestic models and data sovereignty; scale for the domestic AI industry."
+     },
+     "forecloses": {
+      "lv": "Pastāvīgas ekspluatācijas izmaksas valsts budžetā; valsts izvēlas operatorus un modeļus; atkarība no valsts, ja programma beidzas.",
+      "en": "A permanent operating cost in the state budget; the state picks operators and models; dependence on the state if the programme ends."
+     }
+    }
+   ],
+   "org": {
+    "name": {
+     "en": "Employee access to AI",
+     "lv": "Darbinieku piekļuve MI"
+    },
+    "method": {
+     "en": "Whether the organisation has decided who gets general-purpose AI and who pays for it. Individuals bring their own 1; training without tools 2; AI only inside internal systems 3; licences for defined roles 4; general-purpose AI for every employee, paid by the organisation 5.",
+     "lv": "Vai organizācija ir izlēmusi, kam ir piekļuve vispārējas nozīmes MI un kas par to maksā. Katrs pats — 1; apmācība bez rīkiem — 2; MI tikai iekšējās sistēmās — 3; licences noteiktām lomām — 4; vispārējas nozīmes MI visiem darbiniekiem par organizācijas līdzekļiem — 5."
+    },
+    "options": {
+     "none": {
+      "label": {
+       "lv": "nav norādīts",
+       "en": "not stated"
+      },
+      "gives": {
+       "lv": "—",
+       "en": "—"
+      },
+      "forecloses": {
+       "lv": "Jautājums, kas maksā par iedzīvotāju piekļuvi MI, paliek neatbildēts.",
+       "en": "The question of who pays for staff and customers' access to AI stays unanswered."
+      }
+     },
+     "market": {
+      "label": {
+       "en": "individuals bring their own",
+       "lv": "katrs pats — darbinieki lieto, ko atrod"
+      },
+      "gives": {
+       "en": "Nothing to fund; nothing to choose.",
+       "lv": "Nav jāfinansē; nav jāizvēlas."
+      },
+      "forecloses": {
+       "en": "No control over which tools are used or where the data goes — shadow AI by default.",
+       "lv": "Nav kontroles pār rīkiem un datu plūsmu — ēnu MI pēc noklusējuma."
+      }
+     },
+     "skills": {
+      "label": {
+       "en": "training without tools",
+       "lv": "apmācība bez rīkiem"
+      },
+      "gives": {
+       "en": "Cheap, quick, measurable.",
+       "lv": "Lēti, ātri, mērāmi."
+      },
+      "forecloses": {
+       "en": "Skills without tools fade; people go back to whatever they can reach.",
+       "lv": "Prasmes bez rīkiem izgaist; cilvēki atgriežas pie tā, kas sasniedzams."
+      }
+     },
+     "services": {
+      "label": {
+       "en": "AI only inside internal systems",
+       "lv": "MI tikai iekšējās sistēmās"
+      },
+      "gives": {
+       "en": "Concrete use inside controlled systems — assistant, search, document handling.",
+       "lv": "Konkrēts lietojums kontrolētās sistēmās — asistents, meklēšana, dokumentu apstrāde."
+      },
+      "forecloses": {
+       "en": "General-purpose work still happens in personal tools the organisation cannot see.",
+       "lv": "Vispārējas nozīmes darbs joprojām notiek personīgos rīkos, ko organizācija neredz."
+      }
+     },
+     "targeted": {
+      "label": {
+       "en": "licences for defined roles",
+       "lv": "licences noteiktām lomām"
+      },
+      "gives": {
+       "en": "The universal model's gains where they matter most, at a fraction of the cost.",
+       "lv": "Universālā modeļa ieguvumi tur, kur tie visvairāk vajadzīgi, par daļu no izmaksām."
+      },
+      "forecloses": {
+       "en": "Who is in and who is out becomes a standing argument.",
+       "lv": "Kam ir un kam nav — pastāvīgs strīds."
+      }
+     },
+     "universal": {
+      "label": {
+       "en": "general-purpose AI for every employee, paid by the organisation",
+       "lv": "vispārējas nozīmes MI visiem darbiniekiem par organizācijas līdzekļiem"
+      },
+      "gives": {
+       "en": "Equal access; control over which tools and where data goes; shadow AI loses its excuse.",
+       "lv": "Vienlīdzīga piekļuve; kontrole pār rīkiem un datu plūsmu; ēnu MI zaudē attaisnojumu."
+      },
+      "forecloses": {
+       "en": "A permanent licence cost; the organisation picks the vendor for everyone.",
+       "lv": "Pastāvīgas licenču izmaksas; organizācija izvēlas piegādātāju visiem."
+      }
+     }
+    }
+   }
+  },
+  {
    "id": "meas",
    "group": "A",
    "name": {
@@ -3740,6 +3952,7 @@
   "identity": 6,
   "knowledge": 5,
   "adopt": 8,
+  "access": 8,
   "meas": 8,
   "eval": 5,
   "intl": 5,

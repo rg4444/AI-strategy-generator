@@ -71,6 +71,7 @@ coding:
   identity: gw
   knowledge: fed
   adopt: mand
+  access: services
   meas: out
   eval: cat
   return: layered
@@ -81,6 +82,8 @@ coding:
   gov: agy
   reg: sand
 partial:
+  access:
+    universal: 3
   identity:
     natid: 5
     pid: 4

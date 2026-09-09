@@ -29,6 +29,7 @@ coding:
   identity: pid
   knowledge: docs
   adopt: vol
+  access: skills
   meas: act
   eval: none
   return: null
@@ -46,5 +47,6 @@ partial:
   lang:
     data: 3
 low_confidence:
+- access
 - sourcing
 - lang

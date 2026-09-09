@@ -12,6 +12,7 @@ default:
   identity: 6
   knowledge: 5
   adopt: 8
+  access: 8
   meas: 8
   eval: 5
   intl: 5

@@ -32,6 +32,7 @@ coding:
   identity: pid
   knowledge: docs
   adopt: vol
+  access: skills
   meas: out
   eval: none
   return: null
@@ -49,4 +50,5 @@ partial:
   compute:
     cloud: 4
 low_confidence:
+- access
 - sourcing

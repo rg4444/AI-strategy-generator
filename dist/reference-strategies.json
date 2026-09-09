@@ -5,10 +5,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Estonia",
   "subject": {
    "name": {
@@ -163,6 +163,11 @@
     ]
    },
    {
+    "axis": "access",
+    "lowConfidence": false,
+    "option": "services"
+   },
+   {
     "axis": "meas",
     "lowConfidence": true,
     "option": "act"
@@ -261,6 +266,10 @@
      "value": 5.0
     },
     {
+     "axis": "access",
+     "value": 3.0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -307,10 +316,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Lithuania",
   "subject": {
    "name": {
@@ -452,6 +461,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "act"
@@ -544,6 +558,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -581,7 +599,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 2.88
+   "overall": 2.82
   }
  },
  {
@@ -590,10 +608,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Finland",
   "subject": {
    "name": {
@@ -717,6 +735,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": false,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "act"
@@ -809,6 +832,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -846,7 +873,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 1.72
+   "overall": 1.74
   }
  },
  {
@@ -855,10 +882,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Denmark",
   "subject": {
    "name": {
@@ -987,6 +1014,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "act"
@@ -1079,6 +1111,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -1116,7 +1152,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 1.82
+   "overall": 1.83
   }
  },
  {
@@ -1125,10 +1161,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Ireland",
   "subject": {
    "name": {
@@ -1248,6 +1284,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "out"
@@ -1340,6 +1381,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 4.0
     },
@@ -1377,7 +1422,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 1.71
+   "overall": 1.73
   }
  },
  {
@@ -1386,10 +1431,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Netherlands",
   "subject": {
    "name": {
@@ -1514,6 +1559,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "act"
@@ -1606,6 +1656,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -1643,7 +1697,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 2.22
+   "overall": 2.2
   }
  },
  {
@@ -1652,10 +1706,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Slovenia",
   "subject": {
    "name": {
@@ -1775,6 +1829,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "out"
@@ -1867,6 +1926,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 4.0
     },
@@ -1904,7 +1967,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 2.42
+   "overall": 2.39
   }
  },
  {
@@ -1913,10 +1976,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Norway",
   "subject": {
    "name": {
@@ -2030,6 +2093,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "none"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "out",
@@ -2128,6 +2196,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 0
+    },
+    {
      "axis": "meas",
      "value": 4.0
     },
@@ -2165,7 +2237,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 1.76
+   "overall": 1.64
   }
  },
  {
@@ -2174,10 +2246,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Czechia",
   "subject": {
    "name": {
@@ -2296,6 +2368,11 @@
     "option": "vou"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "act"
@@ -2388,6 +2465,10 @@
      "value": 2.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -2425,7 +2506,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 1.89
+   "overall": 1.9
   }
  },
  {
@@ -2434,10 +2515,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Portugal",
   "subject": {
    "name": {
@@ -2557,6 +2638,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "out"
@@ -2649,6 +2735,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 4.0
     },
@@ -2686,7 +2776,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 1.94
+   "overall": 1.95
   }
  },
  {
@@ -2695,10 +2785,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Singapore",
   "subject": {
    "name": {
@@ -2833,6 +2923,17 @@
     "option": "plat"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "services",
+    "partials": [
+     {
+      "option": "skills",
+      "score": 3
+     }
+    ]
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "out",
@@ -2937,6 +3038,10 @@
      "value": 5.0
     },
     {
+     "axis": "access",
+     "value": 3.0
+    },
+    {
      "axis": "meas",
      "value": 4.0
     },
@@ -2974,7 +3079,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 3.68
+   "overall": 3.63
   }
  },
  {
@@ -2983,10 +3088,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "South Korea",
   "subject": {
    "name": {
@@ -3000,7 +3105,7 @@
   },
   "sources": [
    {
-    "title": "AI Basic Act (2024/26) · sovereign AI programme"
+    "title": "AI Basic Act (2024/26) · sovereign AI programme · AI for All (MSIT, 2026-08)"
    }
   ],
   "text": {
@@ -3029,11 +3134,16 @@
      "lv": "No 6.–7. vietas uz 3. Stanford globālajā indeksā",
      "en": "From 6th–7th to 3rd on the Stanford global index",
      "numbered": true
+    },
+    {
+     "lv": "Bezmaksas, neierobežota vispārējas nozīmes MI piekļuve visiem 52 miljoniem iedzīvotāju; vismaz puse katras sistēmas uz vietējiem modeļiem (AI for All, 2026)",
+     "en": "Free, unlimited general-purpose AI for all 52 million citizens; at least half of every system on domestic models (AI for All, 2026)",
+     "numbered": true
     }
    ],
    "position": {
-    "lv": "Pilna kaudze. Pieci vietējie pamatmodeļu konsorciji.",
-    "en": "Full-stack build. Five domestic foundation-model consortia."
+    "lv": "Pilna kaudze. Pieci vietējie pamatmodeļu konsorciji. MI kā sabiedriskais pakalpojums, sasaistīts ar valsts sistēmām (ārstu pieraksts, nodokļi, mājokļi).",
+    "en": "Full-stack build. Five domestic foundation-model consortia. AI as a public service, wired into government systems (doctor bookings, tax, housing)."
    }
   },
   "coding": [
@@ -3060,6 +3170,10 @@
      {
       "option": "compute",
       "score": 4
+     },
+     {
+      "option": "speed",
+      "score": 3
      }
     ]
    },
@@ -3098,7 +3212,13 @@
    {
     "axis": "compute",
     "lowConfidence": false,
-    "option": "nat"
+    "option": "nat",
+    "partials": [
+     {
+      "option": "ppp",
+      "score": 3
+     }
+    ]
    },
    {
     "axis": "lang",
@@ -3124,7 +3244,18 @@
    {
     "axis": "adopt",
     "lowConfidence": true,
-    "option": "mand"
+    "option": "mand",
+    "partials": [
+     {
+      "option": "plat",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "access",
+    "lowConfidence": false,
+    "option": "universal"
    },
    {
     "axis": "meas",
@@ -3216,7 +3347,11 @@
     },
     {
      "axis": "adopt",
-     "value": 3.0
+     "value": 4.0
+    },
+    {
+     "axis": "access",
+     "value": 5.0
     },
     {
      "axis": "meas",
@@ -3256,7 +3391,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 3.73
+   "overall": 3.89
   }
  },
  {
@@ -3265,10 +3400,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "United Kingdom",
   "subject": {
    "name": {
@@ -3423,6 +3558,11 @@
     "option": "plat"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "trk"
@@ -3515,6 +3655,10 @@
      "value": 5.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 5.0
     },
@@ -3552,7 +3696,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 3.68
+   "overall": 3.56
   }
  },
  {
@@ -3561,10 +3705,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Canada",
   "subject": {
    "name": {
@@ -3684,6 +3828,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "none"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "act"
@@ -3776,6 +3925,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -3813,7 +3966,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 2.9
+   "overall": 2.69
   }
  },
  {
@@ -3822,10 +3975,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Japan",
   "subject": {
    "name": {
@@ -3940,6 +4093,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "act"
@@ -4032,6 +4190,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -4069,7 +4231,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 2.41
+   "overall": 2.38
   }
  },
  {
@@ -4078,10 +4240,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "UAE",
   "subject": {
    "name": {
@@ -4212,6 +4374,11 @@
     ]
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "services"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "out"
@@ -4304,6 +4471,10 @@
      "value": 4.0
     },
     {
+     "axis": "access",
+     "value": 3.0
+    },
+    {
      "axis": "meas",
      "value": 4.0
     },
@@ -4341,7 +4512,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 3.66
+   "overall": 3.61
   }
  },
  {
@@ -4350,10 +4521,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "EU",
   "subject": {
    "name": {
@@ -4489,6 +4660,11 @@
     ]
    },
    {
+    "axis": "access",
+    "lowConfidence": false,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "act"
@@ -4581,6 +4757,10 @@
      "value": 4.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 2.0
     },
@@ -4618,7 +4798,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 3.25
+   "overall": 3.16
   }
  },
  {
@@ -4627,10 +4807,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Latvia 2020",
   "subject": {
    "name": {
@@ -4736,6 +4916,11 @@
     "option": "vol"
    },
    {
+    "axis": "access",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "none"
@@ -4828,6 +5013,10 @@
      "value": 1.0
     },
     {
+     "axis": "access",
+     "value": 0
+    },
+    {
      "axis": "meas",
      "value": 0
     },
@@ -4865,7 +5054,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 0.58
+   "overall": 0.54
   }
  },
  {
@@ -4874,10 +5063,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "Latvia — VARAM draft",
   "subject": {
    "name": {
@@ -5039,6 +5228,11 @@
     ]
    },
    {
+    "axis": "access",
+    "lowConfidence": true,
+    "option": "skills"
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "none"
@@ -5131,6 +5325,10 @@
      "value": 2.0
     },
     {
+     "axis": "access",
+     "value": 2.0
+    },
+    {
      "axis": "meas",
      "value": 0
     },
@@ -5168,7 +5366,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 1.52
+   "overall": 1.55
   }
  },
  {
@@ -5177,10 +5375,10 @@
   "kind": "national",
   "status": "final",
   "version": 1,
-  "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@e01d828",
-  "createdAt": "2026-09-09T12:20:37Z",
-  "updatedAt": "2026-09-09T12:20:37Z",
+  "axesVersion": "1.1.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@bd2fed5",
+  "createdAt": "2026-09-09T14:04:17Z",
+  "updatedAt": "2026-09-09T14:04:17Z",
   "title": "PPPA proposal",
   "subject": {
    "name": {
@@ -5434,6 +5632,17 @@
     ]
    },
    {
+    "axis": "access",
+    "lowConfidence": false,
+    "option": "services",
+    "partials": [
+     {
+      "option": "universal",
+      "score": 3
+     }
+    ]
+   },
+   {
     "axis": "meas",
     "lowConfidence": false,
     "option": "out",
@@ -5559,6 +5768,10 @@
      "value": 3.2
     },
     {
+     "axis": "access",
+     "value": 3.0
+    },
+    {
      "axis": "meas",
      "value": 4.0
     },
@@ -5596,7 +5809,7 @@
     }
    ],
    "scoringVersion": "1.0",
-   "overall": 3.68
+   "overall": 3.63
   }
  }
 ]

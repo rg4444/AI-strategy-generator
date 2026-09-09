@@ -36,6 +36,7 @@ coding:
   identity: pid
   knowledge: mrec
   adopt: mand
+  access: services
   meas: out
   eval: none
   return: null
@@ -55,4 +56,5 @@ partial:
   adopt:
     plat: 4
 low_confidence:
+- access
 - eval

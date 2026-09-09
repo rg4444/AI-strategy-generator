@@ -33,6 +33,7 @@ coding:
   identity: pid
   knowledge: docs
   adopt: vou
+  access: skills
   meas: act
   eval: none
   return: null
@@ -50,5 +51,6 @@ partial:
   interest:
     comp: 3
 low_confidence:
+- access
 - sourcing
 - adopt

@@ -2,7 +2,7 @@ id: KR
 name:
   lv: Dienvidkoreja
   en: South Korea
-documents: AI Basic Act (2024/26) · sovereign AI programme
+documents: AI Basic Act (2024/26) · sovereign AI programme · AI for All (MSIT, 2026-08)
 text:
   interest:
     status: 'yes'
@@ -21,9 +21,12 @@ text:
   - lv: No 6.–7. vietas uz 3. Stanford globālajā indeksā
     en: From 6th–7th to 3rd on the Stanford global index
     numbered: true
+  - lv: Bezmaksas, neierobežota vispārējas nozīmes MI piekļuve visiem 52 miljoniem iedzīvotāju; vismaz puse katras sistēmas uz vietējiem modeļiem (AI for All, 2026)
+    en: Free, unlimited general-purpose AI for all 52 million citizens; at least half of every system on domestic models (AI for All, 2026)
+    numbered: true
   position:
-    lv: Pilna kaudze. Pieci vietējie pamatmodeļu konsorciji.
-    en: Full-stack build. Five domestic foundation-model consortia.
+    lv: Pilna kaudze. Pieci vietējie pamatmodeļu konsorciji. MI kā sabiedriskais pakalpojums, sasaistīts ar valsts sistēmām (ārstu pieraksts, nodokļi, mājokļi).
+    en: Full-stack build. Five domestic foundation-model consortia. AI as a public service, wired into government systems (doctor bookings, tax, housing).
 coding:
   frame: dep
   diff: cap
@@ -36,6 +39,7 @@ coding:
   identity: pid
   knowledge: mrec
   adopt: mand
+  access: universal
   meas: out
   eval: none
   return: null
@@ -48,11 +52,16 @@ coding:
 partial:
   knowledge:
     reuse: 2
+  adopt:
+    plat: 4
+  compute:
+    ppp: 3
   frame:
     behind: 3
     trans: 3
   diff:
     compute: 4
+    speed: 3
   sourcing:
     self: 4
   interest:

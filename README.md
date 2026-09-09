@@ -1,7 +1,7 @@
 # AI Strategy Decision Axes
 
 A method for comparing AI strategies by the **decisions they take**, not the
-themes they cover — 20 decision axes, each with a closed set of options that
+themes they cover — 21 decision axes, each with a closed set of options that
 state what the option *gives* and what it *forecloses*, a coding procedure,
 and a transparent 0–5 scoring with adjustable weights.
 

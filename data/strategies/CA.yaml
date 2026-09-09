@@ -33,6 +33,7 @@ coding:
   identity: policy
   knowledge: docs
   adopt: vol
+  access: none
   meas: act
   eval: none
   return: null
@@ -50,5 +51,6 @@ partial:
   interest:
     comp: 2
 low_confidence:
+- access
 - sourcing
 - adopt

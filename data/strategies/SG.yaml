@@ -36,6 +36,7 @@ coding:
   identity: pid
   knowledge: orgkb
   adopt: plat
+  access: services
   meas: out
   eval: cat
   return: null
@@ -46,6 +47,8 @@ coding:
   gov: coun
   reg: soft
 partial:
+  access:
+    skills: 3
   identity:
     policy: 2
   knowledge:
@@ -62,4 +65,5 @@ partial:
   eval:
     fn: 3
 low_confidence:
+- access
 - eval

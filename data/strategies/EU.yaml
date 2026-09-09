@@ -33,6 +33,7 @@ coding:
   identity: pid
   knowledge: mrec
   adopt: proc
+  access: skills
   meas: act
   eval: none
   return: null

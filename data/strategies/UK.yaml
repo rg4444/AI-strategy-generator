@@ -36,6 +36,7 @@ coding:
   identity: policy
   knowledge: orgkb
   adopt: plat
+  access: skills
   meas: trk
   eval: ww
   return: null
@@ -62,4 +63,5 @@ partial:
   interest:
     indep: 4
 low_confidence:
+- access
 - sourcing

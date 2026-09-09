@@ -147,6 +147,19 @@ How far the adoption mechanism reaches into institutions. Voluntary 1; vouchers 
 | `proc` | 4 | procurement-led | EU (buy European) | The strongest lever a state has. Sets terms once, everywhere. | Slow to change; needs procurement expertise you must build. |
 | `plat` | 5 | central platform | SG (Pair) · UK (Humphrey) · EE (Bürokratt) | Adoption becomes a login. Singapore: ~80% of 150,000 officers. | Single point of failure; you own support and trust permanently. |
 
+### `access` — Citizen access to AI / Iedzīvotāju piekļuve MI · default weight 8
+
+What the state commits to on citizens' access to general-purpose AI — a market matter, a skills matter, part of public services, or a public service the state funds for everyone. Market 1; skills 2; AI inside public services 3; free access for target groups 4; universal free access 5.
+
+| key | value | option | chosen by | gives | forecloses |
+|---|---|---|---|---|---|
+| `none` | 0 | not stated | NO · CA · LV 2020 | — | The question of who pays for citizens' access to AI stays unanswered. |
+| `market` | 1 | market provides | — | Nothing to fund; no winners to pick. | The state has no lever over which AI products citizens use or where the data goes. |
+| `skills` | 2 | skills and awareness | FI (Elements of AI) · EU (MI akta 4. p.) · UK · DK · IE · NL · SI · CZ · PT · LT · JP · LV draft | Cheap, quick to start, measurable — courses, campaigns, skills frameworks. | Access stays paid and unequal; skills without tools fade. |
+| `services` | 3 | AI inside public services | EE (Bürokratt) · SG · AE · PPPA priekšlikums | Concrete use — assistants and agents inside public services, tied to existing infrastructure. | General-purpose AI use stays commercial; the state does not shape what citizens work with daily. |
+| `targeted` | 4 | free access for target groups | — | The universal model's gains where they matter most — students, seniors, SMEs — at a fraction of the cost. | No universality; the boundaries between groups are a standing political fight. |
+| `universal` | 5 | universal free access | KR (AI for All, 2026) | Equal access regardless of income or skills; steers use toward domestic models and data sovereignty; scale for the domestic AI industry. | A permanent operating cost in the state budget; the state picks operators and models; dependence on the state if the programme ends. |
+
 ### `meas` — Measurement / Mērīšana · default weight 8
 
 Whether the strategy can be tested. None 0; activity KPIs 2; outcome KPIs 4; public delivery tracker 5.
@@ -267,7 +280,7 @@ How settled the regulatory stance is. EU transposition only 1; soft law 2; sandb
 | `CZ` | Czechia | National AI Strategy 2030 (NAIS, 2024) |
 | `PT` | Portugal | AI Portugal 2030 · National AI Agenda 2026–2030 |
 | `SG` | Singapore | National AI Strategy 2.0 (2023) · NAIS Update (2026) |
-| `KR` | South Korea | AI Basic Act (2024/26) · sovereign AI programme |
+| `KR` | South Korea | AI Basic Act (2024/26) · sovereign AI programme · AI for All (MSIT, 2026-08) |
 | `UK` | United Kingdom | AI Opportunities Action Plan (2025) |
 | `CA` | Canada | Canadian Sovereign AI Compute Strategy (2024) |
 | `JP` | Japan | AI Promotion Act (2025) · Basic AI Plan (2025) |

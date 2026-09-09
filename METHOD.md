@@ -240,7 +240,7 @@ Metode salīdzina MI stratēģijas nevis pēc tā, ko tās *saka*, bet pēc tā,
 tās *izlemj*. Katrs lēmums ir **ass** ar slēgtu izvēļu sarakstu; katrai
 izvēlei ir vērtība (0–5, kur augstāka nozīmē skaidrāku lēmumu, ne labāku),
 saraksts, kuras valstis to izvēlējušās, un divi lauki — **ko dod** un **ko
-liedz**. Divdesmit asis divās grupās: 15 stratēģisko lēmumu asis (vērtētas
+liedz**. Divdesmit asis divās grupās: 16 stratēģisko lēmumu asis (vērtētas
 un svērtas) un 5 formas un pārvaldības asis (rādītas, bet nesvērtas).
 
 Stratēģiju **kodē**, katrai asij norādot vienu primāro izvēli (vai `null`, ja

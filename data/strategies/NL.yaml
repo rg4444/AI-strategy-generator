@@ -32,6 +32,7 @@ coding:
   identity: pid
   knowledge: mrec
   adopt: vol
+  access: skills
   meas: act
   eval: none
   return: null
@@ -51,6 +52,7 @@ partial:
   sourcing:
     dec: 3
 low_confidence:
+- access
 - diff
 - compute
 - adopt
