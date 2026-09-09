@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/rg4444/AI-strategy-generator/schema/ai-strategy.schema.json",
+  "title": "AI strategy document (JSON form of urn:pppa:ai-strategy:1.0)",
+  "description": "GENERATED from schema/ai-strategy.xsd by tools/xsd_to_jsonschema.py — do not edit.",
+  "$ref": "#/$defs/AIStrategyType",
+  "$defs": {
+    "AIStrategyType": {
+      "type": "object",
+      "properties": {
+        "subject": {
+          "$ref": "#/$defs/SubjectType"
+        },
+        "sources": {
+          "type": "object",
+          "properties": {
+            "source": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/SourceType"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "text": {
+          "$ref": "#/$defs/TextLayerType"
+        },
+        "coding": {
+          "type": "object",
+          "properties": {
+            "axis": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/AxisCodingType"
+              },
+              "minItems": 1
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "axis"
+          ]
+        },
+        "weights": {
+          "type": "object",
+          "properties": {
+            "axis": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/WeightEntryType"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "score": {
+          "$ref": "#/$defs/ScoreType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "kind": {
+          "$ref": "#/$defs/KindType"
+        },
+        "status": {
+          "$ref": "#/$defs/StatusType",
+          "default": "draft"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1
+        },
+        "axesVersion": {
+          "type": "string"
+        },
+        "axesSource": {
+          "type": "string",
+          "format": "uri"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "subject",
+        "text",
+        "coding",
+        "id",
+        "schemaVersion",
+        "kind",
+        "axesVersion"
+      ]
+    },
+    "SubjectType": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/TextType"
+        },
+        "identifier": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "kind": {
+              "$ref": "#/$defs/IdentifierKindType"
+            }
+          },
+          "required": [
+            "value",
+            "kind"
+          ],
+          "additionalProperties": false
+        },
+        "country": {
+          "type": "string"
+        },
+        "sector": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ]
+    },
+    "TextType": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]{2}$": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Bilingual (or multilingual) text: one entry per language."
+    },
+    "IdentifierKindType": {
+      "type": "string",
+      "enum": [
+        "country",
+        "registration",
+        "lei",
+        "did",
+        "other"
+      ]
+    },
+    "SourceType": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "title"
+      ]
+    },
+    "TextLayerType": {
+      "type": "object",
+      "properties": {
+        "interest": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "$ref": "#/$defs/TextType"
+            },
+            "source": {
+              "type": "string"
+            },
+            "status": {
+              "$ref": "#/$defs/InterestStatusType"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "text",
+            "status"
+          ]
+        },
+        "vision": {
+          "type": "object",
+          "properties": {
+            "quote": {
+              "type": "string"
+            },
+            "note": {
+              "$ref": "#/$defs/TextType"
+            }
+          },
+          "additionalProperties": false
+        },
+        "objectives": {
+          "type": "object",
+          "properties": {
+            "objective": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ObjectiveType"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "position": {
+          "$ref": "#/$defs/TextType"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "interest",
+        "vision",
+        "objectives",
+        "position"
+      ],
+      "description": "What the document itself says, recorded before any axis is coded."
+    },
+    "InterestStatusType": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "part",
+        "no"
+      ],
+      "description": "Does the document state why it exists?"
+    },
+    "ObjectiveType": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/TextType"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "numbered": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        }
+      ]
+    },
+    "AxisCodingType": {
+      "type": "object",
+      "properties": {
+        "partial": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PartialType"
+          }
+        },
+        "rationale": {
+          "$ref": "#/$defs/TextType"
+        },
+        "axis": {
+          "$ref": "#/$defs/KeyType"
+        },
+        "option": {
+          "$ref": "#/$defs/KeyType"
+        },
+        "lowConfidence": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "axis"
+      ],
+      "description": "One decision. No @option means the document decides nothing on this axis (scores 0)."
+    },
+    "PartialType": {
+      "type": "object",
+      "properties": {
+        "option": {
+          "$ref": "#/$defs/KeyType"
+        },
+        "score": {
+          "$ref": "#/$defs/PartialScoreType"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "option",
+        "score"
+      ]
+    },
+    "KeyType": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,31}$",
+      "description": "Axis or option key as defined in data/axes.yaml."
+    },
+    "PartialScoreType": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "description": "Secondary lean, 1–4. The primary option is always 5."
+    },
+    "WeightEntryType": {
+      "type": "object",
+      "properties": {
+        "axis": {
+          "$ref": "#/$defs/KeyType"
+        },
+        "weight": {
+          "$ref": "#/$defs/WeightType"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "axis",
+        "weight"
+      ]
+    },
+    "WeightType": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Percent points; weights need not sum to 100."
+    },
+    "ScoreType": {
+      "type": "object",
+      "properties": {
+        "axis": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/AxisScoreType"
+          }
+        },
+        "overall": {
+          "$ref": "#/$defs/Score05Type"
+        },
+        "scoringVersion": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Computed by decision/scoring.dmn (or tools/score.py); never authored by hand."
+    },
+    "AxisScoreType": {
+      "type": "object",
+      "properties": {
+        "axis": {
+          "$ref": "#/$defs/KeyType"
+        },
+        "value": {
+          "$ref": "#/$defs/Score05Type"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "axis",
+        "value"
+      ]
+    },
+    "Score05Type": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 5.0
+    },
+    "KindType": {
+      "type": "string",
+      "enum": [
+        "national",
+        "organisation"
+      ],
+      "description": "Who the strategy is for. The axes are identical; only the reading of three of them changes."
+    },
+    "StatusType": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "final",
+        "superseded"
+      ]
+    }
+  }
+}

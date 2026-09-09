@@ -6,12 +6,17 @@
 dist/sg-data.js is the data half of the pppa.lv generator: it declares the
 same four top-level constants (AX, C, T, W) that sg-app.js used to embed.
 """
-import argparse, json, os, sys, tempfile, filecmp
+import argparse, json, os, re, sys, tempfile, filecmp
 from xml.sax.saxutils import escape
 from common import ROOT, load_all, axis_index
 
 sys.path.insert(0, os.path.dirname(__file__))
 from score import validate  # noqa: E402
+import strategy_doc as SD  # noqa: E402
+import xsd_to_jsonschema as X2J  # noqa: E402
+import xml.etree.ElementTree as ET  # noqa: E402
+import datetime as _dt  # noqa: E402
+import subprocess  # noqa: E402
 
 
 # ---------------------------------------------------------------- JS data ---
@@ -170,6 +175,49 @@ def build_docs(axes, weights, strategies):
     return "\n".join(L)
 
 
+# ----------------------------------------------------------------- bundle ---
+def git_commit():
+    try:
+        return subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True,
+                              text=True, check=True).stdout.strip()
+    except Exception:
+        return ""
+
+
+def build_bundle(axes, weights):
+    """dist/axes-bundle.json — everything a consumer needs to render, code and score."""
+    return {
+        "bundle": "ai-strategy-axes",
+        "version": str(axes["version"]),
+        "scoring_version": SD.SCORING_VERSION,
+        "schema_version": SD.SCHEMA_VERSION,
+        "source": SD.AXES_SOURCE + ("@" + git_commit() if git_commit() else ""),
+        "generated_at": _dt.datetime.now(_dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z",
+        "groups": axes["groups"],
+        "axes": axes["axes"],
+        "default_weights": weights["default"],
+    }
+
+
+def build_reference(bundle, strategies):
+    docs = [SD.from_yaml_strategy(s, bundle, kind="national") for s in strategies]
+    for d in docs:
+        errs = SD.validate(d, bundle)
+        if errs:
+            sys.exit(f"reference strategy {d['id']} invalid: {errs}")
+        # XML round trip must be lossless for the fields the XSD carries
+        back = SD.from_xml(SD.to_xml(d))
+        for k in ("id", "kind", "axesVersion", "coding", "weights"):
+            if back.get(k) != d.get(k):
+                sys.exit(f"XML round-trip mismatch for {d['id']} on {k}")
+    return docs
+
+
+def build_json_schema():
+    xsd = os.path.join(ROOT, "schema", "ai-strategy.xsd")
+    return json.dumps(X2J.Conv(ET.parse(xsd).getroot()).run(), ensure_ascii=False, indent=2) + "\n"
+
+
 # ------------------------------------------------------------------- main ---
 def write(p, text):
     os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -184,8 +232,14 @@ def main():
     args = ap.parse_args()
     axes, weights, ui, strategies = load_all()
     validate(axes, weights, strategies)
+    bundle = build_bundle(axes, weights)
+    reference = build_reference(bundle, strategies)
+    bundle_json = json.dumps(bundle, ensure_ascii=False, indent=1) + "\n"
     targets = {
         "dist/sg-data.js": build_js(axes, weights, ui, strategies),
+        "dist/axes-bundle.json": bundle_json,
+        "dist/reference-strategies.json": json.dumps(reference, ensure_ascii=False, indent=1) + "\n",
+        "schema/ai-strategy.schema.json": build_json_schema(),
         "decision/scoring.dmn": build_dmn(axes, weights),
         "docs/axes.md": build_docs(axes, weights, strategies),
     }
@@ -194,7 +248,11 @@ def main():
         bad = []
         for rel, text in targets.items():
             write(os.path.join(tmp, rel), text)
-            if not filecmp.cmp(os.path.join(tmp, rel), os.path.join(ROOT, rel), shallow=False):
+            if rel in ("dist/axes-bundle.json", "dist/reference-strategies.json"):
+                strip = lambda p: re.sub(r'"(generated_at|source|createdAt|updatedAt|axesSource)": "[^"]*"', "", open(p, encoding="utf-8").read())
+                if strip(os.path.join(tmp, rel)) != strip(os.path.join(ROOT, rel)):
+                    bad.append(rel)
+            elif not filecmp.cmp(os.path.join(tmp, rel), os.path.join(ROOT, rel), shallow=False):
                 bad.append(rel)
         if bad:
             sys.exit("out of date: " + ", ".join(bad) + "  (run tools/build.py)")

@@ -1,0 +1,5602 @@
+[
+ {
+  "id": "urn:pppa:ai-strategy:ref:ee",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Estonia",
+  "subject": {
+   "name": {
+    "lv": "Igaunija",
+    "en": "Estonia"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "EE"
+   }
+  },
+  "sources": [
+   {
+    "title": "Kratt 2024–2026 · Data & AI White Paper 2024–2030 · Eesti.ai"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "no",
+    "text": {
+     "lv": "Nav norādīta atsevišķa nacionālā interese. MI pasniegts kā digitālās valsts turpinājums, nevis atbilde uz draudu.",
+     "en": "No distinct national interest stated. AI is framed as a continuation of the digital state, not a response to a threat."
+    }
+   },
+   "vision": {
+    "quote": "Help Estonia become the world's smartest nation.",
+    "note": {
+     "lv": "Prezidenta Alara Karisa formulējums “AI Leap” kontekstā, nevis stratēģijas teksts. Baltā grāmata paredz “AI-powered state” līdz 2030.",
+     "en": "President Karis's framing for AI Leap, not strategy text. The White Paper targets an “AI-powered state” by 2030."
+    }
+   },
+   "objectives": [
+    {
+     "lv": "AI Leap: 20 000 skolēnu un ~3 000 pedagogu (2025. g. septembris)",
+     "en": "AI Leap: 20,000 students and ~3,000 teachers (September 2025)",
+     "numbered": true
+    },
+    {
+     "lv": "Paplašinājums 2026. gadā: vēl ~38 000 skolēnu",
+     "en": "2026 expansion: ~38,000 further students",
+     "numbered": true
+    },
+    {
+     "lv": "~85 miljoni eiro rīcības plāna finansējumā",
+     "en": "~€85 million action-plan funding",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Ieviešana pirmajā vietā, ar valodas tehnoloģiju izņēmumu. Vienīgā valsts, kas 2026. gada jūnijā sākusi darbu pie MI aģentu identitātēm.",
+    "en": "Adoption-first with a language-technology carve-out. The only state working on AI agent identities (June 2026)."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "trans",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "std",
+    "partials": [
+     {
+      "option": "speed",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "line"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "brok",
+    "partials": [
+     {
+      "option": "dec",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "natl"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "natid",
+    "partials": [
+     {
+      "option": "gw",
+      "score": 3
+     },
+     {
+      "option": "pid",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "reuse",
+    "partials": [
+     {
+      "option": "mrec",
+      "score": 4
+     },
+     {
+      "option": "orgkb",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "plat",
+    "partials": [
+     {
+      "option": "vol",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": true,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": true,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "std",
+    "partials": [
+     {
+      "option": "bloc",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "rolling"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "r3"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "coun"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "sand"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 4.0
+    },
+    {
+     "axis": "diff",
+     "value": 5.0
+    },
+    {
+     "axis": "interest",
+     "value": 0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 3.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 4.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 5.0
+    },
+    {
+     "axis": "identity",
+     "value": 4.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 3.0
+    },
+    {
+     "axis": "adopt",
+     "value": 5.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 5.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 5.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 5.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 3.02
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:lt",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Lithuania",
+  "subject": {
+   "name": {
+    "lv": "Lietuva",
+    "en": "Lithuania"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "LT"
+   }
+  },
+  "sources": [
+   {
+    "title": "National AI Strategic Guidelines 2026–2035"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "“LitAI nostiprinās Lietuvas tehnoloģisko neatkarību un nacionālo drošību — mūsu dati un MI risinājumi tiks radīti un apstrādāti šeit, Lietuvā.”",
+     "en": "“LitAI will reinforce Lithuania's technological independence and national security — our data and AI solutions will be created and processed here, in Lithuania.”"
+    },
+    "source": "Vice-Minister Paulius Petrauskas, 2025"
+   },
+   "vision": {
+    "quote": "Lithuania would become not only a user but also a developer and exporter of advanced AI solutions.",
+    "note": {
+     "lv": "Formulējums no ES Digital Skills & Jobs Platform kopsavilkuma; oriģinālvalodas teksts nav pārbaudīts.",
+     "en": "As rendered on the EU Digital Skills & Jobs Platform; original-language wording unverified."
+    }
+   },
+   "objectives": [
+    {
+     "lv": "≈10,1 miljardi eiro pievienotās vērtības desmit gados",
+     "en": "≈€10.1 billion in added value over a decade",
+     "numbered": true
+    },
+    {
+     "lv": "LitAI MI rūpnīca — 130 miljoni eiro, ~90 no ES",
+     "en": "LitAI AI factory — €130 million, ~€90m EU co-funded",
+     "numbered": true
+    },
+    {
+     "lv": "MI lietojums uzņēmumos: 4,9 % (2023) → 8,8 % (2024)",
+     "en": "Company AI use: 4.9% (2023) → 8.8% (2024)",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Skaidri formulēta abpusēja nostāja: gan lietotāja, gan izstrādātāja un eksportētāja.",
+    "en": "Explicitly both: user, developer and exporter."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "dep",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": true,
+    "option": "none",
+    "partials": [
+     {
+      "option": "compute",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "indep",
+    "partials": [
+     {
+      "option": "comp",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "quant"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "fund"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "self",
+    "partials": [
+     {
+      "option": "bloc",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "nat"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": true,
+    "option": "data"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec",
+    "partials": [
+     {
+      "option": "docs",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": true,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": true,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y10"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "eu"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 4.0
+    },
+    {
+     "axis": "diff",
+     "value": 2.4
+    },
+    {
+     "axis": "interest",
+     "value": 4.0
+    },
+    {
+     "axis": "ambition",
+     "value": 5.0
+    },
+    {
+     "axis": "fund",
+     "value": 5.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 4.0
+    },
+    {
+     "axis": "compute",
+     "value": 5.0
+    },
+    {
+     "axis": "lang",
+     "value": 2.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 3.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 2.88
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:fi",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Finland",
+  "subject": {
+   "name": {
+    "lv": "Somija",
+    "en": "Finland"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "FI"
+   }
+  },
+  "sources": [
+   {
+    "title": "Finland's Age of AI (2017) · AI 4.0 · Digital Compass 2030"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "part",
+    "text": {
+     "lv": "“Somijai ir lieliskas iespējas būt starp šīs pārmaiņas uzvarētājiem.” Iespēja, ne draudi.",
+     "en": "“Finland has excellent opportunities to be among the winners in this transformation.” Opportunity, not threat."
+    }
+   },
+   "vision": {
+    "quote": "",
+    "note": {
+     "lv": "Nav atsevišķa vīzijas teikuma. Apakšvirsraksts: “Turning Finland into a leading country in the application of artificial intelligence.”",
+     "en": "No single vision sentence. Subtitle: “Turning Finland into a leading country in the application of artificial intelligence.”"
+    }
+   },
+   "objectives": [
+    {
+     "lv": "Astoņas galvenās darbības, bez skaitliskiem nacionāliem mērķiem",
+     "en": "Eight key actions; no numeric national targets",
+     "numbered": false
+    },
+    {
+     "lv": "250 miljoni eiro HPC finansējumam (2024)",
+     "en": "€250 million HPC commitment (2024)",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Lietojums. Stratēģijas apakšvirsraksts runā par “application”, ne izstrādi.",
+    "en": "Use. The subtitle says application, not development."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "econ",
+    "partials": [
+     {
+      "option": "trans",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "comp"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "line"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "dec",
+    "partials": [
+     {
+      "option": "self",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro",
+    "partials": [
+     {
+      "option": "cloud",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": true,
+    "option": "data"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "vision"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "eu"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 2.0
+    },
+    {
+     "axis": "diff",
+     "value": 0
+    },
+    {
+     "axis": "interest",
+     "value": 2.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 3.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.6
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 2.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 2.0
+    },
+    {
+     "axis": "horizon",
+     "value": 0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 1.72
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:dk",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Denmark",
+  "subject": {
+   "name": {
+    "lv": "Dānija",
+    "en": "Denmark"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "DK"
+   }
+  },
+  "sources": [
+   {
+    "title": "Digitalisation strategy 2024–2027 · Strategic Approach to AI (2024)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "no",
+    "text": {
+     "lv": "Nav formulēta atsevišķa nacionālā interese. Trīs vadošie principi, ne viens “kāpēc”.",
+     "en": "No distinct national interest. Three guiding principles rather than one “why”."
+    }
+   },
+   "vision": {
+    "quote": "",
+    "note": {
+     "lv": "Nav atsevišķa MI vīzijas teikuma — MI ietverts plašākā digitalizācijas stratēģijā.",
+     "en": "No standalone AI vision sentence; AI sits inside the wider digitalisation strategy."
+    }
+   },
+   "objectives": [
+    {
+     "lv": "800 miljoni DKK, 25 iniciatīvas",
+     "en": "DKK 800 million across 25 initiatives",
+     "numbered": true
+    },
+    {
+     "lv": "55 miljoni DKK MI, tostarp 17 miljoni smilškastei",
+     "en": "DKK 55m for AI, including DKK 17m for a sandbox",
+     "numbered": true
+    },
+    {
+     "lv": "Gefion: 1 528 NVIDIA H100 GPU, 95 miljoni eiro (85 % privāts fonds)",
+     "en": "Gefion: 1,528 NVIDIA H100 GPUs, €95m (85% private foundation)",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Ieviešana pirmajā vietā plus suverēna jauda caur publiskās un privātās partnerības sabiedrību.",
+    "en": "Adoption-first plus sovereign compute through a public-private vehicle."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "tool",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": true,
+    "option": "speed",
+    "partials": [
+     {
+      "option": "trust",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "ppp",
+    "partials": [
+     {
+      "option": "line",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "dec"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "ppp"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": true,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y5"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "agy"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "sand"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 1.6
+    },
+    {
+     "axis": "diff",
+     "value": 4.0
+    },
+    {
+     "axis": "interest",
+     "value": 0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 4.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.0
+    },
+    {
+     "axis": "compute",
+     "value": 4.0
+    },
+    {
+     "axis": "lang",
+     "value": 0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 4.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 4.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 1.82
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:ie",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Ireland",
+  "subject": {
+   "name": {
+    "lv": "Īrija",
+    "en": "Ireland"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "IE"
+   }
+  },
+  "sources": [
+   {
+    "title": "AI — Here for Good (2021, atjaunināta 2024)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "no",
+    "text": {
+     "lv": "Nav eksistenciālas nacionālās intereses. Ietvars ir konkurētspēja un produktivitāte.",
+     "en": "No existential national interest. The framing is competitiveness and productivity."
+    }
+   },
+   "vision": {
+    "quote": "Ireland will be an international leader in using AI to the benefit of our population, through a people-centred, ethical approach to AI development, adoption and use."
+   },
+   "objectives": [
+    {
+     "lv": "75 % uzņēmumu izmanto MI līdz 2030. gadam (2024. gada bāze: ~15 %)",
+     "en": "75% of enterprises using AI by 2030 (2024 baseline: ~15%)",
+     "numbered": true
+    },
+    {
+     "lv": "Pārējie mērķi kvalitatīvi",
+     "en": "Remaining objectives qualitative",
+     "numbered": false
+    }
+   ],
+   "position": {
+    "lv": "Lietojums. Īrija pozicionējas kā mājvieta globāliem MI uzņēmumiem, ne kā suverēna modeļu veidotāja.",
+    "en": "Use. Ireland positions as a host for global AI firms, not a sovereign model-builder."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "econ",
+    "partials": [
+     {
+      "option": "trans",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "mkt",
+    "partials": [
+     {
+      "option": "trust",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "comp"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "quant"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "un"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "dec"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro",
+    "partials": [
+     {
+      "option": "cloud",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "docs"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "out"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "vision"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "eu"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 2.0
+    },
+    {
+     "axis": "diff",
+     "value": 3.0
+    },
+    {
+     "axis": "interest",
+     "value": 2.0
+    },
+    {
+     "axis": "ambition",
+     "value": 5.0
+    },
+    {
+     "axis": "fund",
+     "value": 0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 1.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 4.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 2.0
+    },
+    {
+     "axis": "horizon",
+     "value": 0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 1.71
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:nl",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Netherlands",
+  "subject": {
+   "name": {
+    "lv": "Nīderlande",
+    "en": "Netherlands"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "NL"
+   }
+  },
+  "sources": [
+   {
+    "title": "SAPAI (2019) · Generative AI vision (2024)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "no",
+    "text": {
+     "lv": "Iespēju ietvars: MI kā “atslēgas tehnoloģija sabiedriskajām un ekonomiskajām iespējām”.",
+     "en": "Opportunity framing: AI as “the key technology for societal and economic opportunities.”"
+    }
+   },
+   "vision": {
+    "quote": "",
+    "note": {
+     "lv": "Nav atsevišķa vīzijas teikuma; mērķis — kļūt par “nozīmīgu spēlētāju MI jomā”.",
+     "en": "No single vision sentence; the aspiration is to become “a major player in the field of artificial intelligence.”"
+    }
+   },
+   "objectives": [
+    {
+     "lv": "Trīs pīlāri, bez galvenā skaitliskā mērķa",
+     "en": "Three pillars, no headline numeric target",
+     "numbered": false
+    }
+   ],
+   "position": {
+    "lv": "Abi, ar uzsvaru uz ieviešanu. GPT-NL kā suverēna valodas modeļa iniciatīva.",
+    "en": "Both, adoption-weighted. GPT-NL as the sovereign language-model effort."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "econ",
+    "partials": [
+     {
+      "option": "risk",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": true,
+    "option": "mkt",
+    "partials": [
+     {
+      "option": "lang",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "comp"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "line"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": false,
+    "option": "self",
+    "partials": [
+     {
+      "option": "dec",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": true,
+    "option": "cloud"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "natl"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec",
+    "partials": [
+     {
+      "option": "docs",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": true,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "eu"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 2.0
+    },
+    {
+     "axis": "diff",
+     "value": 3.0
+    },
+    {
+     "axis": "interest",
+     "value": 2.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 3.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 4.0
+    },
+    {
+     "axis": "compute",
+     "value": 1.0
+    },
+    {
+     "axis": "lang",
+     "value": 5.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 2.22
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:si",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Slovenia",
+  "subject": {
+   "name": {
+    "lv": "Slovēnija",
+    "en": "Slovenia"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "SI"
+   }
+  },
+  "sources": [
+   {
+    "title": "NpUI — National Programme for AI to 2025"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "part",
+    "text": {
+     "lv": "Nacionālā interese saistīta ar 40 gadu pētniecības mantojuma izmantošanu.",
+     "en": "Interest tied to leveraging a 40-year research legacy."
+    }
+   },
+   "vision": {
+    "quote": "Upgrade more than 40 years of research achievements in the field of AI in Slovenia and become internationally recognised for the competences of knowledge transfer of high-quality, ethical and safe AI technologies."
+   },
+   "objectives": [
+    {
+     "lv": "110 miljoni eiro publiskā finansējuma līdz 2025. gadam",
+     "en": "€110 million of public funding to 2025",
+     "numbered": true
+    },
+    {
+     "lv": "10 stratēģiskie mērķi sešās prioritārajās jomās",
+     "en": "10 strategic objectives across six priority areas",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Abi, balstoties uz esošo pētniecības kapacitāti. Slovēņu valodas tehnoloģijas pret digitālo marginalizāciju.",
+    "en": "Both, leaning on existing research capacity. Slovenian language technology against digital marginalisation."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "econ",
+    "partials": [
+     {
+      "option": "risk",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "res",
+    "partials": [
+     {
+      "option": "lang",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "comp",
+    "partials": [
+     {
+      "option": "indep",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "line"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "dec"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "natl"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "reuse"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": true,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "out"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "std"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y5"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "eu"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 2.0
+    },
+    {
+     "axis": "diff",
+     "value": 3.0
+    },
+    {
+     "axis": "interest",
+     "value": 2.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 3.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 5.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 3.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 4.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 5.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 4.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 2.42
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:no",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Norway",
+  "subject": {
+   "name": {
+    "lv": "Norvēģija",
+    "en": "Norway"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "NO"
+   }
+  },
+  "sources": [
+   {
+    "title": "National Strategy for Artificial Intelligence (2020)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "Uzticēšanās kā konkurences priekšrocība: sabiedrību raksturo uzticēšanās un pamattiesību ievērošana, un tas “var kļūt par būtisku priekšrocību globālajā konkurencē”.",
+     "en": "Trust as competitive advantage: society is “characterised by trust and respect for fundamental values,” which “can become a key advantage in today's global competition.”"
+    }
+   },
+   "vision": {
+    "quote": "The Government wants Norway to lead the way in developing and using AI with respect for individual rights and freedoms."
+   },
+   "objectives": [
+    {
+     "lv": "2020. gada stratēģija kvalitatīva",
+     "en": "2020 strategy qualitative",
+     "numbered": false
+    },
+    {
+     "lv": "2030: visas valsts iestādes izmanto MI (2025. gadā — 43 %)",
+     "en": "2030: all government agencies use AI (43% in 2025)",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Lietojums. Fokuss uz nozarēm, kurās Norvēģijai ir priekšrocība.",
+    "en": "Use. Focused on sectors of national advantage."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "risk",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "trust"
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "trust",
+    "partials": [
+     {
+      "option": "comp",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "un"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "dec"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "data"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "out",
+    "partials": [
+     {
+      "option": "act",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "vision"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": true,
+    "option": "matrix"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "soft"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 3.0
+    },
+    {
+     "axis": "diff",
+     "value": 2.0
+    },
+    {
+     "axis": "interest",
+     "value": 3.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 2.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 4.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 2.0
+    },
+    {
+     "axis": "horizon",
+     "value": 0
+    },
+    {
+     "axis": "decomp",
+     "value": 4.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 1.76
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:cz",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Czechia",
+  "subject": {
+   "name": {
+    "lv": "Čehija",
+    "en": "Czechia"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "CZ"
+   }
+  },
+  "sources": [
+   {
+    "title": "National AI Strategy 2030 (NAIS, 2024)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "Nacionālā interese — kļūt par radītāju, ne atkarīgu lietotāju.",
+     "en": "Interest = becoming a creator rather than a dependent user."
+    }
+   },
+   "vision": {
+    "quote": "The Czech Republic should be not only a user but also a creator of advanced artificial intelligence technologies.",
+    "note": {
+     "lv": "Ministra Jozefa Sīkelas formulējums stratēģijas apstiprināšanas brīdī (2024. g. jūlijs).",
+     "en": "Minister Jozef Síkela's formulation at the strategy's approval (July 2024)."
+    }
+   },
+   "objectives": [
+    {
+     "lv": "≈19 miljardi CZK septiņās prioritārajās jomās (2025. gada rīcības plāns)",
+     "en": "≈CZK 19 billion across seven priority areas (2025 action plan)",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Skaidri formulēts “ne tikai lietotājs, bet arī radītājs”.",
+    "en": "Explicit “not only a user but also a creator.”"
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "econ",
+    "partials": [
+     {
+      "option": "dep",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "none",
+    "partials": [
+     {
+      "option": "res",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "indep",
+    "partials": [
+     {
+      "option": "comp",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "line"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "dec"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "docs"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": true,
+    "option": "vou"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y5"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "eu"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 2.4
+    },
+    {
+     "axis": "diff",
+     "value": 1.2
+    },
+    {
+     "axis": "interest",
+     "value": 4.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 3.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 1.0
+    },
+    {
+     "axis": "adopt",
+     "value": 2.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 4.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 1.89
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:pt",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Portugal",
+  "subject": {
+   "name": {
+    "lv": "Portugāle",
+    "en": "Portugal"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "PT"
+   }
+  },
+  "sources": [
+   {
+    "title": "AI Portugal 2030 · National AI Agenda 2026–2030"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "part",
+    "text": {
+     "lv": "Strukturālā atpalicība attiecībā pret ES vidējiem rādītājiem.",
+     "en": "Structural gaps relative to EU averages."
+    }
+   },
+   "vision": {
+    "quote": "To ensure that in 2030 Portugal presents a robust Artificial Intelligence ecosystem, based on ethics and scientific excellence, which promotes social well-being and enhances the productivity and competitiveness of the Portuguese economy."
+   },
+   "objectives": [
+    {
+     "lv": "18–22 miljardi eiro IKP pieauguma desmit gados",
+     "en": "€18–22 billion GDP gains over the decade",
+     "numbered": true
+    },
+    {
+     "lv": "Produktivitātes pieaugums līdz 2,7 procentpunktiem gadā",
+     "en": "Productivity increase of up to 2.7 percentage points annually",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Abi: MI pakalpojumu ekonomika un nišas tirgi plus plaša ieviešana.",
+    "en": "Both: an economy of AI services and niche markets, plus broad adoption."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "econ",
+    "partials": [
+     {
+      "option": "dep",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "none",
+    "partials": [
+     {
+      "option": "compute",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "comp"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "quant"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "line"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "dec"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro",
+    "partials": [
+     {
+      "option": "cloud",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "docs"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "out"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y5"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": true,
+    "option": "agy"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "eu"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 2.0
+    },
+    {
+     "axis": "diff",
+     "value": 1.6
+    },
+    {
+     "axis": "interest",
+     "value": 2.0
+    },
+    {
+     "axis": "ambition",
+     "value": 5.0
+    },
+    {
+     "axis": "fund",
+     "value": 3.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 1.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 4.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 4.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 4.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 1.94
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:sg",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Singapore",
+  "subject": {
+   "name": {
+    "lv": "Singapūra",
+    "en": "Singapore"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "SG"
+   }
+  },
+  "sources": [
+   {
+    "title": "National AI Strategy 2.0 (2023) · NAIS Update (2026)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "“MI ir stratēģiski svarīgs… Mums tas jāapgūst, lai pārvarētu darbaspēka un produktivitātes izaicinājumus.”",
+     "en": "“AI is strategically important… We must master AI to overcome our labour and productivity challenges.”"
+    }
+   },
+   "vision": {
+    "quote": "AI for the Public Good, for Singapore and the World."
+   },
+   "objectives": [
+    {
+     "lv": "Vairāk nekā 1 miljards SGD piecos gados, tostarp 500 miljoni jaudai",
+     "en": "Over S$1 billion over five years, including S$500m for compute",
+     "numbered": true
+    },
+    {
+     "lv": "Vēl vairāk nekā 1 miljards SGD publiskajai MI pētniecībai 2025–2030",
+     "en": "A further S$1bn+ for public AI R&D, 2025–2030",
+     "numbered": true
+    },
+    {
+     "lv": "Pair: ~80 % no 150 000 ierēdņu; AIBots: 115 iestādes",
+     "en": "Pair: ~80% of 150,000 officers; AIBots: 115 agencies",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Abi, izlases veidā: “selectively develop peaks of excellence”. Eksportē uzticēšanās rīkus (AI Verify).",
+    "en": "Both, selectively: “selectively develop peaks of excellence.” Exports trust tooling (AI Verify)."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "trans",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "std"
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "svc"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "fund"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": false,
+    "option": "brok",
+    "partials": [
+     {
+      "option": "self",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "nat"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid",
+    "partials": [
+     {
+      "option": "policy",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "orgkb",
+    "partials": [
+     {
+      "option": "reuse",
+      "score": 4
+     },
+     {
+      "option": "mrec",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "plat"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "out",
+    "partials": [
+     {
+      "option": "trk",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": true,
+    "option": "cat",
+    "partials": [
+     {
+      "option": "fn",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "std"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "r3"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "miss"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "coun"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "soft"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 4.0
+    },
+    {
+     "axis": "diff",
+     "value": 5.0
+    },
+    {
+     "axis": "interest",
+     "value": 4.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 5.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 4.0
+    },
+    {
+     "axis": "compute",
+     "value": 5.0
+    },
+    {
+     "axis": "lang",
+     "value": 0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 4.0
+    },
+    {
+     "axis": "adopt",
+     "value": 5.0
+    },
+    {
+     "axis": "meas",
+     "value": 4.0
+    },
+    {
+     "axis": "eval",
+     "value": 2.4
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 5.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 5.0
+    },
+    {
+     "axis": "decomp",
+     "value": 5.0
+    },
+    {
+     "axis": "gov",
+     "value": 5.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 3.68
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:kr",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "South Korea",
+  "subject": {
+   "name": {
+    "lv": "Dienvidkoreja",
+    "en": "South Korea"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "KR"
+   }
+  },
+  "sources": [
+   {
+    "title": "AI Basic Act (2024/26) · sovereign AI programme"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "Suverenitāte: spēja kontrolēt visu MI vērtību ķēdi — no pusvadītājiem līdz izvietošanai.",
+     "en": "Sovereignty: capability across the entire AI value chain, from semiconductors to deployment."
+    }
+   },
+   "vision": {
+    "quote": "One of the world's top three AI powerhouses."
+   },
+   "objectives": [
+    {
+     "lv": "100 triljoni KRW (≈74 miljardi USD) MI fondam",
+     "en": "KRW 100 trillion (≈US$74 billion) AI fund",
+     "numbered": true
+    },
+    {
+     "lv": "4 triljoni KRW nacionālajam MI skaitļošanas centram līdz 2030",
+     "en": "KRW 4 trillion for a National AI Computing Centre through 2030",
+     "numbered": true
+    },
+    {
+     "lv": "No 6.–7. vietas uz 3. Stanford globālajā indeksā",
+     "en": "From 6th–7th to 3rd on the Stanford global index",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Pilna kaudze. Pieci vietējie pamatmodeļu konsorciji.",
+    "en": "Full-stack build. Five domestic foundation-model consortia."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "dep",
+    "partials": [
+     {
+      "option": "behind",
+      "score": 3
+     },
+     {
+      "option": "trans",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "cap",
+    "partials": [
+     {
+      "option": "compute",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "indep",
+    "partials": [
+     {
+      "option": "comp",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "quant"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "fund"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": false,
+    "option": "natl",
+    "partials": [
+     {
+      "option": "self",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "nat"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "natl"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec",
+    "partials": [
+     {
+      "option": "reuse",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": true,
+    "option": "mand"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "out"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": true,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "std"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "statute"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "stat"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "stat"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "stat"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 4.0
+    },
+    {
+     "axis": "diff",
+     "value": 4.0
+    },
+    {
+     "axis": "interest",
+     "value": 4.0
+    },
+    {
+     "axis": "ambition",
+     "value": 5.0
+    },
+    {
+     "axis": "fund",
+     "value": 5.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 5.0
+    },
+    {
+     "axis": "compute",
+     "value": 5.0
+    },
+    {
+     "axis": "lang",
+     "value": 5.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 3.0
+    },
+    {
+     "axis": "meas",
+     "value": 4.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 5.0
+    },
+    {
+     "axis": "doctype",
+     "value": 5.0
+    },
+    {
+     "axis": "horizon",
+     "value": 5.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 5.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 3.73
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:uk",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "United Kingdom",
+  "subject": {
+   "name": {
+    "lv": "Apvienotā Karaliste",
+    "en": "United Kingdom"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "UK"
+   }
+  },
+  "sources": [
+   {
+    "title": "AI Opportunities Action Plan (2025)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "“Apvienotā Karaliste riskē atpalikt no MI sasniegumiem ASV un Ķīnā.”",
+     "en": "“The UK risks falling behind the advances in Artificial Intelligence made in the USA and China.”"
+    }
+   },
+   "vision": {
+    "quote": "Be an AI maker, not an AI taker."
+   },
+   "objectives": [
+    {
+     "lv": "Skaitļošanas jauda ×20 līdz 2030 (2 → 21 → 420 ExaFLOP)",
+     "en": "Compute ×20 by 2030 (2 → 21 → 420 ExaFLOPs)",
+     "numbered": true
+    },
+    {
+     "lv": "10 miljoni cilvēku apmācīti līdz 2030",
+     "en": "10 million workers upskilled by 2030",
+     "numbered": true
+    },
+    {
+     "lv": "14 miljardi mārciņu un 13 250 darbvietu izsludināšanas brīdī",
+     "en": "£14 billion and 13,250 jobs committed at launch",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Abi, ar uzsvaru uz infrastruktūras veidošanu. Publisks izpildes izsekotājs.",
+    "en": "Both, build-leaning on infrastructure. Public delivery tracker."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "behind",
+    "partials": [
+     {
+      "option": "dep",
+      "score": 3
+     },
+     {
+      "option": "trans",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "compute",
+    "partials": [
+     {
+      "option": "std",
+      "score": 2
+     },
+     {
+      "option": "cap",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "behind",
+    "partials": [
+     {
+      "option": "indep",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "quant"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "fund"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "brok",
+    "partials": [
+     {
+      "option": "self",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "nat"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "policy",
+    "partials": [
+     {
+      "option": "pid",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "orgkb",
+    "partials": [
+     {
+      "option": "reuse",
+      "score": 2
+     },
+     {
+      "option": "mrec",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "plat"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "trk"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "ww"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "bil"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "r3"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "agy"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "soft"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 3.0
+    },
+    {
+     "axis": "diff",
+     "value": 4.0
+    },
+    {
+     "axis": "interest",
+     "value": 3.2
+    },
+    {
+     "axis": "ambition",
+     "value": 5.0
+    },
+    {
+     "axis": "fund",
+     "value": 5.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 4.0
+    },
+    {
+     "axis": "compute",
+     "value": 5.0
+    },
+    {
+     "axis": "lang",
+     "value": 0
+    },
+    {
+     "axis": "identity",
+     "value": 1.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 4.0
+    },
+    {
+     "axis": "adopt",
+     "value": 5.0
+    },
+    {
+     "axis": "meas",
+     "value": 5.0
+    },
+    {
+     "axis": "eval",
+     "value": 5.0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 3.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 5.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 4.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 3.68
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:ca",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Canada",
+  "subject": {
+   "name": {
+    "lv": "Kanāda",
+    "en": "Canada"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "CA"
+   }
+  },
+  "sources": [
+   {
+    "title": "Canadian Sovereign AI Compute Strategy (2024)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "“Aizsargāt Kanādas digitālo suverenitāti… paturot Kanādas pētniecību ārpus ārvalstu mākoņiem un Kanādas rokās.”",
+     "en": "“Protect Canada's digital sovereignty… keeping Canadian research off foreign clouds and in Canadian hands.”"
+    }
+   },
+   "vision": {
+    "quote": "To position Canada as a global leader in AI, support and protect Canadian research and enable scientific and industrial breakthroughs."
+   },
+   "objectives": [
+    {
+     "lv": "2 miljardi CAD piecos gados",
+     "en": "CAD $2 billion over five years",
+     "numbered": true
+    },
+    {
+     "lv": "Līdz 1 miljardam publiskajai superskaitļošanai; 300 miljoni MVU piekļuvei",
+     "en": "Up to $1bn public supercomputing; $300m SME access fund",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Suverēna veidošana skaitļošanas jaudā plus komercializācija.",
+    "en": "Sovereign build on compute, plus commercialisation."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "dep",
+    "partials": [
+     {
+      "option": "behind",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "compute",
+    "partials": [
+     {
+      "option": "res",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "indep",
+    "partials": [
+     {
+      "option": "comp",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "quant"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "fund"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "self"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "nat"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "policy"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "docs"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": true,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "bil"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y5"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "soft"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 4.0
+    },
+    {
+     "axis": "diff",
+     "value": 4.0
+    },
+    {
+     "axis": "interest",
+     "value": 4.0
+    },
+    {
+     "axis": "ambition",
+     "value": 5.0
+    },
+    {
+     "axis": "fund",
+     "value": 5.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 4.0
+    },
+    {
+     "axis": "compute",
+     "value": 5.0
+    },
+    {
+     "axis": "lang",
+     "value": 0
+    },
+    {
+     "axis": "identity",
+     "value": 1.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 1.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 3.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 4.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 2.9
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:jp",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Japan",
+  "subject": {
+   "name": {
+    "lv": "Japāna",
+    "en": "Japan"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "JP"
+   }
+  },
+  "sources": [
+   {
+    "title": "AI Promotion Act (2025) · Basic AI Plan (2025)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "Ieviešanas atpalicība pārkvalificēta kā ekonomiskās un nacionālās drošības jautājums: 26,7 % pret 68,8 % ASV un 81,2 % Ķīnā.",
+     "en": "An adoption gap reframed as an economic and national security issue: 26.7% vs 68.8% (US) and 81.2% (China)."
+    }
+   },
+   "vision": {
+    "quote": "The world's most AI-friendly country."
+   },
+   "objectives": [
+    {
+     "lv": "Virziena mērķi; likums bez sankcijām",
+     "en": "Directional targets; a promotion act without penalties",
+     "numbered": false
+    }
+   ],
+   "position": {
+    "lv": "Lietojums pirmajā vietā, ar valdības vadītu infrastruktūru.",
+    "en": "Use-first with government-led infrastructure."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "behind",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "none",
+    "partials": [
+     {
+      "option": "std",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "behind"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "line"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": true,
+    "option": "dec"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "nat"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": true,
+    "option": "natl",
+    "partials": [
+     {
+      "option": "data",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "docs"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "std"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "statute"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "stat"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "stat"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "soft"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 3.0
+    },
+    {
+     "axis": "diff",
+     "value": 3.0
+    },
+    {
+     "axis": "interest",
+     "value": 3.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 3.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.0
+    },
+    {
+     "axis": "compute",
+     "value": 5.0
+    },
+    {
+     "axis": "lang",
+     "value": 5.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 1.0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 5.0
+    },
+    {
+     "axis": "doctype",
+     "value": 5.0
+    },
+    {
+     "axis": "horizon",
+     "value": 5.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 5.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 2.41
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:ae",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "UAE",
+  "subject": {
+   "name": {
+    "lv": "AAE",
+    "en": "UAE"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "AE"
+   }
+  },
+  "sources": [
+   {
+    "title": "National Strategy for Artificial Intelligence 2031"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "Ekonomikas diversifikācija prom no naftas; saistīta ar “UAE Centennial 2071”.",
+     "en": "Economic diversification away from oil; tied to UAE Centennial 2071."
+    }
+   },
+   "vision": {
+    "quote": "To be one of the leaders in AI in the world."
+   },
+   "objectives": [
+    {
+     "lv": "335 miljardi AED papildu ekonomiskās izaugsmes līdz 2031",
+     "en": "AED 335 billion in additional economic growth by 2031",
+     "numbered": true
+    },
+    {
+     "lv": "20 % no ne-naftas IKP",
+     "en": "20% of non-oil GDP",
+     "numbered": true
+    },
+    {
+     "lv": "10 000 datu zinātnieku apmācība",
+     "en": "Train 10,000 data scientists",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Abi: ātra ieviešana valsts pārvaldē plus skaidrs nodoms eksportēt.",
+    "en": "Both: fast government adoption plus an explicit intent to export."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "trans",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "cap",
+    "partials": [
+     {
+      "option": "speed",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "div"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "quant"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "fund"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": false,
+    "option": "natl",
+    "partials": [
+     {
+      "option": "self",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "ppp"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "natl"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "mand",
+    "partials": [
+     {
+      "option": "plat",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "out"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": true,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "bil"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "vision"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y10"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "sect"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "soft"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 4.0
+    },
+    {
+     "axis": "diff",
+     "value": 4.0
+    },
+    {
+     "axis": "interest",
+     "value": 4.0
+    },
+    {
+     "axis": "ambition",
+     "value": 5.0
+    },
+    {
+     "axis": "fund",
+     "value": 5.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 5.0
+    },
+    {
+     "axis": "compute",
+     "value": 4.0
+    },
+    {
+     "axis": "lang",
+     "value": 5.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 4.0
+    },
+    {
+     "axis": "meas",
+     "value": 4.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 3.0
+    },
+    {
+     "axis": "doctype",
+     "value": 2.0
+    },
+    {
+     "axis": "horizon",
+     "value": 3.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 3.66
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:eu",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "EU",
+  "subject": {
+   "name": {
+    "lv": "ES",
+    "en": "EU"
+   },
+   "identifier": {
+    "kind": "country",
+    "value": "EU"
+   }
+  },
+  "sources": [
+   {
+    "title": "AI Continent Action Plan · Apply AI Strategy (2025)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "Tehnoloģiskā suverenitāte — mazināt atkarību no ārpussavienības tehnoloģiju piegādātājiem.",
+     "en": "Technological sovereignty — reducing dependence on non-EU technology providers."
+    }
+   },
+   "vision": {
+    "quote": "The European Union is committed and determined to become a global leader in Artificial Intelligence, a leading AI continent."
+   },
+   "objectives": [
+    {
+     "lv": "InvestAI — līdz 200 miljardiem eiro mobilizācijas",
+     "en": "InvestAI — up to €200 billion mobilised",
+     "numbered": true
+    },
+    {
+     "lv": "Horizon Europe MI finansējums pārsniedz 3 miljardus",
+     "en": "Horizon Europe AI funding over €3 billion",
+     "numbered": true
+    }
+   ],
+   "position": {
+    "lv": "Veidošana plus suverēna ieviešana: “AI first” un “buy European”, ar atvērtā pirmkoda uzsvaru.",
+    "en": "Build plus sovereign adoption: “AI first” and “buy European,” with an open-source emphasis."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": true,
+    "option": "dep",
+    "partials": [
+     {
+      "option": "risk",
+      "score": 4
+     },
+     {
+      "option": "behind",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "std"
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "indep"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap"
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "fund"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": false,
+    "option": "bloc",
+    "partials": [
+     {
+      "option": "self",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "reg"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid",
+    "partials": [
+     {
+      "option": "policy",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec",
+    "partials": [
+     {
+      "option": "reuse",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "proc",
+    "partials": [
+     {
+      "option": "vol",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "act"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": true,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "std"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y5"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "agy"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "stat"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 4.0
+    },
+    {
+     "axis": "diff",
+     "value": 5.0
+    },
+    {
+     "axis": "interest",
+     "value": 4.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 5.0
+    },
+    {
+     "axis": "sourcing",
+     "value": 3.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 4.0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 4.0
+    },
+    {
+     "axis": "meas",
+     "value": 2.0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 5.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 4.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 4.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 3.25
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:lv20",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Latvia 2020",
+  "subject": {
+   "name": {
+    "lv": "Latvija 2020",
+    "en": "Latvia 2020"
+   },
+   "identifier": {
+    "kind": "other",
+    "value": "LV20"
+   }
+  },
+  "sources": [
+   {
+    "title": "Informatīvais ziņojums “Par mākslīgā intelekta risinājumu attīstību” (MK, 04.02.2020.)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "part",
+    "text": {
+     "lv": "Tautsaimniecības produktivitāte. Nav eksistenciālas, demogrāfiskas vai suverenitātes intereses.",
+     "en": "Economic productivity. No existential, demographic or sovereignty interest."
+    }
+   },
+   "vision": {
+    "quote": "",
+    "note": {
+     "lv": "Vīzijas teikuma nav. Dokuments ir informatīvs ziņojums, nevis stratēģija ar gala stāvokli.",
+     "en": "No vision sentence. The document is an informative report, not a strategy with an end state."
+    }
+   },
+   "objectives": [
+    {
+     "lv": "Nav skaitlisku mērķu, budžeta vai termiņu",
+     "en": "No numeric targets, budget or deadlines",
+     "numbered": false
+    }
+   ],
+   "position": {
+    "lv": "Tikai lietojums. Nav nodoma veidot modeļus, jaudu vai eksporta nozari.",
+    "en": "Use only. No stated ambition to build models, compute or an export industry."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "tool",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "comp"
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "un"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": false,
+    "option": "dec"
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pid"
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "vol"
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "vision"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "soft"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 1.2
+    },
+    {
+     "axis": "diff",
+     "value": 0
+    },
+    {
+     "axis": "interest",
+     "value": 2.0
+    },
+    {
+     "axis": "ambition",
+     "value": 0
+    },
+    {
+     "axis": "fund",
+     "value": 0
+    },
+    {
+     "axis": "sourcing",
+     "value": 1.0
+    },
+    {
+     "axis": "compute",
+     "value": 0
+    },
+    {
+     "axis": "lang",
+     "value": 0
+    },
+    {
+     "axis": "identity",
+     "value": 2.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 0
+    },
+    {
+     "axis": "adopt",
+     "value": 1.0
+    },
+    {
+     "axis": "meas",
+     "value": 0
+    },
+    {
+     "axis": "eval",
+     "value": 0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 2.0
+    },
+    {
+     "axis": "horizon",
+     "value": 0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 0.58
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:lv26",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "Latvia — VARAM draft",
+  "subject": {
+   "name": {
+    "lv": "Latvija — VARAM projekts",
+    "en": "Latvia — VARAM draft"
+   },
+   "identifier": {
+    "kind": "other",
+    "value": "LV26"
+   }
+  },
+  "sources": [
+   {
+    "title": "MI plāna stratēģiskais kartējums (2026)"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "no",
+    "text": {
+     "lv": "“Latvijai ir spēcīgi digitālās pārvaldes pamati, bet MI attīstība un ieviešana ir fragmentēta.” Tas ir koordinācijas trūkums, nevis nacionālā interese — teikuma subjekts ir pati programma, ne valsts. Vārdi “neatkarība”, “suverenitāte”, “demogrāfija” dokumentā neparādās.",
+     "en": "“Latvia has strong digital government foundations, but AI development and deployment is fragmented.” A coordination failure, not a national interest — the subject is the programme, not the country. The words independence, sovereignty and demography never appear."
+    }
+   },
+   "vision": {
+    "quote": "Nostiprināt Latviju kā Ziemeļeiropas un Baltijas reģionā atpazīstamu valsti, kas mērķtiecīgi, droši un atbildīgi izmanto MI.",
+    "note": {
+     "lv": "Vienīgā vīzija kopā, kuras gala stāvoklis ir reputācija (“atpazīstamu valsti”), nevis spēja. Kopīgais nacionālais mērķis virs tās aptver četrus darbības vārdus četrās jomās.",
+     "en": "The only vision in the set whose end state is a reputation rather than a capability. The national goal above it spans four verbs across four domains."
+    }
+   },
+   "objectives": [
+    {
+     "lv": "Produktivitāte — “īsāks procesu laiks”",
+     "en": "Productivity — “shorter process times”",
+     "numbered": false
+    },
+    {
+     "lv": "Pakalpojumu kvalitāte — “pieejamāki, proaktīvāki”",
+     "en": "Service quality — “more accessible, more proactive”",
+     "numbered": false
+    },
+    {
+     "lv": "Inovācija — “vairāk pilotu”",
+     "en": "Innovation — “more pilots”",
+     "numbered": false
+    },
+    {
+     "lv": "Konkurētspēja — “spēcīgāki talanti”",
+     "en": "Competitiveness — “stronger talent”",
+     "numbered": false
+    }
+   ],
+   "position": {
+    "lv": "Netieši: lietojums pirmajā vietā ar valodas modeļa izņēmumu — tieši Igaunijas nostāja, tikai neizteikta. Darbības vārds abās virsrakstu rindās ir “izmanto”.",
+    "en": "Implicit: use-first with a language-model exception — precisely Estonia's posture, but unstated. The operative verb in both headline boxes is “uses.”"
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "tool",
+    "partials": [
+     {
+      "option": "econ",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "none",
+    "partials": [
+     {
+      "option": "comp",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "reput",
+    "partials": [
+     {
+      "option": "cap",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "un"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": false,
+    "option": "brok",
+    "partials": [
+     {
+      "option": "dec",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": false,
+    "option": "euro"
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "natl"
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "pilot",
+    "partials": [
+     {
+      "option": "pid",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "mrec",
+    "partials": [
+     {
+      "option": "reuse",
+      "score": 2
+     },
+     {
+      "option": "docs",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "vou",
+    "partials": [
+     {
+      "option": "plat",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "none"
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "cat"
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "fol"
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y5"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "matrix"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": false,
+    "option": "min"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "sand"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 0.8
+    },
+    {
+     "axis": "diff",
+     "value": 0
+    },
+    {
+     "axis": "interest",
+     "value": 0.8
+    },
+    {
+     "axis": "ambition",
+     "value": 1.2
+    },
+    {
+     "axis": "fund",
+     "value": 0
+    },
+    {
+     "axis": "sourcing",
+     "value": 4.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 5.0
+    },
+    {
+     "axis": "identity",
+     "value": 3.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 2.0
+    },
+    {
+     "axis": "adopt",
+     "value": 2.0
+    },
+    {
+     "axis": "meas",
+     "value": 0
+    },
+    {
+     "axis": "eval",
+     "value": 2.0
+    },
+    {
+     "axis": "return",
+     "value": 0
+    },
+    {
+     "axis": "intl",
+     "value": 1.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 4.0
+    },
+    {
+     "axis": "decomp",
+     "value": 4.0
+    },
+    {
+     "axis": "gov",
+     "value": 2.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 1.52
+  }
+ },
+ {
+  "id": "urn:pppa:ai-strategy:ref:pppa",
+  "schemaVersion": "1.0",
+  "kind": "national",
+  "status": "final",
+  "version": 1,
+  "axesVersion": "1.0.0",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@c5703ff",
+  "createdAt": "2026-09-09T08:37:28Z",
+  "updatedAt": "2026-09-09T08:37:28Z",
+  "title": "PPPA proposal",
+  "subject": {
+   "name": {
+    "lv": "PPPA priekšlikums",
+    "en": "PPPA proposal"
+   },
+   "identifier": {
+    "kind": "other",
+    "value": "PPPA"
+   }
+  },
+  "sources": [
+   {
+    "title": "pppa.lv/mi-strategija-2 · darba versija v2 · 3 pīlāri, 4 mērķi, 12 rīcības"
+   }
+  ],
+  "text": {
+   "interest": {
+    "status": "yes",
+    "text": {
+     "lv": "Demogrāfiskais sarukums un tehnoloģiskā atkarība. III pīlārs to izsaka tieši: produktivitāte ir atbilde uz demogrāfisko sarukumu — MI aģenti kompensē darbaspēka iztrūkumu, dod jauniešiem iemeslu būvēt šeit un ļauj eksportēt Latvijas pārvaldības standartus. Neviena salīdzinātā valsts demogrāfiju kā MI pamatojumu nav pieteikusi.",
+     "en": "Demographic decline and technological dependency. Pillar III says it outright: productivity is the answer to demographic decline — AI agents compensate for the missing workforce, give young people a reason to build here, and let Latvia export its governance standards. No comparator country has claimed demography as its AI rationale."
+    }
+   },
+   "vision": {
+    "quote": "Latvijas mērķis ir kļūt par atvērtāko un uzticamāko vidi mākslīgā intelekta ieviešanai un MI ekonomikai, būtiski paaugstināt valsts un uzņēmumu efektivitāti un stiprināt tehnoloģisko neatkarību un radīt eksportspējīgu izaugsmi.",
+    "note": {
+     "lv": "Viens teikums nes četru valstu saturu: vide (Japāna), efektivitāte (mērķis), neatkarība (Lietuva), eksports (Lietuva). Detaļa tagad ir pīlāros zemāk — teikums to var atlaist. Trīs pīlāri: I Efektivitāte, II Atvērtība, III Līderība.",
+     "en": "One sentence carrying four countries' content: environment (Japan), efficiency (an objective), independence (Lithuania), export (Lithuania). The detail now sits in the pillars below — the sentence can let it go. Three pillars: I Efficiency, II Openness, III Leadership."
+    }
+   },
+   "objectives": [
+    {
+     "lv": "I PĪLĀRS · Atbrīvot cilvēkus un uzņēmumus no birokrātijas — Ikviens iedzīvotājs un uzņēmums saņem uzticamu MI atbalstu darbam ar valsti: atļaujas, deklarācijas, reģistrācijas un iesniegumi tiek nokārtoti minūtēs, uzraudzīti, auditējami un atsaucami. Šī ir suverēnā, iekšzemes puse: tās flagmanis ir “MI Dvīnis” — verificētas Latvijas fiziskas vai juridiskas personas MI pārstāvis, kas balstās Latvijas eID (eParaksts) uzticamības enkurā un rīkojas vienīgi piešķirtās pilnvaras robežās.",
+     "en": "PILLAR I · Free people and businesses from bureaucracy — Every resident and business gets trustworthy AI support in dealing with the state: permits, declarations, registrations and applications settled in minutes, supervised, auditable and revocable. This is the sovereign, domestic side: its flagship is the “AI Twin” — an AI representative of a verified Latvian natural or legal person, anchored in Latvia's eID (eParaksts) trust anchor and acting only within the authority granted.",
+     "numbered": false
+    },
+    {
+     "lv": "II PĪLĀRS · Atvērt Latviju pasaules MI biznesam — Latvija kļūst par ES atvērto vārteju MI aģentu ekonomikai. Eksporta produkts nav identitāte, bet atvērta uzticamības vārteja, kas pārbauda jebkura MI aģenta identitāti un pilnvaru pirms darbības pieņemšanas. Ārvalstu persona vai uzņēmums nesaņem Latvijas “MI Dvīni” — tā aģents balstās savas jurisdikcijas uzticamības enkurā (eIDAS-saskaņoti), bet caur Latvijas vārteju iegūst juridisku spēku visā ES vienotajā tirgū no Rīgas.",
+     "en": "PILLAR II · Open Latvia to the world's AI business — Latvia becomes the EU's open gateway to the AI agent economy. The export product is not the identity but an open trust gateway, which verifies any AI agent's identity and mandate before an action is accepted. A foreign person or company does not receive a Latvian “AI Twin” — their agent is anchored in its own jurisdiction's trust anchor (eIDAS-aligned), but through the Latvian gateway gains legal force across the EU single market from Rīga.",
+     "numbered": false
+    },
+    {
+     "lv": "III PĪLĀRS · Veidot Latvijas suverēnās MI spējas un starptautisko līderību — Produktivitāte ir atbilde uz demogrāfisko sarukumu: MI aģenti kompensē darbaspēka iztrūkumu, dod jauniešiem iemeslu būvēt šeit, un ļauj Latvijai eksportēt savus pārvaldības un sadarbspējas standartus. Šis pīlārs apvieno kapacitāti, suverenitāti un pārvaldību, kas dara iespējamus pirmos divus pīlārus.",
+     "en": "PILLAR III · Build Latvia's sovereign AI capability and international leadership — Productivity is the answer to demographic decline: AI agents compensate for the missing workforce, give young people a reason to build here, and let Latvia export its governance and interoperability standards. This pillar combines the capacity, sovereignty and governance that make the first two pillars possible.",
+     "numbered": false
+    },
+    {
+     "lv": "Četri stratēģiskie mērķi zem pīlāriem: 1) proaktīvi valsts pakalpojumi iedzīvotājiem un uzņēmumiem; 2) izmaksu efektivitāte un auditējami lēmumi; 3) atvērta MI aģentu identitātes, pilnvaru un uzticamības vārteja; 4) sabiedrībai jaunu iespēju pavēršana.",
+     "en": "Four strategic goals beneath the pillars: 1) proactive public services for residents and businesses; 2) cost efficiency and auditable decisions; 3) an open AI agent identity, mandate and trust gateway; 4) opening new possibilities for society.",
+     "numbered": false
+    },
+    {
+     "lv": "30.12.2026. — “MI Dvīnis”: funkcionējoša pilotdemonstrācija ar vismaz vienu pilnvarotu darbību un publiski demonstrējamu audita pēdu (flagmanis, I pīlārs)",
+     "en": "30.12.2026 — “AI Twin”: working pilot with at least one delegated action and a publicly demonstrable audit trail (flagship, Pillar I)",
+     "numbered": true
+    },
+    {
+     "lv": "31.12.2026. — izvērtējums par vienotas MI atbildīgās iestādes izveidi izkliedētā modeļa vietā",
+     "en": "31.12.2026 — assessment of a single AI competent authority in place of the dispersed model",
+     "numbered": true
+    },
+    {
+     "lv": "01.05.2027. — katrā institūcijā vismaz viens algoritmizēts, auditējams process ar MI atbalstu lēmumos",
+     "en": "01.05.2027 — at least one algorithmic, auditable AI-supported decision process in every institution",
+     "numbered": true
+    },
+    {
+     "lv": "30.06.2027. — MI izmantojami vismaz 50 % institūcijas dokumentu; 100 % jaunradīto vai apstrādāto",
+     "en": "30.06.2027 — at least 50% of an institution's documents machine-usable; 100% of newly created or processed ones",
+     "numbered": true
+    },
+    {
+     "lv": "30.06.2027. — visi iepirkuma līgumi virs Direktīvas 2014/24/ES sliekšņiem mašīnlasāmā standartā",
+     "en": "30.06.2027 — all procurement contracts above the 2014/24/EU thresholds in a machine-readable standard",
+     "numbered": true
+    },
+    {
+     "lv": "30.06.2027. — nacionāls datu katalogs: 5 nozares ar strukturētām datu kopām, 3 starpinstitūciju pilotprojekti",
+     "en": "30.06.2027 — national data catalogue: 5 sectors with structured datasets, 3 cross-institutional pilots",
+     "numbered": true
+    },
+    {
+     "lv": "30.06.2027. — MI pārvaldības apmācība obligāta visiem publiskā sektora lēmumu pieņēmējiem, ne tikai IT",
+     "en": "30.06.2027 — AI governance training mandatory for all public-sector decision-makers, not only IT",
+     "numbered": true
+    },
+    {
+     "lv": "30.06.2027. — MI sistēmu reģistrs funkcionāls; augsta riska sistēmas reģistrētas (MI akta 49. un 71. p.)",
+     "en": "30.06.2027 — AI system register operational; high-risk systems registered (AI Act Arts. 49, 71)",
+     "numbered": true
+    },
+    {
+     "lv": "30.06.2027. — regulatīvās “MI Smilškastes” paplašināšana; katrs pierādīts projekts saņem sektora ieviešanas plānu 12 mēnešos",
+     "en": "30.06.2027 — expand the regulatory sandbox; every proven project gets a sector-wide rollout plan within 12 months",
+     "numbered": true
+    },
+    {
+     "lv": "Uzticamības vārteja: verificēta vismaz vienas citas jurisdikcijas enkurā balstīta aģenta identitāte un pilnvara — termiņš precizējams",
+     "en": "Trust gateway: verify the identity and mandate of at least one agent anchored in another jurisdiction — date TBC",
+     "numbered": false
+    }
+   ],
+   "position": {
+    "lv": "Hibrīds, formulēts tieši. Ikdienā izmanto labākos pieejamos ārējos modeļus un sistemātiski uzkrāj no tiem zināšanas; paralēli veido savus rezerves modeļus suverēnai apmācībai, lai kritiskie pakalpojumi darbotos arī tad, ja ārējais piegādātājs kļūst nepieejams. Latviešu valodas tehnoloģijās Latvija ir nodrošinātāja, ne tikai uzturētāja. Zināšanas glabā iestādes, bet apmainās pēc kopīga standarta — federēti, nevis vienā centrālā kaudzē.",
+    "en": "Hybrid, stated outright. Use the best available external models day to day and systematically accumulate knowledge from them; in parallel build own fallback models for sovereign training, so critical services keep working if an external supplier becomes unavailable. In Latvian language technology Latvia is a provider, not only a deployer. Knowledge stays with institutions but is exchanged on a shared standard — federated, not pooled centrally."
+   }
+  },
+  "coding": [
+   {
+    "axis": "frame",
+    "lowConfidence": false,
+    "option": "econ",
+    "partials": [
+     {
+      "option": "dep",
+      "score": 4
+     },
+     {
+      "option": "trans",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "diff",
+    "lowConfidence": false,
+    "option": "std",
+    "partials": [
+     {
+      "option": "lang",
+      "score": 3
+     },
+     {
+      "option": "speed",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "interest",
+    "lowConfidence": false,
+    "option": "demo",
+    "partials": [
+     {
+      "option": "comp",
+      "score": 2
+     },
+     {
+      "option": "svc",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "ambition",
+    "lowConfidence": false,
+    "option": "cap",
+    "partials": [
+     {
+      "option": "quant",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "fund",
+    "lowConfidence": false,
+    "option": "un"
+   },
+   {
+    "axis": "sourcing",
+    "lowConfidence": false,
+    "option": "hybrid",
+    "partials": [
+     {
+      "option": "brok",
+      "score": 4
+     },
+     {
+      "option": "self",
+      "score": 3
+     },
+     {
+      "option": "bloc",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "compute",
+    "lowConfidence": true,
+    "option": "euro",
+    "partials": [
+     {
+      "option": "nat",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "lang",
+    "lowConfidence": false,
+    "option": "natl",
+    "partials": [
+     {
+      "option": "data",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "identity",
+    "lowConfidence": false,
+    "option": "gw",
+    "partials": [
+     {
+      "option": "pid",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "knowledge",
+    "lowConfidence": false,
+    "option": "fed",
+    "partials": [
+     {
+      "option": "reuse",
+      "score": 4
+     }
+    ]
+   },
+   {
+    "axis": "adopt",
+    "lowConfidence": false,
+    "option": "mand",
+    "partials": [
+     {
+      "option": "proc",
+      "score": 4
+     },
+     {
+      "option": "plat",
+      "score": 2
+     },
+     {
+      "option": "vou",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "meas",
+    "lowConfidence": false,
+    "option": "out",
+    "partials": [
+     {
+      "option": "trk",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "eval",
+    "lowConfidence": false,
+    "option": "cat",
+    "partials": [
+     {
+      "option": "fn",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "return",
+    "lowConfidence": false,
+    "option": "layered",
+    "partials": [
+     {
+      "option": "roi",
+      "score": 4
+     },
+     {
+      "option": "roai",
+      "score": 4
+     },
+     {
+      "option": "evc",
+      "score": 3
+     }
+    ]
+   },
+   {
+    "axis": "intl",
+    "lowConfidence": false,
+    "option": "std",
+    "partials": [
+     {
+      "option": "bloc",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "axis": "doctype",
+    "lowConfidence": false,
+    "option": "plan"
+   },
+   {
+    "axis": "horizon",
+    "lowConfidence": false,
+    "option": "y5"
+   },
+   {
+    "axis": "decomp",
+    "lowConfidence": false,
+    "option": "enab"
+   },
+   {
+    "axis": "gov",
+    "lowConfidence": true,
+    "option": "agy"
+   },
+   {
+    "axis": "reg",
+    "lowConfidence": false,
+    "option": "sand"
+   }
+  ],
+  "weights": [],
+  "score": {
+   "axes": [
+    {
+     "axis": "frame",
+     "value": 3.2
+    },
+    {
+     "axis": "diff",
+     "value": 5.0
+    },
+    {
+     "axis": "interest",
+     "value": 4.0
+    },
+    {
+     "axis": "ambition",
+     "value": 3.0
+    },
+    {
+     "axis": "fund",
+     "value": 0
+    },
+    {
+     "axis": "sourcing",
+     "value": 5.0
+    },
+    {
+     "axis": "compute",
+     "value": 3.0
+    },
+    {
+     "axis": "lang",
+     "value": 5.0
+    },
+    {
+     "axis": "identity",
+     "value": 5.0
+    },
+    {
+     "axis": "knowledge",
+     "value": 5.0
+    },
+    {
+     "axis": "adopt",
+     "value": 3.2
+    },
+    {
+     "axis": "meas",
+     "value": 4.0
+    },
+    {
+     "axis": "eval",
+     "value": 2.4
+    },
+    {
+     "axis": "return",
+     "value": 5.0
+    },
+    {
+     "axis": "intl",
+     "value": 5.0
+    },
+    {
+     "axis": "doctype",
+     "value": 4.0
+    },
+    {
+     "axis": "horizon",
+     "value": 4.0
+    },
+    {
+     "axis": "decomp",
+     "value": 3.0
+    },
+    {
+     "axis": "gov",
+     "value": 4.0
+    },
+    {
+     "axis": "reg",
+     "value": 0
+    }
+   ],
+   "scoringVersion": "1.0",
+   "overall": 3.68
+  }
+ }
+]

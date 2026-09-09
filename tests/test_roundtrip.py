@@ -53,6 +53,26 @@ def main():
         assert r["axes"] == py[r["id"]]["axes"], (r["id"], r["axes"], py[r["id"]]["axes"])
         assert abs(r["overall"] - py[r["id"]]["overall"]) < 0.011, (r["id"], r["overall"], py[r["id"]]["overall"])
     print("ok: JS scoring == score.py for", len(res["rows"]), "strategies")
+    # 1b. strategy_doc (the vendored algorithm) agrees with score.py on the bundle
+    import strategy_doc as SD
+    bundle = json.load(open(os.path.join(ROOT, "dist", "axes-bundle.json"), encoding="utf-8"))
+    ref = json.load(open(os.path.join(ROOT, "dist", "reference-strategies.json"), encoding="utf-8"))
+    for d in ref:
+        sid = d["subject"]["identifier"]["value"]
+        sc = SD.compute_score(d, bundle)
+        assert abs((sc.get("overall") or 0) - py[sid]["overall"]) < 0.011, (sid, sc.get("overall"), py[sid]["overall"])
+        assert all(abs(a["value"] - py[sid]["axes"][a["axis"]]) < 0.011 for a in sc["axes"]), sid
+        assert SD.validate(d, bundle) == [], (sid, SD.validate(d, bundle))
+    print("ok: strategy_doc scoring == score.py; reference documents validate; XML round-trips")
+    # 1c. JSON Schema validates the reference documents when jsonschema is available
+    try:
+        import jsonschema
+        schema = json.load(open(os.path.join(ROOT, "schema", "ai-strategy.schema.json"), encoding="utf-8"))
+        for d in ref:
+            jsonschema.validate(d, schema)
+        print("ok: reference documents validate against schema/ai-strategy.schema.json")
+    except ImportError:
+        print("skip: jsonschema not installed")
     # 2. optional roundtrip against original export
     if len(sys.argv) > 1:
         orig = json.load(open(sys.argv[1], encoding="utf-8"))

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AI Strategy document — canonical schema (v1.0).
+  One schema for national and organisational strategies. A strategy is a
+  configuration: one option per decision axis, optional partials, a text
+  layer, weights, and the scores computed from them. Axis and option keys
+  refer to data/axes.yaml of the axes version named in @axesVersion.
+
+  schema/ai-strategy.schema.json is GENERATED from this file by
+  tools/xsd_to_jsonschema.py — edit the XSD, not the JSON Schema.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="urn:pppa:ai-strategy:1.0"
+           targetNamespace="urn:pppa:ai-strategy:1.0"
+           elementFormDefault="qualified" attributeFormDefault="unqualified"
+           version="1.0">
+
+  <!-- ============================================================ simple types -->
+  <xs:simpleType name="KindType">
+    <xs:annotation><xs:documentation>Who the strategy is for. The axes are identical; only the reading of three of them changes.</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="national"/>
+      <xs:enumeration value="organisation"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="draft"/>
+      <xs:enumeration value="review"/>
+      <xs:enumeration value="final"/>
+      <xs:enumeration value="superseded"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="InterestStatusType">
+    <xs:annotation><xs:documentation>Does the document state why it exists?</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="yes"/>
+      <xs:enumeration value="part"/>
+      <xs:enumeration value="no"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="IdentifierKindType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="country"/>
+      <xs:enumeration value="registration"/>
+      <xs:enumeration value="lei"/>
+      <xs:enumeration value="did"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="KeyType">
+    <xs:annotation><xs:documentation>Axis or option key as defined in data/axes.yaml.</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-z][a-z0-9_]{0,31}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Score05Type">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PartialScoreType">
+    <xs:annotation><xs:documentation>Secondary lean, 1–4. The primary option is always 5.</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="WeightType">
+    <xs:annotation><xs:documentation>Percent points; weights need not sum to 100.</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LangType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-z]{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- =========================================================== complex types -->
+  <xs:complexType name="TextType">
+    <xs:annotation><xs:documentation>Bilingual (or multilingual) text: one entry per language.</xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="t" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="lang" type="LangType" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SubjectType">
+    <xs:sequence>
+      <xs:element name="name" type="TextType"/>
+      <xs:element name="identifier" minOccurs="0">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="kind" type="IdentifierKindType" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="country" type="xs:string" minOccurs="0"/>
+      <xs:element name="sector" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SourceType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="year" type="xs:string" minOccurs="0"/>
+      <xs:element name="url" type="xs:anyURI" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectiveType">
+    <xs:complexContent>
+      <xs:extension base="TextType">
+        <xs:attribute name="numbered" type="xs:boolean" default="false"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TextLayerType">
+    <xs:annotation><xs:documentation>What the document itself says, recorded before any axis is coded.</xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="interest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="text" type="TextType"/>
+            <xs:element name="source" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+          <xs:attribute name="status" type="InterestStatusType" use="required"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="vision">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="quote" type="xs:string" minOccurs="0"/>
+            <xs:element name="note" type="TextType" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="objectives">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="objective" type="ObjectiveType" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="position" type="TextType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PartialType">
+    <xs:attribute name="option" type="KeyType" use="required"/>
+    <xs:attribute name="score" type="PartialScoreType" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="AxisCodingType">
+    <xs:annotation><xs:documentation>One decision. No @option means the document decides nothing on this axis (scores 0).</xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="partial" type="PartialType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="rationale" type="TextType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="axis" type="KeyType" use="required"/>
+    <xs:attribute name="option" type="KeyType" use="optional"/>
+    <xs:attribute name="lowConfidence" type="xs:boolean" default="false"/>
+  </xs:complexType>
+
+  <xs:complexType name="WeightEntryType">
+    <xs:attribute name="axis" type="KeyType" use="required"/>
+    <xs:attribute name="weight" type="WeightType" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="AxisScoreType">
+    <xs:attribute name="axis" type="KeyType" use="required"/>
+    <xs:attribute name="value" type="Score05Type" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ScoreType">
+    <xs:annotation><xs:documentation>Computed by decision/scoring.dmn (or tools/score.py); never authored by hand.</xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="axis" type="AxisScoreType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="overall" type="Score05Type" use="optional"/>
+    <xs:attribute name="scoringVersion" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="AIStrategyType">
+    <xs:sequence>
+      <xs:element name="subject" type="SubjectType"/>
+      <xs:element name="sources" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="source" type="SourceType" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="text" type="TextLayerType"/>
+      <xs:element name="coding">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="axis" type="AxisCodingType" minOccurs="1" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="weights" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="axis" type="WeightEntryType" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="score" type="ScoreType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="schemaVersion" type="xs:string" use="required" fixed="1.0"/>
+    <xs:attribute name="kind" type="KindType" use="required"/>
+    <xs:attribute name="status" type="StatusType" default="draft"/>
+    <xs:attribute name="version" type="xs:positiveInteger" default="1"/>
+    <xs:attribute name="axesVersion" type="xs:string" use="required"/>
+    <xs:attribute name="axesSource" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="createdAt" type="xs:dateTime" use="optional"/>
+    <xs:attribute name="updatedAt" type="xs:dateTime" use="optional"/>
+    <xs:attribute name="title" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="aiStrategy" type="AIStrategyType"/>
+</xs:schema>

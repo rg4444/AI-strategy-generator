@@ -186,7 +186,22 @@ The output is a configuration, a score, and — the useful part — an explicit
 list of what you have foreclosed. A strategy whose "forecloses" column is
 empty has not been written yet.
 
-## 7. Limits
+## 7. Document schema and consumers
+
+A coded strategy is a document conforming to
+[`schema/ai-strategy.xsd`](schema/ai-strategy.xsd) (namespace
+`urn:pppa:ai-strategy:1.0`); the JSON form is defined by the generated
+[`schema/ai-strategy.schema.json`](schema/ai-strategy.schema.json). The same
+schema holds national and organisational strategies — `@kind` is the only
+difference. A document records the `@axesVersion` it was coded against, so
+a strategy stays interpretable after the axes change.
+
+Consumers (the pppa.lv generator, AI Register) take two things from this
+repository: the data bundle `dist/axes-bundle.json`, which they may update
+at runtime, and the algorithm module `tools/strategy_doc.py`, which they
+vendor at build time. Scoring is never re-implemented downstream.
+
+## 8. Limits
 
 - Coding is a reading, and readings can be wrong. The `chosen_by` field and
   the low-confidence flags exist so that codings can be challenged against
@@ -201,7 +216,7 @@ empty has not been written yet.
 - Values and weights are v1 and will change. The version of `data/` a
   comparison was made with is part of that comparison; cite the commit.
 
-## 8. Provenance and citation
+## 9. Provenance and citation
 
 The axes and the first 17 codings were produced in August 2026 while
 benchmarking Latvia's draft national AI strategy (VARAM, approval deadline

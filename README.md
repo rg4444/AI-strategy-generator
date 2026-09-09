@@ -24,6 +24,12 @@ Live tool: [pppa.lv/mi-strategijas-generators](https://pppa.lv/mi-strategijas-ge
 | [`decision/scoring.dmn`](decision/scoring.dmn) | DMN 1.3 decision tables: one per axis (COLLECT/MAX) + weighted overall | generated |
 | [`process/strategy-coding.bpmn`](process/strategy-coding.bpmn) | BPMN 2.0 process for coding and reviewing a strategy | yes |
 | `dist/sg-data.js` | the data half of the pppa.lv generator (declares `AX`, `C`, `T`, `W`) | generated |
+| `dist/axes-bundle.json` | axes + groups + default weights + versions, for any consumer (AI Register fetches this) | generated |
+| `dist/reference-strategies.json` | the 20 coded strategies in document form (JSON form of the XSD) | generated |
+| [`schema/ai-strategy.xsd`](schema/ai-strategy.xsd) | **canonical strategy document schema** (`urn:pppa:ai-strategy:1.0`), national and organisational alike | yes |
+| `schema/ai-strategy.schema.json` | JSON Schema of the same document | generated |
+| `tools/strategy_doc.py` | the algorithm module: scoring, JSON⇄XML, validation — vendored verbatim by consumers | yes |
+| `tools/xsd_to_jsonschema.py` | XSD → JSON Schema generator | — |
 | `tools/build.py` | rebuild everything generated from `data/` | — |
 | `tools/score.py` | reference scorer; prints the matrix | — |
 | `tools/bootstrap_from_js.py` | one-time import from the original sg-app.js (provenance only) | — |

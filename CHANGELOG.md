@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0 — 2026-09-09
+
+- Canonical strategy document schema `schema/ai-strategy.xsd`
+  (`urn:pppa:ai-strategy:1.0`) for national and organisational strategies;
+  JSON Schema generated from it.
+- `tools/strategy_doc.py`: scoring, JSON⇄XML, validation in one dependency-free
+  module for consumers to vendor (AI Register, pppa.lv).
+- `dist/axes-bundle.json` and `dist/reference-strategies.json` for consumers.
+- `data/axes.yaml` version is now a semver string (1.0.0).
+
 ## 1.0.0 — 2026-09-09
 
 - First public release. Data imported from the pppa.lv generator (`sg-app.js`)
