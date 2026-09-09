@@ -9,7 +9,7 @@ Built for benchmarking Latvia's national AI strategy against 19 comparators
 (PPPA AI LV Exchange programme, August–September 2026). The method applies
 unchanged to any organisation's AI strategy — see [METHOD.md §6](METHOD.md#6-applying-the-method-to-an-organisation).
 
-Live tool: [pppa.lv/mi-strategijas-generators](https://pppa.lv/mi-strategijas-generators) · [English](https://pppa.lv/en/strategy-generator)
+Live tool (bilingual): [pppa.lv/ai-strategy-generator](https://pppa.lv/ai-strategy-generator) · stores strategies as `urn:pppa:ai-strategy:1.0` documents with versions, XML/JSON export and import
 
 ## What is here
 

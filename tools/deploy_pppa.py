@@ -1,4 +1,5 @@
-"""Deploy dist/sg-data.js to pppa.lv and make the generator load it.
+"""Deploy dist/sg-data.js, dist/axes-bundle.json, dist/reference-strategies.json and the
+schema files to pppa.lv and make the generator load them.
 
 Runs with Windows python on Kojusalas (the docroot is on the Windows side):
 
@@ -18,7 +19,8 @@ args = ap.parse_args()
 
 ROOT, BAK = args.docroot, os.path.join(r"C:\WebServers\_backups_offweb\pppa", args.tag)
 JS = os.path.join(ROOT, "assets", "js")
-PAGES = [os.path.join(ROOT, "mi-strategijas-generators.html"), os.path.join(ROOT, "en", "strategy-generator.html")]
+# s1455: one bilingual page; the old LV/EN pages 301 to it
+PAGES = [os.path.join(ROOT, "ai-strategy-generator.html")]
 
 
 def read(p):
@@ -48,6 +50,20 @@ if not os.path.exists(dst) or read(dst) != new:
         print("installed assets/js/sg-data.js")
 else:
     print("sg-data.js unchanged")
+
+# 1b) axes bundle + reference + schema (read by api/strategija.php and served for reference)
+for src_rel, dst_rel in (("dist/axes-bundle.json", "assets/data/axes-bundle.json"),
+                         ("dist/reference-strategies.json", "assets/data/reference-strategies.json"),
+                         ("schema/ai-strategy.xsd", "assets/schema/ai-strategy.xsd"),
+                         ("schema/ai-strategy.schema.json", "assets/schema/ai-strategy.schema.json")):
+    sp, dp = os.path.join(args.repo, *src_rel.split("/")), os.path.join(ROOT, *dst_rel.split("/"))
+    content = read(sp)
+    if not os.path.exists(dp) or read(dp) != content:
+        os.makedirs(os.path.dirname(dp), exist_ok=True)
+        if os.path.exists(dp): write(dp, content)
+        else: open(dp, "wb").write(content.encode("utf-8")); print("installed", dst_rel)
+    else:
+        print(dst_rel, "unchanged")
 
 # 2) strip the embedded data block from sg-app.js (first run only)
 app = os.path.join(JS, "sg-app.js")

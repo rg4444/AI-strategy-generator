@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 — 2026-09-09
+
+- pppa.lv consumer: one bilingual page `/ai-strategy-generator` (old URLs 301, share links carried over); storage v2 keeps every strategy as a schema document with versions, XML/JSON export and import; PHP scoring verified equal to `strategy_doc.py`. `tools/deploy_pppa.py` now also installs the bundle, reference and schema files.
+
 ## 1.2.0 — 2026-09-09
 
 - `data/org-reading.yaml`: the organisational reading of every axis (names,
