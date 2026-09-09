@@ -8,9 +8,9 @@ strings:
     build: Konfigurēt
     score: Novērtējums
     matrix: Matrica
-    mxnote: 'Visas valstis vienlaikus. Katra šūna — vērtējums no 0 līdz 5 attiecīgajā asī. Sarkanie cipari ir nulles: šajā asī dokuments neko neizlemj. Pēdējā rinda — svērtais kopvērtējums pēc svariem, kas iestatīti sadaļā Novērtējums.'
+    mxnote: 'Visas valstis vienlaikus. Katra šūna — vērtējums no 0 līdz 5 attiecīgajā asī. Sarkanie cipari ir nulles: šajā asī dokuments neko neizlemj. Pēdējā rinda — svērtais kopvērtējums pēc īpatsvariem, kas iestatīti sadaļā Novērtējums.'
     yours: Jūsu konfigurācija
-    wt: Svars
+    wt: Īpatsvars
     sv: Vērtējums
     overall: Kopā
     stages:
@@ -20,7 +20,7 @@ strings:
     - noteikts
     - apņemšanās
     - īstenots
-    sclg: Vērtējums katrā asī = augstākā izvēle tajā asī (0–5). Svarus var mainīt. Kopvērtējums ir svērtais vidējais.
+    sclg: Vērtējums katrā asī = augstākā izvēle tajā asī (0–5). Īpatsvarus var mainīt. Kopvērtējums ir svērtais vidējais.
     gA: A. Stratēģiskie lēmumi
     gAs: Ko valsts apņemas darīt un būt. Katrā asī iespējamas vairākas izvēles vienlaikus, novērtētas no 1 līdz 5. Zem katras — ko šī izvēle dod un ko tā liedz.
     gB: B. Forma un pārvaldība
