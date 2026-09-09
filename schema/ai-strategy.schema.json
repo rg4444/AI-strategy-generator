@@ -12,47 +12,26 @@
           "$ref": "#/$defs/SubjectType"
         },
         "sources": {
-          "type": "object",
-          "properties": {
-            "source": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/SourceType"
-              }
-            }
-          },
-          "additionalProperties": false
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceType"
+          }
         },
         "text": {
           "$ref": "#/$defs/TextLayerType"
         },
         "coding": {
-          "type": "object",
-          "properties": {
-            "axis": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/AxisCodingType"
-              },
-              "minItems": 1
-            }
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/AxisCodingType"
           },
-          "additionalProperties": false,
-          "required": [
-            "axis"
-          ]
+          "minItems": 1
         },
         "weights": {
-          "type": "object",
-          "properties": {
-            "axis": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/WeightEntryType"
-              }
-            }
-          },
-          "additionalProperties": false
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/WeightEntryType"
+          }
         },
         "score": {
           "$ref": "#/$defs/ScoreType"
@@ -213,16 +192,10 @@
           "additionalProperties": false
         },
         "objectives": {
-          "type": "object",
-          "properties": {
-            "objective": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/ObjectiveType"
-              }
-            }
-          },
-          "additionalProperties": false
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ObjectiveType"
+          }
         },
         "position": {
           "$ref": "#/$defs/TextType"
@@ -247,25 +220,24 @@
       "description": "Does the document state why it exists?"
     },
     "ObjectiveType": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/TextType"
-        },
-        {
-          "type": "object",
-          "properties": {
-            "numbered": {
-              "type": "boolean",
-              "default": false
-            }
-          }
+      "type": "object",
+      "properties": {
+        "numbered": {
+          "type": "boolean",
+          "default": false
         }
-      ]
+      },
+      "patternProperties": {
+        "^[a-z]{2}$": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
     },
     "AxisCodingType": {
       "type": "object",
       "properties": {
-        "partial": {
+        "partials": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/PartialType"
@@ -343,7 +315,7 @@
     "ScoreType": {
       "type": "object",
       "properties": {
-        "axis": {
+        "axes": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/AxisScoreType"

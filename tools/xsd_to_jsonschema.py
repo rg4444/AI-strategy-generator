@@ -5,7 +5,11 @@ schema uses and defines the JSON form of a strategy document:
 
   * an element with a complexType becomes an object; attributes and child
     elements both become properties (attribute names keep their camelCase);
-  * maxOccurs="unbounded" becomes an array of the item type;
+  * maxOccurs="unbounded" becomes an array of the item type, under the
+    PLURAL property name (axis -> axes, source -> sources, objective ->
+    objectives, partial -> partials);
+  * a wrapper element whose whole content is one unbounded child and no
+    attributes (sources, coding, weights, objectives) collapses to that array;
   * TextType (a sequence of <t lang=".."/>) becomes an object keyed by
     language code: {"lv": "...", "en": "..."};
   * simpleContent with attributes becomes {"value": <text>, <attr>: ...};
@@ -19,6 +23,7 @@ import xml.etree.ElementTree as ET
 
 XS = "{http://www.w3.org/2001/XMLSchema}"
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+PLURAL = {"axis": "axes", "source": "sources", "objective": "objectives", "partial": "partials"}
 BUILTIN = {
     "xs:string": {"type": "string"}, "xs:anyURI": {"type": "string", "format": "uri"},
     "xs:boolean": {"type": "boolean"}, "xs:integer": {"type": "integer"},
@@ -94,10 +99,17 @@ class Conv:
         cc = node.find(f"{XS}complexContent")
         if cc is not None:
             ext = cc.find(f"{XS}extension")
-            base = self.ref_type(ext.get("base"))
             props, req = {}, []
             self.attrs(ext, props, req)
             self.seq(ext, props, req)
+            if ext.get("base") == "TextType":
+                # language map plus the extension's attributes, in one object
+                out = {"type": "object", "properties": props,
+                       "patternProperties": {"^[a-z]{2}$": {"type": "string"}}, "additionalProperties": False}
+                if req:
+                    out["required"] = req
+                return out
+            base = self.ref_type(ext.get("base"))
             out = {"allOf": [base, {"type": "object", "properties": props}]}
             if req:
                 out["allOf"][1]["required"] = req
@@ -144,6 +156,20 @@ class Conv:
                 item = self.ref_type(e.get("type"))
             else:
                 ct = e.find(f"{XS}complexType")
+                inner = ct.find(f"{XS}sequence")
+                kids = inner.findall(f"{XS}element") if inner is not None else []
+                if (len(kids) == 1 and kids[0].get("maxOccurs") == "unbounded"
+                        and not ct.findall(f"{XS}attribute")):
+                    # wrapper collapses to the array of its single child
+                    k = kids[0]
+                    kitem = self.ref_type(k.get("type")) if k.get("type") else self.complex_schema(k.find(f"{XS}complexType"), name=k.get("name"))
+                    item = {"type": "array", "items": kitem}
+                    if k.get("minOccurs", "1") != "0":
+                        item["minItems"] = int(k.get("minOccurs", "1"))
+                    props[nm] = item
+                    if e.get("minOccurs", "1") != "0":
+                        req.append(nm)
+                    continue
                 item = self.complex_schema(ct, name=nm)
             d = self.doc(e)
             if d:
@@ -153,6 +179,7 @@ class Conv:
                 item = {"type": "array", "items": item}
                 if e.get("minOccurs", "1") != "0":
                     item["minItems"] = int(e.get("minOccurs", "1"))
+                nm = PLURAL.get(nm, nm)
             props[nm] = item
             if e.get("minOccurs", "1") != "0":
                 req.append(nm)
