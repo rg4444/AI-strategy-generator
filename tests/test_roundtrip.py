@@ -7,7 +7,7 @@
 2. If the original JSON export of sg-app.js is given, the rebuilt data is
    semantically identical to it (flag keys normalised).
 """
-import json, os, subprocess, sys, tempfile
+import json, os, re, subprocess, sys, tempfile
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 from common import load_all  # noqa: E402
@@ -64,6 +64,11 @@ def main():
         assert all(abs(a["value"] - py[sid]["axes"][a["axis"]]) < 0.011 for a in sc["axes"]), sid
         assert SD.validate(d, bundle) == [], (sid, SD.validate(d, bundle))
     print("ok: strategy_doc scoring == score.py; reference documents validate; XML round-trips")
+    org = SD.axes_for_kind(bundle, "organisation")
+    assert len(org) == len(bundle["axes"]) and all(a["org"]["name"]["en"] for a in bundle["axes"])
+    leftovers = [(a["id"], t) for a in org for t in (a["name"]["en"], a["method"]["en"]) if re.search(r"\b(state|national|country|ministr)", t, re.I)]
+    assert not leftovers, leftovers
+    print("ok: organisational reading present for all axes, no national wording left in EN names/methods")
     # 1c. JSON Schema validates the reference documents when jsonschema is available
     try:
         import jsonschema

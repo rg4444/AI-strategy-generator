@@ -8,7 +8,7 @@ same four top-level constants (AX, C, T, W) that sg-app.js used to embed.
 """
 import argparse, json, os, re, sys, tempfile, filecmp
 from xml.sax.saxutils import escape
-from common import ROOT, load_all, axis_index
+from common import ROOT, DATA, load_all, load_yaml, axis_index
 
 sys.path.insert(0, os.path.dirname(__file__))
 from score import validate  # noqa: E402
@@ -184,8 +184,49 @@ def git_commit():
         return ""
 
 
+def _apply_terms(text, terms):
+    """Whole-word replacement, longest first, keeping a leading capital."""
+    out = text
+    for a, b in sorted(terms, key=lambda x: -len(x[0])):
+        def rep(m):
+            w = m.group(0)
+            return b[0].upper() + b[1:] if w[0].isupper() else b
+        out = re.sub(r"(?<![\w])" + re.escape(a) + r"(?![\w])", rep, out, flags=re.IGNORECASE if a.islower() else 0)
+    return out
+
+
+def org_reading(axes):
+    """Merge data/org-reading.yaml over the national wording: explicit overrides
+    win, everything else goes through the term map. Returns {axis_id: org dict}."""
+    org = load_yaml(os.path.join(DATA, "org-reading.yaml"))
+    terms = org.get("terms", {})
+    def txt(bi, override):
+        if override:
+            return {L: override.get(L, bi.get(L, "")) for L in set(bi) | set(override)}
+        return {L: _apply_terms(v, terms.get(L, [])) for L, v in bi.items()}
+    out = {}
+    for a in axes["axes"]:
+        o = (org.get("axes") or {}).get(a["id"]) or {}
+        opts = {}
+        for op in a["options"]:
+            oo = (o.get("options") or {}).get(op["key"]) or {}
+            opts[op["key"]] = {f: txt(op[f], oo.get(f)) for f in ("label", "gives", "forecloses")}
+        out[a["id"]] = {"name": txt(a["name"], o.get("name")), "method": txt(a["method"], o.get("method")), "options": opts}
+    groups = {gid: {"description": txt(g["description"], ((org.get("groups") or {}).get(gid) or {}).get("description"))}
+              for gid, g in axes["groups"].items()}
+    return out, groups, org.get("version", "")
+
+
 def build_bundle(axes, weights):
-    """dist/axes-bundle.json — everything a consumer needs to render, code and score."""
+    """dist/axes-bundle.json — everything a consumer needs to render, code and score.
+    `readings`: the national wording is the base; `org` on each axis (and
+    `org` on each group) carries the organisational wording. Consumers pick
+    by the document's `kind`; chosen_by is national-only and has no org form."""
+    org_axes, org_groups, org_ver = org_reading(axes)
+    axes_out = []
+    for a in axes["axes"]:
+        a2 = dict(a); a2["org"] = org_axes[a["id"]]; axes_out.append(a2)
+    groups_out = {gid: {**g, "org": org_groups[gid]} for gid, g in axes["groups"].items()}
     return {
         "bundle": "ai-strategy-axes",
         "version": str(axes["version"]),
@@ -193,8 +234,10 @@ def build_bundle(axes, weights):
         "schema_version": SD.SCHEMA_VERSION,
         "source": SD.AXES_SOURCE + ("@" + git_commit() if git_commit() else ""),
         "generated_at": _dt.datetime.now(_dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + "Z",
-        "groups": axes["groups"],
-        "axes": axes["axes"],
+        "readings": ["national", "organisation"],
+        "org_reading_version": str(org_ver),
+        "groups": groups_out,
+        "axes": axes_out,
         "default_weights": weights["default"],
     }
 

@@ -20,6 +20,7 @@ Live tool: [pppa.lv/mi-strategijas-generators](https://pppa.lv/mi-strategijas-ge
 | `data/weights.yaml` | default weights for the 15 scored axes | yes |
 | `data/strategies/*.yaml` | one coded strategy per file (17 countries + EU, Latvia 2020, VARAM draft 2026, PPPA proposal) | yes |
 | `data/ui-strings.yaml` | interface strings of the generator | yes |
+| `data/org-reading.yaml` | organisational reading of the axes (EN primary, LV native); merged into the bundle as `org` | yes |
 | [`docs/axes.md`](docs/axes.md) | human-readable reference of every axis and option | generated |
 | [`decision/scoring.dmn`](decision/scoring.dmn) | DMN 1.3 decision tables: one per axis (COLLECT/MAX) + weighted overall | generated |
 | [`process/strategy-coding.bpmn`](process/strategy-coding.bpmn) | BPMN 2.0 process for coding and reviewing a strategy | yes |

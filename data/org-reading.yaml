@@ -1,0 +1,191 @@
+# Organisational reading of the decision axes.
+#
+# The axes are the same for a country and for an organisation; only the wording
+# assumes a state. This file holds the wording that differs when `kind` is
+# `organisation`. Anything not listed here is used unchanged from axes.yaml.
+# tools/build.py merges it into dist/axes-bundle.json as `org` overrides so that
+# every consumer (pppa.lv, AI Register) renders the right reading from one source.
+#
+# English is the primary text; Latvian is written natively, not translated.
+version: 1.0.0
+groups:
+  A:
+    description: {en: "What the organisation commits to.", lv: "Ko organizācija apņemas darīt."}
+  B:
+    description: {en: "What kind of artefact the strategy document is.", lv: "Kāda veida dokuments ir stratēģija."}
+terms:   # applied to any org-reading text NOT explicitly overridden below (whole words, case kept where possible)
+  en:
+    - ["the state", "the organisation"]
+    - ["ministries", "departments"]
+    - ["ministry", "department"]
+    - ["institutions", "business units"]
+    - ["institution", "business unit"]
+    - ["citizens", "staff and customers"]
+    - ["national", "organisational"]
+    - ["country", "organisation"]
+  lv:
+    - ["iestādēm", "struktūrvienībām"]
+    - ["iestādes", "struktūrvienības"]
+    - ["iestāde", "struktūrvienība"]
+    - ["ministrijām", "departamentiem"]
+    - ["ministrijas", "departamenti"]
+    - ["ministrija", "departaments"]
+    - ["iedzīvotājiem", "darbiniekiem un klientiem"]
+    - ["iedzīvotāji", "darbinieki un klienti"]
+    - ["valstij", "organizācijai"]
+    - ["valsts", "organizācijas"]
+    - ["nacionāls", "organizācijas"]
+    - ["nacionāla", "organizācijas"]
+axes:
+  frame:
+    name: {en: "How the organisation frames AI", lv: "Kā organizācija redz MI"}
+  diff:
+    method:
+      en: "Whether the organisation names something it is distinctively good at. None 0; trust (a crowded claim) 2; domain data or research 3; deployment speed, compute or capital 4; standard-setting 5, as it buys the most reach per euro."
+      lv: "Vai organizācija nosauc kaut ko, ar ko tā atšķiras. Nav norādīts — 0; uzticēšanās (pārpildīts lauks) — 2; nozares dati vai pētniecība — 3; ieviešanas ātrums, jauda vai kapitāls — 4; standartu veidošana — 5, jo dod vislielāko ietekmi attiecībā pret izmaksām."
+    options:
+      lang:
+        label: {en: "domain and proprietary data", lv: "nozare un pašu dati"}
+  interest:
+    name: {en: "Organisational interest", lv: "Organizācijas interese"}
+    method:
+      en: "Whether an organisation-specific reason is stated. Not stated 0; generic competitiveness 2; falling behind or trust 3; independence, service sustainability, diversification or knowledge retention 4."
+      lv: "Vai nosaukts konkrēts iemesls, kāpēc organizācijai tas rūp. Nav norādīts — 0; vispārīga konkurētspēja — 2; atpalikšana vai uzticēšanās — 3; neatkarība, pakalpojumu ilgtspēja, diversifikācija vai zināšanu saglabāšana — 4."
+    options:
+      demo:
+        label: {en: "workforce shortage", lv: "darbaspēka trūkums"}
+      lang:
+        label: {en: "retention of domain knowledge", lv: "nozares zināšanu saglabāšana"}
+      svc:
+        label: {en: "service and cost sustainability", lv: "pakalpojumu un izmaksu ilgtspēja"}
+  fund:
+    options:
+      ppp:
+        label: {en: "partner / joint-venture vehicle", lv: "partnera vai kopuzņēmuma instruments"}
+  sourcing:
+    method:
+      en: "How decidedly the document says where models come from. Decentralised by default 1; consortium co-funding 3; central broker or self-hosting 4; own frontier model 5. Measures decidedness, not feasibility."
+      lv: "Cik noteikti pateikts, kā struktūrvienības iegūst modeļus. Decentralizēti pēc noklusējuma — 1; konsorcija līdzfinansējums — 3; brokeris vai pašmitināšana — 4; pašu robežmodelis — 5. Mēra izlemtību, ne izpildāmību."
+    options:
+      natl:
+        label: {en: "own frontier model", lv: "pašu robežmodelis"}
+      bloc:
+        label: {en: "consortium co-funding", lv: "konsorcija līdzfinansējums"}
+  compute:
+    method:
+      en: "What compute is secured. None 0; commercial cloud only 1; shared or group capacity 3; dedicated partner capacity 4; own cluster 5."
+      lv: "Kāda skaitļošanas jauda ir nodrošināta. Nav — 0; tikai komerciāls mākonis — 1; kopīga vai grupas jauda — 3; īpaša partnera jauda — 4; pašu klasteris — 5."
+    options:
+      nat:
+        label: {en: "own GPU/HPC cluster", lv: "pašu GPU/HPC klasteris"}
+      euro:
+        label: {en: "shared or group capacity", lv: "kopīga vai grupas jauda"}
+      ppp:
+        label: {en: "dedicated partner capacity", lv: "īpaša partnera jauda"}
+  lang:
+    name: {en: "Language and domain model strategy", lv: "Valodas un nozares modeļu stratēģija"}
+    method:
+      en: "How far the provision for the organisation's language and domain goes. None 0; data contribution 2; fine-tuning 3; industry consortium 4; own domain model 5."
+      lv: "Cik tālu iet organizācijas valodas un nozares nodrošinājums. Nav — 0; datu ieguldījums — 2; pielāgošana — 3; nozares konsorcijs — 4; pašu nozares modelis — 5."
+    options:
+      natl:
+        label: {en: "own domain model", lv: "pašu nozares modelis"}
+      reg:
+        label: {en: "industry consortium", lv: "nozares konsorcijs"}
+  identity:
+    name: {en: "AI agent identity provision", lv: "MI aģentu identitātes nodrošinājums"}
+    method:
+      en: "How far the organisation has got with identity for AI agents — who the agent is, who owns it, what it may do. None 0; policy talk only 1; person identity exists but nothing for agents 2; agent identity pilot 3; organisation-wide agent identity 4; external verification gateway 5."
+      lv: "Cik tālu organizācija ir tikusi ar identitāti MI aģentiem — kas ir aģents, kam tas pieder un ko drīkst darīt. Nav — 0; tikai politikas līmenī — 1; ir personu identitāte, aģentiem nekas — 2; aģentu identitātes pilotprojekts — 3; organizācijas mēroga aģentu identitāte — 4; ārējās verifikācijas vārteja — 5."
+    options:
+      pid:
+        label: {en: "person identity only, nothing for agents", lv: "tikai personu identitāte, aģentiem nekas"}
+      pilot:
+        label: {en: "agent identity pilot project", lv: "aģentu identitātes pilotprojekts"}
+      natid:
+        label: {en: "organisation-wide agent identity", lv: "organizācijas mēroga aģentu identitāte"}
+      gw:
+        label: {en: "external verification gateway", lv: "ārējās verifikācijas vārteja"}
+  knowledge:
+    method:
+      en: "Whether the organisation accumulates and reuses what its units know and learn, instead of starting from zero each time. None 0; document digitisation 1; machine-readable records and a data catalogue 2; reusable shared components 3; organisational knowledge base 4; federated knowledge exchange between units 5."
+      lv: "Vai organizācija uzkrāj un atkārtoti izmanto to, ko tās struktūrvienības zina un iemācās, nevis sāk katru reizi no nulles. Nav — 0; dokumentu digitalizācija — 1; mašīnlasāmi ieraksti un datu katalogs — 2; koplietojami komponenti — 3; organizācijas zināšanu bāze — 4; federēta zināšanu apmaiņa starp struktūrvienībām — 5."
+    options:
+      orgkb:
+        forecloses: {en: "Each unit in its own silo — across the organisation, knowledge still does not talk.", lv: "Katra struktūrvienība savā silosā — organizācijas mērogā zināšanas joprojām nesarunājas."}
+  adopt:
+    method:
+      en: "How far the adoption mechanism reaches into the organisation. Voluntary 1; incentives 2; mandates 3; procurement rules 4; central platform 5."
+      lv: "Cik tālu ieviešanas mehānisms sniedzas organizācijā. Brīvprātīgi — 1; stimuli — 2; pienākums — 3; iepirkuma noteikumi — 4; centrāla platforma — 5."
+    options:
+      vou:
+        label: {en: "incentives / budget vouchers", lv: "stimuli / budžeta vaučeri"}
+      proc:
+        label: {en: "procurement rules", lv: "iepirkuma noteikumi"}
+        gives: {en: "The strongest lever management has. Sets terms once, for every purchase.", lv: "Spēcīgākais vadības rīks. Nosaka noteikumus vienreiz un visiem iepirkumiem."}
+  meas:
+    options:
+      trk:
+        label: {en: "public delivery tracker (board-visible)", lv: "publisks izpildes izsekotājs (redzams valdei)"}
+  intl:
+    name: {en: "External posture (standards and ecosystem)", lv: "Ārējā nostāja (standarti un ekosistēma)"}
+    method:
+      en: "How active the organisation is beyond its own walls. Standards follower 1; bilateral partnerships or consortium co-funding 3; standard-setter 5."
+      lv: "Cik aktīva organizācija ir ārpus savām sienām. Standartu sekotāja — 1; divpusējas partnerības vai konsorcija līdzfinansējums — 3; standartu veidotāja — 5."
+    options:
+      fol:
+        label: {en: "standards follower", lv: "standartu sekotāja"}
+      bloc:
+        label: {en: "consortium co-funder", lv: "konsorcija līdzfinansētāja"}
+  doctype:
+    options:
+      statute:
+        label: {en: "binding policy", lv: "saistoša politika"}
+        gives: {en: "Binding, survives executives, creates real functions.", lv: "Saistoša, pārdzīvo vadītājus, rada reālas funkcijas."}
+      rolling:
+        label: {en: "rolling portfolio of initiatives", lv: "rotējošs iniciatīvu portfelis"}
+  horizon:
+    options:
+      y5:
+        gives: {en: "Matches budget and group planning cycles.", lv: "Sakrīt ar budžeta un grupas plānošanas cikliem."}
+      stat:
+        label: {en: "board / charter cycle", lv: "valdes vai statūtu cikls"}
+  decomp:
+    options:
+      sect:
+        label: {en: "business units only", lv: "tikai struktūrvienības"}
+      matrix:
+        label: {en: "enablers × business units", lv: "iespējotāji × struktūrvienības"}
+      enab:
+        gives: {en: "Clean, comparable, matches group reporting.", lv: "Pārskatāmi, salīdzināmi, atbilst grupas atskaitēm."}
+        forecloses: {en: "No business unit owns anything; departments can nod without committing.", lv: "Neviena struktūrvienība neko neuzņemas; departamenti var piekrist, neko neapņemoties."}
+  gov:
+    method:
+      en: "How much power there is to direct other units. Line department 2; central digital/AI office 4; executive-board council or charter body 5."
+      lv: "Cik liela vara vadīt citas struktūrvienības. Nozares departaments — 2; centrālais digitālais/MI birojs — 4; valdes līmeņa padome vai statūtos noteikta struktūra — 5."
+    options:
+      min:
+        label: {en: "line department", lv: "nozares departaments"}
+        forecloses: {en: "Cannot compel other departments. Coordination stays voluntary.", lv: "Nevar uzlikt pienākumus citiem departamentiem. Koordinācija paliek brīvprātīga."}
+      agy:
+        label: {en: "central digital / AI office", lv: "centrālais digitālais / MI birojs"}
+      coun:
+        label: {en: "executive-board council", lv: "valdes līmeņa padome"}
+        gives: {en: "Convening power over departments. Attention at the top.", lv: "Sasaukšanas vara pār departamentiem. Uzmanība augšgalā."}
+        forecloses: {en: "Depends on one executive's interest; fades when leadership changes.", lv: "Atkarīgs no viena vadītāja intereses; izgaist pie vadības maiņas."}
+      stat:
+        label: {en: "charter-mandated body", lv: "statūtos noteikta struktūra"}
+  reg:
+    name: {en: "Compliance posture", lv: "Atbilstības nostāja"}
+    method:
+      en: "How settled the compliance stance is. AI Act minimum only 1; internal guidelines 2; sandbox-first 4; binding internal framework 5."
+      lv: "Cik noteikta ir atbilstības nostāja. Tikai MI akta minimums — 1; iekšējās vadlīnijas — 2; smilškaste vispirms — 4; saistošs iekšējais regulējums — 5."
+    options:
+      eu:
+        label: {en: "AI Act minimum only", lv: "tikai MI akta minimums"}
+        forecloses: {en: "Purely reactive. No position of its own.", lv: "Tīri reaktīvi. Nav savas nostājas."}
+      soft:
+        label: {en: "internal guidelines", lv: "iekšējās vadlīnijas"}
+      stat:
+        label: {en: "binding internal framework", lv: "saistošs iekšējais regulējums"}
+        gives: {en: "Enforceable; creates functions with real mandate.", lv: "Izpildāms; rada funkcijas ar reālām pilnvarām."}

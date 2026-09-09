@@ -38,6 +38,28 @@ def scored_axes(bundle: dict) -> list:
     return [a for a in bundle["axes"] if bundle["groups"][a["group"]]["scored"]]
 
 
+def axes_for_kind(bundle: dict, kind: str) -> list:
+    """Axes with the wording for `kind` applied (organisation -> org overrides).
+    Scoring never depends on this; only rendering does."""
+    if kind != "organisation":
+        return bundle["axes"]
+    out = []
+    for a in bundle["axes"]:
+        o = a.get("org") or {}
+        a2 = dict(a)
+        a2["name"] = o.get("name", a["name"]); a2["method"] = o.get("method", a["method"])
+        a2["options"] = [{**op, **({k: v for k, v in (o.get("options", {}).get(op["key"]) or {}).items()}), "chosen_by": ""}
+                         for op in a["options"]]
+        out.append(a2)
+    return out
+
+
+def groups_for_kind(bundle: dict, kind: str) -> dict:
+    if kind != "organisation":
+        return bundle["groups"]
+    return {gid: {**g, **(g.get("org") or {})} for gid, g in bundle["groups"].items()}
+
+
 # ----------------------------------------------------------------- scoring --
 def coding_map(doc: dict) -> dict:
     """{axis: {"option": key|None, "partials": {key: score}}} from the document form."""
