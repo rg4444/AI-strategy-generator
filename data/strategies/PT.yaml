@@ -1,0 +1,54 @@
+id: PT
+name:
+  lv: Portugāle
+  en: Portugal
+documents: AI Portugal 2030 · National AI Agenda 2026–2030
+text:
+  interest:
+    status: part
+    text:
+      lv: Strukturālā atpalicība attiecībā pret ES vidējiem rādītājiem.
+      en: Structural gaps relative to EU averages.
+  vision:
+    quote: To ensure that in 2030 Portugal presents a robust Artificial Intelligence ecosystem, based on ethics and scientific excellence, which promotes social well-being and enhances the productivity and competitiveness of the Portuguese economy.
+  objectives:
+  - lv: 18–22 miljardi eiro IKP pieauguma desmit gados
+    en: €18–22 billion GDP gains over the decade
+    numbered: true
+  - lv: Produktivitātes pieaugums līdz 2,7 procentpunktiem gadā
+    en: Productivity increase of up to 2.7 percentage points annually
+    numbered: true
+  position:
+    lv: 'Abi: MI pakalpojumu ekonomika un nišas tirgi plus plaša ieviešana.'
+    en: 'Both: an economy of AI services and niche markets, plus broad adoption.'
+coding:
+  frame: econ
+  diff: none
+  interest: comp
+  ambition: quant
+  fund: line
+  sourcing: dec
+  compute: euro
+  lang: none
+  identity: pid
+  knowledge: docs
+  adopt: vol
+  meas: out
+  eval: none
+  return: null
+  intl: fol
+  doctype: plan
+  horizon: y5
+  decomp: enab
+  gov: agy
+  reg: eu
+partial:
+  frame:
+    dep: 2
+  diff:
+    compute: 2
+  compute:
+    cloud: 2
+low_confidence:
+- sourcing
+- gov

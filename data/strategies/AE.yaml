@@ -1,0 +1,58 @@
+id: AE
+name:
+  lv: AAE
+  en: UAE
+documents: National Strategy for Artificial Intelligence 2031
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: Ekonomikas diversifikācija prom no naftas; saistīta ar “UAE Centennial 2071”.
+      en: Economic diversification away from oil; tied to UAE Centennial 2071.
+  vision:
+    quote: To be one of the leaders in AI in the world.
+  objectives:
+  - lv: 335 miljardi AED papildu ekonomiskās izaugsmes līdz 2031
+    en: AED 335 billion in additional economic growth by 2031
+    numbered: true
+  - lv: 20 % no ne-naftas IKP
+    en: 20% of non-oil GDP
+    numbered: true
+  - lv: 10 000 datu zinātnieku apmācība
+    en: Train 10,000 data scientists
+    numbered: true
+  position:
+    lv: 'Abi: ātra ieviešana valsts pārvaldē plus skaidrs nodoms eksportēt.'
+    en: 'Both: fast government adoption plus an explicit intent to export.'
+coding:
+  frame: trans
+  diff: cap
+  interest: div
+  ambition: quant
+  fund: fund
+  sourcing: natl
+  compute: ppp
+  lang: natl
+  identity: pid
+  knowledge: mrec
+  adopt: mand
+  meas: out
+  eval: none
+  return: null
+  intl: bil
+  doctype: vision
+  horizon: y10
+  decomp: sect
+  gov: min
+  reg: soft
+partial:
+  frame:
+    econ: 4
+  diff:
+    speed: 4
+  sourcing:
+    self: 3
+  adopt:
+    plat: 4
+low_confidence:
+- eval

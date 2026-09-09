@@ -1,0 +1,61 @@
+id: EU
+name:
+  lv: ES
+  en: EU
+documents: AI Continent Action Plan · Apply AI Strategy (2025)
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: Tehnoloģiskā suverenitāte — mazināt atkarību no ārpussavienības tehnoloģiju piegādātājiem.
+      en: Technological sovereignty — reducing dependence on non-EU technology providers.
+  vision:
+    quote: The European Union is committed and determined to become a global leader in Artificial Intelligence, a leading AI continent.
+  objectives:
+  - lv: InvestAI — līdz 200 miljardiem eiro mobilizācijas
+    en: InvestAI — up to €200 billion mobilised
+    numbered: true
+  - lv: Horizon Europe MI finansējums pārsniedz 3 miljardus
+    en: Horizon Europe AI funding over €3 billion
+    numbered: true
+  position:
+    lv: 'Veidošana plus suverēna ieviešana: “AI first” un “buy European”, ar atvērtā pirmkoda uzsvaru.'
+    en: 'Build plus sovereign adoption: “AI first” and “buy European,” with an open-source emphasis.'
+coding:
+  frame: dep
+  diff: std
+  interest: indep
+  ambition: cap
+  fund: fund
+  sourcing: bloc
+  compute: euro
+  lang: reg
+  identity: pid
+  knowledge: mrec
+  adopt: proc
+  meas: act
+  eval: none
+  return: null
+  intl: std
+  doctype: plan
+  horizon: y5
+  decomp: enab
+  gov: agy
+  reg: stat
+partial:
+  identity:
+    policy: 3
+  knowledge:
+    reuse: 2
+  frame:
+    risk: 4
+    behind: 3
+  diff:
+    std: 5
+  sourcing:
+    self: 3
+  adopt:
+    vol: 2
+low_confidence:
+- frame
+- eval

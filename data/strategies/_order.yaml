@@ -1,0 +1,22 @@
+note: Display order of strategies in the generator (a divider is drawn after the 17th entry).
+order:
+- EE
+- LT
+- FI
+- DK
+- IE
+- NL
+- SI
+- 'NO'
+- CZ
+- PT
+- SG
+- KR
+- UK
+- CA
+- JP
+- AE
+- EU
+- LV20
+- LV26
+- PPPA

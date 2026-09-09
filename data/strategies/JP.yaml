@@ -1,0 +1,50 @@
+id: JP
+name:
+  lv: Japāna
+  en: Japan
+documents: AI Promotion Act (2025) · Basic AI Plan (2025)
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: 'Ieviešanas atpalicība pārkvalificēta kā ekonomiskās un nacionālās drošības jautājums: 26,7 % pret 68,8 % ASV un 81,2 % Ķīnā.'
+      en: 'An adoption gap reframed as an economic and national security issue: 26.7% vs 68.8% (US) and 81.2% (China).'
+  vision:
+    quote: The world's most AI-friendly country.
+  objectives:
+  - lv: Virziena mērķi; likums bez sankcijām
+    en: Directional targets; a promotion act without penalties
+  position:
+    lv: Lietojums pirmajā vietā, ar valdības vadītu infrastruktūru.
+    en: Use-first with government-led infrastructure.
+coding:
+  frame: behind
+  diff: none
+  interest: behind
+  ambition: cap
+  fund: line
+  sourcing: dec
+  compute: nat
+  lang: natl
+  identity: pid
+  knowledge: docs
+  adopt: vol
+  meas: act
+  eval: none
+  return: null
+  intl: std
+  doctype: statute
+  horizon: stat
+  decomp: enab
+  gov: stat
+  reg: soft
+partial:
+  frame:
+    econ: 3
+  diff:
+    std: 3
+  lang:
+    data: 3
+low_confidence:
+- sourcing
+- lang

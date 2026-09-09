@@ -1,0 +1,127 @@
+id: PPPA
+name:
+  lv: PPPA priekšlikums
+  en: PPPA proposal
+latvian: true
+documents: pppa.lv/mi-strategija-2 · darba versija v2 · 3 pīlāri, 4 mērķi, 12 rīcības
+note:
+  lv: 'Atjaunināts no mi-strategija-2 (v2, 13.07.2026.): 3 pīlāri, 4 stratēģiskie mērķi, 12 rīcības ar datumiem un izpildes mērījumiem. Tas maina divas asis — mērīšana vairs nav tukša (katrai rīcībai ir mērījums) un dokumenta tips ir plāns, ne vīzija. Trīs asīs PPPA ir vienīgā ieraksts kopā: demogrāfija kā nacionālā interese, hibrīda modeļu iegāde un federēta zināšanu apmaiņa.'
+  en: 'Updated from mi-strategija-2 (v2, 13.07.2026): 3 pillars, 4 strategic goals, 12 dated actions each with a stated measurement. That moves two axes — measurement is no longer empty (every action has one) and the document type is a plan, not a vision. On three axes PPPA is the only entry in the set: demography as the national interest, hybrid model sourcing, and federated knowledge exchange.'
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: 'Demogrāfiskais sarukums un tehnoloģiskā atkarība. III pīlārs to izsaka tieši: produktivitāte ir atbilde uz demogrāfisko sarukumu — MI aģenti kompensē darbaspēka iztrūkumu, dod jauniešiem iemeslu būvēt šeit un ļauj eksportēt Latvijas pārvaldības standartus. Neviena salīdzinātā valsts demogrāfiju kā MI pamatojumu nav pieteikusi.'
+      en: 'Demographic decline and technological dependency. Pillar III says it outright: productivity is the answer to demographic decline — AI agents compensate for the missing workforce, give young people a reason to build here, and let Latvia export its governance standards. No comparator country has claimed demography as its AI rationale.'
+  vision:
+    quote: Latvijas mērķis ir kļūt par atvērtāko un uzticamāko vidi mākslīgā intelekta ieviešanai un MI ekonomikai, būtiski paaugstināt valsts un uzņēmumu efektivitāti un stiprināt tehnoloģisko neatkarību un radīt eksportspējīgu izaugsmi.
+    note:
+      lv: 'Viens teikums nes četru valstu saturu: vide (Japāna), efektivitāte (mērķis), neatkarība (Lietuva), eksports (Lietuva). Detaļa tagad ir pīlāros zemāk — teikums to var atlaist. Trīs pīlāri: I Efektivitāte, II Atvērtība, III Līderība.'
+      en: 'One sentence carrying four countries'' content: environment (Japan), efficiency (an objective), independence (Lithuania), export (Lithuania). The detail now sits in the pillars below — the sentence can let it go. Three pillars: I Efficiency, II Openness, III Leadership.'
+  objectives:
+  - lv: 'I PĪLĀRS · Atbrīvot cilvēkus un uzņēmumus no birokrātijas — Ikviens iedzīvotājs un uzņēmums saņem uzticamu MI atbalstu darbam ar valsti: atļaujas, deklarācijas, reģistrācijas un iesniegumi tiek nokārtoti minūtēs, uzraudzīti, auditējami un atsaucami. Šī ir suverēnā, iekšzemes puse: tās flagmanis ir “MI Dvīnis” — verificētas Latvijas fiziskas vai juridiskas personas MI pārstāvis, kas balstās Latvijas eID (eParaksts) uzticamības enkurā un rīkojas vienīgi piešķirtās pilnvaras robežās.'
+    en: 'PILLAR I · Free people and businesses from bureaucracy — Every resident and business gets trustworthy AI support in dealing with the state: permits, declarations, registrations and applications settled in minutes, supervised, auditable and revocable. This is the sovereign, domestic side: its flagship is the “AI Twin” — an AI representative of a verified Latvian natural or legal person, anchored in Latvia''s eID (eParaksts) trust anchor and acting only within the authority granted.'
+  - lv: II PĪLĀRS · Atvērt Latviju pasaules MI biznesam — Latvija kļūst par ES atvērto vārteju MI aģentu ekonomikai. Eksporta produkts nav identitāte, bet atvērta uzticamības vārteja, kas pārbauda jebkura MI aģenta identitāti un pilnvaru pirms darbības pieņemšanas. Ārvalstu persona vai uzņēmums nesaņem Latvijas “MI Dvīni” — tā aģents balstās savas jurisdikcijas uzticamības enkurā (eIDAS-saskaņoti), bet caur Latvijas vārteju iegūst juridisku spēku visā ES vienotajā tirgū no Rīgas.
+    en: PILLAR II · Open Latvia to the world's AI business — Latvia becomes the EU's open gateway to the AI agent economy. The export product is not the identity but an open trust gateway, which verifies any AI agent's identity and mandate before an action is accepted. A foreign person or company does not receive a Latvian “AI Twin” — their agent is anchored in its own jurisdiction's trust anchor (eIDAS-aligned), but through the Latvian gateway gains legal force across the EU single market from Rīga.
+  - lv: 'III PĪLĀRS · Veidot Latvijas suverēnās MI spējas un starptautisko līderību — Produktivitāte ir atbilde uz demogrāfisko sarukumu: MI aģenti kompensē darbaspēka iztrūkumu, dod jauniešiem iemeslu būvēt šeit, un ļauj Latvijai eksportēt savus pārvaldības un sadarbspējas standartus. Šis pīlārs apvieno kapacitāti, suverenitāti un pārvaldību, kas dara iespējamus pirmos divus pīlārus.'
+    en: 'PILLAR III · Build Latvia''s sovereign AI capability and international leadership — Productivity is the answer to demographic decline: AI agents compensate for the missing workforce, give young people a reason to build here, and let Latvia export its governance and interoperability standards. This pillar combines the capacity, sovereignty and governance that make the first two pillars possible.'
+  - lv: 'Četri stratēģiskie mērķi zem pīlāriem: 1) proaktīvi valsts pakalpojumi iedzīvotājiem un uzņēmumiem; 2) izmaksu efektivitāte un auditējami lēmumi; 3) atvērta MI aģentu identitātes, pilnvaru un uzticamības vārteja; 4) sabiedrībai jaunu iespēju pavēršana.'
+    en: 'Four strategic goals beneath the pillars: 1) proactive public services for residents and businesses; 2) cost efficiency and auditable decisions; 3) an open AI agent identity, mandate and trust gateway; 4) opening new possibilities for society.'
+  - lv: '30.12.2026. — “MI Dvīnis”: funkcionējoša pilotdemonstrācija ar vismaz vienu pilnvarotu darbību un publiski demonstrējamu audita pēdu (flagmanis, I pīlārs)'
+    en: '30.12.2026 — “AI Twin”: working pilot with at least one delegated action and a publicly demonstrable audit trail (flagship, Pillar I)'
+    numbered: true
+  - lv: 31.12.2026. — izvērtējums par vienotas MI atbildīgās iestādes izveidi izkliedētā modeļa vietā
+    en: 31.12.2026 — assessment of a single AI competent authority in place of the dispersed model
+    numbered: true
+  - lv: 01.05.2027. — katrā institūcijā vismaz viens algoritmizēts, auditējams process ar MI atbalstu lēmumos
+    en: 01.05.2027 — at least one algorithmic, auditable AI-supported decision process in every institution
+    numbered: true
+  - lv: 30.06.2027. — MI izmantojami vismaz 50 % institūcijas dokumentu; 100 % jaunradīto vai apstrādāto
+    en: 30.06.2027 — at least 50% of an institution's documents machine-usable; 100% of newly created or processed ones
+    numbered: true
+  - lv: 30.06.2027. — visi iepirkuma līgumi virs Direktīvas 2014/24/ES sliekšņiem mašīnlasāmā standartā
+    en: 30.06.2027 — all procurement contracts above the 2014/24/EU thresholds in a machine-readable standard
+    numbered: true
+  - lv: '30.06.2027. — nacionāls datu katalogs: 5 nozares ar strukturētām datu kopām, 3 starpinstitūciju pilotprojekti'
+    en: '30.06.2027 — national data catalogue: 5 sectors with structured datasets, 3 cross-institutional pilots'
+    numbered: true
+  - lv: 30.06.2027. — MI pārvaldības apmācība obligāta visiem publiskā sektora lēmumu pieņēmējiem, ne tikai IT
+    en: 30.06.2027 — AI governance training mandatory for all public-sector decision-makers, not only IT
+    numbered: true
+  - lv: 30.06.2027. — MI sistēmu reģistrs funkcionāls; augsta riska sistēmas reģistrētas (MI akta 49. un 71. p.)
+    en: 30.06.2027 — AI system register operational; high-risk systems registered (AI Act Arts. 49, 71)
+    numbered: true
+  - lv: 30.06.2027. — regulatīvās “MI Smilškastes” paplašināšana; katrs pierādīts projekts saņem sektora ieviešanas plānu 12 mēnešos
+    en: 30.06.2027 — expand the regulatory sandbox; every proven project gets a sector-wide rollout plan within 12 months
+    numbered: true
+  - lv: 'Uzticamības vārteja: verificēta vismaz vienas citas jurisdikcijas enkurā balstīta aģenta identitāte un pilnvara — termiņš precizējams'
+    en: 'Trust gateway: verify the identity and mandate of at least one agent anchored in another jurisdiction — date TBC'
+  position:
+    lv: Hibrīds, formulēts tieši. Ikdienā izmanto labākos pieejamos ārējos modeļus un sistemātiski uzkrāj no tiem zināšanas; paralēli veido savus rezerves modeļus suverēnai apmācībai, lai kritiskie pakalpojumi darbotos arī tad, ja ārējais piegādātājs kļūst nepieejams. Latviešu valodas tehnoloģijās Latvija ir nodrošinātāja, ne tikai uzturētāja. Zināšanas glabā iestādes, bet apmainās pēc kopīga standarta — federēti, nevis vienā centrālā kaudzē.
+    en: Hybrid, stated outright. Use the best available external models day to day and systematically accumulate knowledge from them; in parallel build own fallback models for sovereign training, so critical services keep working if an external supplier becomes unavailable. In Latvian language technology Latvia is a provider, not only a deployer. Knowledge stays with institutions but is exchanged on a shared standard — federated, not pooled centrally.
+coding:
+  frame: econ
+  diff: std
+  interest: demo
+  ambition: cap
+  fund: un
+  sourcing: hybrid
+  compute: euro
+  lang: natl
+  identity: gw
+  knowledge: fed
+  adopt: mand
+  meas: out
+  eval: cat
+  return: layered
+  intl: std
+  doctype: plan
+  horizon: y5
+  decomp: enab
+  gov: agy
+  reg: sand
+partial:
+  identity:
+    natid: 5
+    pid: 4
+  knowledge:
+    orgkb: 5
+    mrec: 5
+    reuse: 4
+  frame:
+    dep: 4
+    trans: 3
+  diff:
+    lang: 3
+    speed: 3
+  interest:
+    indep: 5
+    comp: 2
+    svc: 3
+  ambition:
+    quant: 3
+  sourcing:
+    brok: 4
+    self: 3
+    bloc: 2
+  compute:
+    nat: 2
+  lang:
+    data: 3
+  adopt:
+    proc: 4
+    plat: 2
+    vou: 2
+  eval:
+    fn: 3
+  intl:
+    bloc: 2
+  meas:
+    trk: 2
+  return:
+    roi: 4
+    roai: 4
+    evc: 3
+low_confidence:
+- compute
+- gov

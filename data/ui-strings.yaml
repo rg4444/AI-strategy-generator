@@ -1,0 +1,102 @@
+version: 1
+strings:
+  lv:
+    title: MI stratēģijas — teksts un konfigurācija
+    sub: Ko dokuments saka · un kādus 15 lēmumus tas pieņem
+    browse: Aplūkot
+    compare: Salīdzināt
+    build: Konfigurēt
+    score: Novērtējums
+    matrix: Matrica
+    mxnote: 'Visas valstis vienlaikus. Katra šūna — vērtējums no 0 līdz 5 attiecīgajā asī. Sarkanie cipari ir nulles: šajā asī dokuments neko neizlemj. Pēdējā rinda — svērtais kopvērtējums pēc svariem, kas iestatīti sadaļā Novērtējums.'
+    yours: Jūsu konfigurācija
+    wt: Svars
+    sv: Vērtējums
+    overall: Kopā
+    stages:
+    - nav
+    - minimāli
+    - daļēji
+    - noteikts
+    - apņemšanās
+    - īstenots
+    sclg: Vērtējums katrā asī = augstākā izvēle tajā asī (0–5). Svarus var mainīt. Kopvērtējums ir svērtais vidējais.
+    gA: A. Stratēģiskie lēmumi
+    gAs: Ko valsts apņemas darīt un būt. Katrā asī iespējamas vairākas izvēles vienlaikus, novērtētas no 1 līdz 5. Zem katras — ko šī izvēle dod un ko tā liedz.
+    gB: B. Forma un pārvaldība
+    gBs: Kāds dokuments tas ir un kas to vada. Šeit izvēle ir viena — dokuments nevar būt divu veidu vienlaikus.
+    gT: Teksts
+    gTs: Citāti no dokumenta. Kodējums zemāk ir šo citātu interpretācija.
+    t0: Nacionālā interese
+    t1: Vīzija
+    t2: Mērķi
+    t3: Attīstība un izmantošana
+    'yes': norādīta
+    'no': nav norādīta
+    part: daļēji
+    novis: Nav atsevišķa vīzijas teikuma
+    undec: nav izlemts
+    inf: secināts
+    cfg: Konfigurācija
+    legend: Iekrāsotās rindas — kur izvēles atšķiras.
+    prog: Izlemtās asis
+    near: Tuvākās valstis
+    fcl: Ko šīs izvēles izslēdz
+    copy: Kopēt
+    load: Ielādēt VARAM projektu
+    copied: Nokopēts
+    gives: Ko iegūst
+    forecl: Ko zaudē
+    chose: Šo izvēlējušās
+    addobj: + mērķis
+    foot: Citāti sniegti publicētajā valodā vai oficiālajā angļu versijā; neoficiāli tulkojumi un ministru paziņojumi atzīmēti pie katra. Asu kodējums ir interpretācija, nevis citāts — daudzas stratēģijas šos lēmumus neizsaka tieši, un tur, kur kodējums ir secinājums, tas atzīmēts. Vērtējumi no 1 līdz 5 un “ko iegūst / ko zaudē” apraksti ir mūsu vērtējums, nevis citāts no dokumenta — tie ir apspriežami un maināmi.
+  en:
+    title: AI strategies — text and configuration
+    sub: What the document says · and which 15 decisions it makes
+    browse: Browse
+    compare: Compare
+    build: Configure
+    score: Scorecard
+    matrix: Matrix
+    mxnote: 'Every country at once. Each cell is a 0–5 score on that axis. Red figures are zeros: the document decides nothing on that axis. The last row is the weighted overall, using the weights set in Scorecard.'
+    yours: Your configuration
+    wt: Weight
+    sv: Score
+    overall: Overall
+    stages:
+    - none
+    - minimal
+    - partial
+    - stated
+    - committed
+    - delivered
+    sclg: Each axis scores as its strongest option (0–5). Weights are editable. The overall is the weighted mean.
+    gA: A. Strategic decisions
+    gAs: 'What the country commits to do and be. Each axis can hold several choices at once, scored 1 to 5. Under each: what it gains you and what it costs.'
+    gB: B. Form and governance
+    gBs: What kind of document it is and who runs it. One choice each — a document cannot be two types at once.
+    gT: Text
+    gTs: Quotes from the document. The coding below is an interpretation of these.
+    t0: National interest
+    t1: Vision
+    t2: Objectives
+    t3: Development & use
+    'yes': stated
+    'no': not stated
+    part: partial
+    novis: No single vision sentence
+    undec: not decided
+    inf: inferred
+    cfg: Configuration
+    legend: Shaded rows are where the choices differ.
+    prog: Axes decided
+    near: Nearest countries
+    fcl: What these choices foreclose
+    copy: Copy
+    load: Load the VARAM draft
+    copied: Copied
+    gives: What you gain
+    forecl: What you give up
+    chose: Chosen by
+    addobj: + objective
+    foot: Quotes are given in the published language or the official English version; unofficial translations and ministerial statements are flagged individually. Axis codings are interpretation, not quotation — many strategies never state these decisions, and inferred codings are marked. The 1–5 scores and the gain/cost notes are our assessment, not quotations — they are open to argument and revision.

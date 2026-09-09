@@ -1,0 +1,54 @@
+id: SI
+name:
+  lv: Slovēnija
+  en: Slovenia
+documents: NpUI — National Programme for AI to 2025
+text:
+  interest:
+    status: part
+    text:
+      lv: Nacionālā interese saistīta ar 40 gadu pētniecības mantojuma izmantošanu.
+      en: Interest tied to leveraging a 40-year research legacy.
+  vision:
+    quote: Upgrade more than 40 years of research achievements in the field of AI in Slovenia and become internationally recognised for the competences of knowledge transfer of high-quality, ethical and safe AI technologies.
+  objectives:
+  - lv: 110 miljoni eiro publiskā finansējuma līdz 2025. gadam
+    en: €110 million of public funding to 2025
+    numbered: true
+  - lv: 10 stratēģiskie mērķi sešās prioritārajās jomās
+    en: 10 strategic objectives across six priority areas
+    numbered: true
+  position:
+    lv: Abi, balstoties uz esošo pētniecības kapacitāti. Slovēņu valodas tehnoloģijas pret digitālo marginalizāciju.
+    en: Both, leaning on existing research capacity. Slovenian language technology against digital marginalisation.
+coding:
+  frame: econ
+  diff: res
+  interest: comp
+  ambition: cap
+  fund: line
+  sourcing: dec
+  compute: euro
+  lang: natl
+  identity: pid
+  knowledge: reuse
+  adopt: vol
+  meas: out
+  eval: none
+  return: null
+  intl: std
+  doctype: plan
+  horizon: y5
+  decomp: enab
+  gov: min
+  reg: eu
+partial:
+  frame:
+    risk: 2
+  diff:
+    lang: 4
+  interest:
+    indep: 2
+low_confidence:
+- sourcing
+- adopt

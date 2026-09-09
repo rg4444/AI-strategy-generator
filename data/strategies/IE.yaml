@@ -1,0 +1,52 @@
+id: IE
+name:
+  lv: Īrija
+  en: Ireland
+documents: AI — Here for Good (2021, atjaunināta 2024)
+text:
+  interest:
+    status: 'no'
+    text:
+      lv: Nav eksistenciālas nacionālās intereses. Ietvars ir konkurētspēja un produktivitāte.
+      en: No existential national interest. The framing is competitiveness and productivity.
+  vision:
+    quote: Ireland will be an international leader in using AI to the benefit of our population, through a people-centred, ethical approach to AI development, adoption and use.
+  objectives:
+  - lv: '75 % uzņēmumu izmanto MI līdz 2030. gadam (2024. gada bāze: ~15 %)'
+    en: '75% of enterprises using AI by 2030 (2024 baseline: ~15%)'
+    numbered: true
+  - lv: Pārējie mērķi kvalitatīvi
+    en: Remaining objectives qualitative
+  position:
+    lv: Lietojums. Īrija pozicionējas kā mājvieta globāliem MI uzņēmumiem, ne kā suverēna modeļu veidotāja.
+    en: Use. Ireland positions as a host for global AI firms, not a sovereign model-builder.
+coding:
+  frame: econ
+  diff: mkt
+  interest: comp
+  ambition: quant
+  fund: un
+  sourcing: dec
+  compute: euro
+  lang: none
+  identity: pid
+  knowledge: docs
+  adopt: vol
+  meas: out
+  eval: none
+  return: null
+  intl: fol
+  doctype: vision
+  horizon: none
+  decomp: enab
+  gov: min
+  reg: eu
+partial:
+  frame:
+    trans: 2
+  diff:
+    trust: 4
+  compute:
+    cloud: 4
+low_confidence:
+- sourcing

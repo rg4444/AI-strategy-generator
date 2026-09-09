@@ -1,0 +1,56 @@
+id: FI
+name:
+  lv: Somija
+  en: Finland
+documents: Finland's Age of AI (2017) · AI 4.0 · Digital Compass 2030
+text:
+  interest:
+    status: part
+    text:
+      lv: “Somijai ir lieliskas iespējas būt starp šīs pārmaiņas uzvarētājiem.” Iespēja, ne draudi.
+      en: “Finland has excellent opportunities to be among the winners in this transformation.” Opportunity, not threat.
+  vision:
+    quote: ''
+    note:
+      lv: 'Nav atsevišķa vīzijas teikuma. Apakšvirsraksts: “Turning Finland into a leading country in the application of artificial intelligence.”'
+      en: 'No single vision sentence. Subtitle: “Turning Finland into a leading country in the application of artificial intelligence.”'
+  objectives:
+  - lv: Astoņas galvenās darbības, bez skaitliskiem nacionāliem mērķiem
+    en: Eight key actions; no numeric national targets
+  - lv: 250 miljoni eiro HPC finansējumam (2024)
+    en: €250 million HPC commitment (2024)
+    numbered: true
+  position:
+    lv: Lietojums. Stratēģijas apakšvirsraksts runā par “application”, ne izstrādi.
+    en: Use. The subtitle says application, not development.
+coding:
+  frame: econ
+  diff: none
+  interest: comp
+  ambition: cap
+  fund: line
+  sourcing: dec
+  compute: euro
+  lang: data
+  identity: pid
+  knowledge: mrec
+  adopt: vol
+  meas: act
+  eval: none
+  return: null
+  intl: fol
+  doctype: vision
+  horizon: none
+  decomp: enab
+  gov: min
+  reg: eu
+partial:
+  frame:
+    trans: 2
+  sourcing:
+    self: 2
+  compute:
+    cloud: 2
+low_confidence:
+- sourcing
+- lang

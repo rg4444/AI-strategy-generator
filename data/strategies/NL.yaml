@@ -1,0 +1,56 @@
+id: NL
+name:
+  lv: Nīderlande
+  en: Netherlands
+documents: SAPAI (2019) · Generative AI vision (2024)
+text:
+  interest:
+    status: 'no'
+    text:
+      lv: 'Iespēju ietvars: MI kā “atslēgas tehnoloģija sabiedriskajām un ekonomiskajām iespējām”.'
+      en: 'Opportunity framing: AI as “the key technology for societal and economic opportunities.”'
+  vision:
+    quote: ''
+    note:
+      lv: Nav atsevišķa vīzijas teikuma; mērķis — kļūt par “nozīmīgu spēlētāju MI jomā”.
+      en: No single vision sentence; the aspiration is to become “a major player in the field of artificial intelligence.”
+  objectives:
+  - lv: Trīs pīlāri, bez galvenā skaitliskā mērķa
+    en: Three pillars, no headline numeric target
+  position:
+    lv: Abi, ar uzsvaru uz ieviešanu. GPT-NL kā suverēna valodas modeļa iniciatīva.
+    en: Both, adoption-weighted. GPT-NL as the sovereign language-model effort.
+coding:
+  frame: econ
+  diff: mkt
+  interest: comp
+  ambition: cap
+  fund: line
+  sourcing: self
+  compute: cloud
+  lang: natl
+  identity: pid
+  knowledge: mrec
+  adopt: vol
+  meas: act
+  eval: none
+  return: null
+  intl: fol
+  doctype: plan
+  horizon: none
+  decomp: enab
+  gov: min
+  reg: eu
+partial:
+  knowledge:
+    docs: 3
+  frame:
+    risk: 3
+  diff:
+    lang: 3
+  sourcing:
+    dec: 3
+low_confidence:
+- diff
+- compute
+- adopt

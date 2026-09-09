@@ -1,0 +1,69 @@
+id: LV26
+name:
+  lv: Latvija — VARAM projekts
+  en: Latvia — VARAM draft
+latvian: true
+documents: MI plāna stratēģiskais kartējums (2026)
+note:
+  lv: 'Brokeris, EuroHPC antena, valodas modelis, smilškaste un katalogs jau ir dokumentā — tikai bez definīcijas. Tukšas ir sešas asis: MI ietvars, nacionālā interese, ambīcija, konkurences priekšrocība, finansējums, mērīšana. Tās visas ir viena rindkopa katra.'
+  en: 'Broker, EuroHPC antenna, language model, sandbox and catalogue are already in the document — just undefined. Six axes are empty: AI framing, national interest, ambition, differentiator, funding, measurement. Each is one paragraph.'
+text:
+  interest:
+    status: 'no'
+    text:
+      lv: “Latvijai ir spēcīgi digitālās pārvaldes pamati, bet MI attīstība un ieviešana ir fragmentēta.” Tas ir koordinācijas trūkums, nevis nacionālā interese — teikuma subjekts ir pati programma, ne valsts. Vārdi “neatkarība”, “suverenitāte”, “demogrāfija” dokumentā neparādās.
+      en: “Latvia has strong digital government foundations, but AI development and deployment is fragmented.” A coordination failure, not a national interest — the subject is the programme, not the country. The words independence, sovereignty and demography never appear.
+  vision:
+    quote: Nostiprināt Latviju kā Ziemeļeiropas un Baltijas reģionā atpazīstamu valsti, kas mērķtiecīgi, droši un atbildīgi izmanto MI.
+    note:
+      lv: Vienīgā vīzija kopā, kuras gala stāvoklis ir reputācija (“atpazīstamu valsti”), nevis spēja. Kopīgais nacionālais mērķis virs tās aptver četrus darbības vārdus četrās jomās.
+      en: The only vision in the set whose end state is a reputation rather than a capability. The national goal above it spans four verbs across four domains.
+  objectives:
+  - lv: Produktivitāte — “īsāks procesu laiks”
+    en: Productivity — “shorter process times”
+  - lv: Pakalpojumu kvalitāte — “pieejamāki, proaktīvāki”
+    en: Service quality — “more accessible, more proactive”
+  - lv: Inovācija — “vairāk pilotu”
+    en: Innovation — “more pilots”
+  - lv: Konkurētspēja — “spēcīgāki talanti”
+    en: Competitiveness — “stronger talent”
+  position:
+    lv: 'Netieši: lietojums pirmajā vietā ar valodas modeļa izņēmumu — tieši Igaunijas nostāja, tikai neizteikta. Darbības vārds abās virsrakstu rindās ir “izmanto”.'
+    en: 'Implicit: use-first with a language-model exception — precisely Estonia''s posture, but unstated. The operative verb in both headline boxes is “uses.”'
+coding:
+  frame: tool
+  diff: none
+  interest: none
+  ambition: reput
+  fund: un
+  sourcing: brok
+  compute: euro
+  lang: natl
+  identity: pilot
+  knowledge: mrec
+  adopt: vou
+  meas: none
+  eval: cat
+  return: null
+  intl: fol
+  doctype: plan
+  horizon: y5
+  decomp: matrix
+  gov: min
+  reg: sand
+partial:
+  identity:
+    pid: 4
+  knowledge:
+    reuse: 2
+    docs: 3
+  frame:
+    econ: 2
+  interest:
+    comp: 2
+  sourcing:
+    dec: 2
+  adopt:
+    plat: 2
+  ambition:
+    cap: 2

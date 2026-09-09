@@ -1,0 +1,68 @@
+id: LT
+name:
+  lv: Lietuva
+  en: Lithuania
+documents: National AI Strategic Guidelines 2026–2035
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: “LitAI nostiprinās Lietuvas tehnoloģisko neatkarību un nacionālo drošību — mūsu dati un MI risinājumi tiks radīti un apstrādāti šeit, Lietuvā.”
+      en: “LitAI will reinforce Lithuania's technological independence and national security — our data and AI solutions will be created and processed here, in Lithuania.”
+    source: Vice-Minister Paulius Petrauskas, 2025
+  vision:
+    quote: Lithuania would become not only a user but also a developer and exporter of advanced AI solutions.
+    note:
+      lv: Formulējums no ES Digital Skills & Jobs Platform kopsavilkuma; oriģinālvalodas teksts nav pārbaudīts.
+      en: As rendered on the EU Digital Skills & Jobs Platform; original-language wording unverified.
+  objectives:
+  - lv: ≈10,1 miljardi eiro pievienotās vērtības desmit gados
+    en: ≈€10.1 billion in added value over a decade
+    numbered: true
+  - lv: LitAI MI rūpnīca — 130 miljoni eiro, ~90 no ES
+    en: LitAI AI factory — €130 million, ~€90m EU co-funded
+    numbered: true
+  - lv: 'MI lietojums uzņēmumos: 4,9 % (2023) → 8,8 % (2024)'
+    en: 'Company AI use: 4.9% (2023) → 8.8% (2024)'
+    numbered: true
+  position:
+    lv: 'Skaidri formulēta abpusēja nostāja: gan lietotāja, gan izstrādātāja un eksportētāja.'
+    en: 'Explicitly both: user, developer and exporter.'
+coding:
+  frame: dep
+  diff: none
+  interest: indep
+  ambition: quant
+  fund: fund
+  sourcing: self
+  compute: nat
+  lang: data
+  identity: pid
+  knowledge: mrec
+  adopt: vol
+  meas: act
+  eval: none
+  return: null
+  intl: fol
+  doctype: plan
+  horizon: y10
+  decomp: enab
+  gov: min
+  reg: eu
+partial:
+  knowledge:
+    docs: 3
+  frame:
+    econ: 4
+  diff:
+    compute: 3
+  sourcing:
+    bloc: 2
+  interest:
+    comp: 3
+low_confidence:
+- diff
+- sourcing
+- lang
+- adopt
+- eval

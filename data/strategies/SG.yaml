@@ -1,0 +1,65 @@
+id: SG
+name:
+  lv: Singapūra
+  en: Singapore
+documents: National AI Strategy 2.0 (2023) · NAIS Update (2026)
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: “MI ir stratēģiski svarīgs… Mums tas jāapgūst, lai pārvarētu darbaspēka un produktivitātes izaicinājumus.”
+      en: “AI is strategically important… We must master AI to overcome our labour and productivity challenges.”
+  vision:
+    quote: AI for the Public Good, for Singapore and the World.
+  objectives:
+  - lv: Vairāk nekā 1 miljards SGD piecos gados, tostarp 500 miljoni jaudai
+    en: Over S$1 billion over five years, including S$500m for compute
+    numbered: true
+  - lv: Vēl vairāk nekā 1 miljards SGD publiskajai MI pētniecībai 2025–2030
+    en: A further S$1bn+ for public AI R&D, 2025–2030
+    numbered: true
+  - lv: 'Pair: ~80 % no 150 000 ierēdņu; AIBots: 115 iestādes'
+    en: 'Pair: ~80% of 150,000 officers; AIBots: 115 agencies'
+    numbered: true
+  position:
+    lv: 'Abi, izlases veidā: “selectively develop peaks of excellence”. Eksportē uzticēšanās rīkus (AI Verify).'
+    en: 'Both, selectively: “selectively develop peaks of excellence.” Exports trust tooling (AI Verify).'
+coding:
+  frame: trans
+  diff: std
+  interest: svc
+  ambition: cap
+  fund: fund
+  sourcing: brok
+  compute: nat
+  lang: none
+  identity: pid
+  knowledge: orgkb
+  adopt: plat
+  meas: out
+  eval: cat
+  return: null
+  intl: std
+  doctype: plan
+  horizon: r3
+  decomp: miss
+  gov: coun
+  reg: soft
+partial:
+  identity:
+    policy: 2
+  knowledge:
+    reuse: 4
+    mrec: 3
+  frame:
+    econ: 4
+  diff:
+    speed: 5
+  sourcing:
+    self: 3
+  meas:
+    trk: 3
+  eval:
+    fn: 3
+low_confidence:
+- eval

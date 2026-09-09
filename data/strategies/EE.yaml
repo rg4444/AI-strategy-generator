@@ -1,0 +1,71 @@
+id: EE
+name:
+  lv: Igaunija
+  en: Estonia
+documents: Kratt 2024–2026 · Data & AI White Paper 2024–2030 · Eesti.ai
+text:
+  interest:
+    status: 'no'
+    text:
+      lv: Nav norādīta atsevišķa nacionālā interese. MI pasniegts kā digitālās valsts turpinājums, nevis atbilde uz draudu.
+      en: No distinct national interest stated. AI is framed as a continuation of the digital state, not a response to a threat.
+  vision:
+    quote: Help Estonia become the world's smartest nation.
+    note:
+      lv: Prezidenta Alara Karisa formulējums “AI Leap” kontekstā, nevis stratēģijas teksts. Baltā grāmata paredz “AI-powered state” līdz 2030.
+      en: President Karis's framing for AI Leap, not strategy text. The White Paper targets an “AI-powered state” by 2030.
+  objectives:
+  - lv: 'AI Leap: 20 000 skolēnu un ~3 000 pedagogu (2025. g. septembris)'
+    en: 'AI Leap: 20,000 students and ~3,000 teachers (September 2025)'
+    numbered: true
+  - lv: 'Paplašinājums 2026. gadā: vēl ~38 000 skolēnu'
+    en: '2026 expansion: ~38,000 further students'
+    numbered: true
+  - lv: ~85 miljoni eiro rīcības plāna finansējumā
+    en: ~€85 million action-plan funding
+    numbered: true
+  position:
+    lv: Ieviešana pirmajā vietā, ar valodas tehnoloģiju izņēmumu. Vienīgā valsts, kas 2026. gada jūnijā sākusi darbu pie MI aģentu identitātēm.
+    en: Adoption-first with a language-technology carve-out. The only state working on AI agent identities (June 2026).
+coding:
+  frame: trans
+  diff: std
+  interest: none
+  ambition: cap
+  fund: line
+  sourcing: brok
+  compute: euro
+  lang: natl
+  identity: natid
+  knowledge: reuse
+  adopt: plat
+  meas: act
+  eval: none
+  return: null
+  intl: std
+  doctype: rolling
+  horizon: r3
+  decomp: enab
+  gov: coun
+  reg: sand
+partial:
+  identity:
+    gw: 3
+    pid: 4
+  knowledge:
+    mrec: 4
+    orgkb: 2
+  frame:
+    econ: 3
+  diff:
+    speed: 4
+  sourcing:
+    dec: 3
+  adopt:
+    vol: 2
+  intl:
+    bloc: 2
+low_confidence:
+- sourcing
+- meas
+- eval

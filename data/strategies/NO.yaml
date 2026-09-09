@@ -1,0 +1,53 @@
+id: 'NO'
+name:
+  lv: Norvēģija
+  en: Norway
+documents: National Strategy for Artificial Intelligence (2020)
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: 'Uzticēšanās kā konkurences priekšrocība: sabiedrību raksturo uzticēšanās un pamattiesību ievērošana, un tas “var kļūt par būtisku priekšrocību globālajā konkurencē”.'
+      en: 'Trust as competitive advantage: society is “characterised by trust and respect for fundamental values,” which “can become a key advantage in today''s global competition.”'
+  vision:
+    quote: The Government wants Norway to lead the way in developing and using AI with respect for individual rights and freedoms.
+  objectives:
+  - lv: 2020. gada stratēģija kvalitatīva
+    en: 2020 strategy qualitative
+  - lv: '2030: visas valsts iestādes izmanto MI (2025. gadā — 43 %)'
+    en: '2030: all government agencies use AI (43% in 2025)'
+    numbered: true
+  position:
+    lv: Lietojums. Fokuss uz nozarēm, kurās Norvēģijai ir priekšrocība.
+    en: Use. Focused on sectors of national advantage.
+coding:
+  frame: risk
+  diff: trust
+  interest: trust
+  ambition: cap
+  fund: un
+  sourcing: dec
+  compute: euro
+  lang: data
+  identity: pid
+  knowledge: mrec
+  adopt: vol
+  meas: out
+  eval: none
+  return: null
+  intl: fol
+  doctype: vision
+  horizon: none
+  decomp: matrix
+  gov: min
+  reg: soft
+partial:
+  frame:
+    econ: 2
+  interest:
+    comp: 3
+  meas:
+    act: 3
+low_confidence:
+- sourcing
+- decomp

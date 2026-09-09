@@ -1,0 +1,54 @@
+id: CZ
+name:
+  lv: Čehija
+  en: Czechia
+documents: National AI Strategy 2030 (NAIS, 2024)
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: Nacionālā interese — kļūt par radītāju, ne atkarīgu lietotāju.
+      en: Interest = becoming a creator rather than a dependent user.
+  vision:
+    quote: The Czech Republic should be not only a user but also a creator of advanced artificial intelligence technologies.
+    note:
+      lv: Ministra Jozefa Sīkelas formulējums stratēģijas apstiprināšanas brīdī (2024. g. jūlijs).
+      en: Minister Jozef Síkela's formulation at the strategy's approval (July 2024).
+  objectives:
+  - lv: ≈19 miljardi CZK septiņās prioritārajās jomās (2025. gada rīcības plāns)
+    en: ≈CZK 19 billion across seven priority areas (2025 action plan)
+    numbered: true
+  position:
+    lv: Skaidri formulēts “ne tikai lietotājs, bet arī radītājs”.
+    en: Explicit “not only a user but also a creator.”
+coding:
+  frame: econ
+  diff: none
+  interest: indep
+  ambition: cap
+  fund: line
+  sourcing: dec
+  compute: euro
+  lang: none
+  identity: pid
+  knowledge: docs
+  adopt: vou
+  meas: act
+  eval: none
+  return: null
+  intl: fol
+  doctype: plan
+  horizon: y5
+  decomp: enab
+  gov: min
+  reg: eu
+partial:
+  frame:
+    dep: 3
+  diff:
+    res: 2
+  interest:
+    comp: 3
+low_confidence:
+- sourcing
+- adopt

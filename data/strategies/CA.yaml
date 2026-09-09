@@ -1,0 +1,54 @@
+id: CA
+name:
+  lv: Kanāda
+  en: Canada
+documents: Canadian Sovereign AI Compute Strategy (2024)
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: “Aizsargāt Kanādas digitālo suverenitāti… paturot Kanādas pētniecību ārpus ārvalstu mākoņiem un Kanādas rokās.”
+      en: “Protect Canada's digital sovereignty… keeping Canadian research off foreign clouds and in Canadian hands.”
+  vision:
+    quote: To position Canada as a global leader in AI, support and protect Canadian research and enable scientific and industrial breakthroughs.
+  objectives:
+  - lv: 2 miljardi CAD piecos gados
+    en: CAD $2 billion over five years
+    numbered: true
+  - lv: Līdz 1 miljardam publiskajai superskaitļošanai; 300 miljoni MVU piekļuvei
+    en: Up to $1bn public supercomputing; $300m SME access fund
+    numbered: true
+  position:
+    lv: Suverēna veidošana skaitļošanas jaudā plus komercializācija.
+    en: Sovereign build on compute, plus commercialisation.
+coding:
+  frame: dep
+  diff: compute
+  interest: indep
+  ambition: quant
+  fund: fund
+  sourcing: self
+  compute: nat
+  lang: none
+  identity: policy
+  knowledge: docs
+  adopt: vol
+  meas: act
+  eval: none
+  return: null
+  intl: bil
+  doctype: plan
+  horizon: y5
+  decomp: enab
+  gov: min
+  reg: soft
+partial:
+  frame:
+    behind: 3
+  diff:
+    res: 3
+  interest:
+    comp: 2
+low_confidence:
+- sourcing
+- adopt

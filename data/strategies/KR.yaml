@@ -1,0 +1,62 @@
+id: KR
+name:
+  lv: Dienvidkoreja
+  en: South Korea
+documents: AI Basic Act (2024/26) · sovereign AI programme
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: 'Suverenitāte: spēja kontrolēt visu MI vērtību ķēdi — no pusvadītājiem līdz izvietošanai.'
+      en: 'Sovereignty: capability across the entire AI value chain, from semiconductors to deployment.'
+  vision:
+    quote: One of the world's top three AI powerhouses.
+  objectives:
+  - lv: 100 triljoni KRW (≈74 miljardi USD) MI fondam
+    en: KRW 100 trillion (≈US$74 billion) AI fund
+    numbered: true
+  - lv: 4 triljoni KRW nacionālajam MI skaitļošanas centram līdz 2030
+    en: KRW 4 trillion for a National AI Computing Centre through 2030
+    numbered: true
+  - lv: No 6.–7. vietas uz 3. Stanford globālajā indeksā
+    en: From 6th–7th to 3rd on the Stanford global index
+    numbered: true
+  position:
+    lv: Pilna kaudze. Pieci vietējie pamatmodeļu konsorciji.
+    en: Full-stack build. Five domestic foundation-model consortia.
+coding:
+  frame: dep
+  diff: cap
+  interest: indep
+  ambition: quant
+  fund: fund
+  sourcing: natl
+  compute: nat
+  lang: natl
+  identity: pid
+  knowledge: mrec
+  adopt: mand
+  meas: out
+  eval: none
+  return: null
+  intl: std
+  doctype: statute
+  horizon: stat
+  decomp: enab
+  gov: stat
+  reg: stat
+partial:
+  knowledge:
+    reuse: 2
+  frame:
+    behind: 3
+    trans: 3
+  diff:
+    compute: 4
+  sourcing:
+    self: 4
+  interest:
+    comp: 3
+low_confidence:
+- adopt
+- eval

@@ -1,0 +1,65 @@
+id: UK
+name:
+  lv: Apvienotā Karaliste
+  en: United Kingdom
+documents: AI Opportunities Action Plan (2025)
+text:
+  interest:
+    status: 'yes'
+    text:
+      lv: “Apvienotā Karaliste riskē atpalikt no MI sasniegumiem ASV un Ķīnā.”
+      en: “The UK risks falling behind the advances in Artificial Intelligence made in the USA and China.”
+  vision:
+    quote: Be an AI maker, not an AI taker.
+  objectives:
+  - lv: Skaitļošanas jauda ×20 līdz 2030 (2 → 21 → 420 ExaFLOP)
+    en: Compute ×20 by 2030 (2 → 21 → 420 ExaFLOPs)
+    numbered: true
+  - lv: 10 miljoni cilvēku apmācīti līdz 2030
+    en: 10 million workers upskilled by 2030
+    numbered: true
+  - lv: 14 miljardi mārciņu un 13 250 darbvietu izsludināšanas brīdī
+    en: £14 billion and 13,250 jobs committed at launch
+    numbered: true
+  position:
+    lv: Abi, ar uzsvaru uz infrastruktūras veidošanu. Publisks izpildes izsekotājs.
+    en: Both, build-leaning on infrastructure. Public delivery tracker.
+coding:
+  frame: behind
+  diff: compute
+  interest: behind
+  ambition: quant
+  fund: fund
+  sourcing: brok
+  compute: nat
+  lang: none
+  identity: policy
+  knowledge: orgkb
+  adopt: plat
+  meas: trk
+  eval: ww
+  return: null
+  intl: bil
+  doctype: plan
+  horizon: r3
+  decomp: enab
+  gov: agy
+  reg: soft
+partial:
+  identity:
+    pid: 2
+  knowledge:
+    reuse: 2
+    mrec: 3
+  frame:
+    dep: 3
+    trans: 3
+  diff:
+    std: 2
+    cap: 3
+  sourcing:
+    self: 3
+  interest:
+    indep: 4
+low_confidence:
+- sourcing

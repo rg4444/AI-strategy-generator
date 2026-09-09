@@ -1,0 +1,63 @@
+id: DK
+name:
+  lv: Dānija
+  en: Denmark
+documents: Digitalisation strategy 2024–2027 · Strategic Approach to AI (2024)
+text:
+  interest:
+    status: 'no'
+    text:
+      lv: Nav formulēta atsevišķa nacionālā interese. Trīs vadošie principi, ne viens “kāpēc”.
+      en: No distinct national interest. Three guiding principles rather than one “why”.
+  vision:
+    quote: ''
+    note:
+      lv: Nav atsevišķa MI vīzijas teikuma — MI ietverts plašākā digitalizācijas stratēģijā.
+      en: No standalone AI vision sentence; AI sits inside the wider digitalisation strategy.
+  objectives:
+  - lv: 800 miljoni DKK, 25 iniciatīvas
+    en: DKK 800 million across 25 initiatives
+    numbered: true
+  - lv: 55 miljoni DKK MI, tostarp 17 miljoni smilškastei
+    en: DKK 55m for AI, including DKK 17m for a sandbox
+    numbered: true
+  - lv: 'Gefion: 1 528 NVIDIA H100 GPU, 95 miljoni eiro (85 % privāts fonds)'
+    en: 'Gefion: 1,528 NVIDIA H100 GPUs, €95m (85% private foundation)'
+    numbered: true
+  position:
+    lv: Ieviešana pirmajā vietā plus suverēna jauda caur publiskās un privātās partnerības sabiedrību.
+    en: Adoption-first plus sovereign compute through a public-private vehicle.
+coding:
+  frame: tool
+  diff: speed
+  interest: none
+  ambition: cap
+  fund: ppp
+  sourcing: dec
+  compute: ppp
+  lang: none
+  identity: pid
+  knowledge: mrec
+  adopt: vol
+  meas: act
+  eval: none
+  return: null
+  intl: fol
+  doctype: plan
+  horizon: y5
+  decomp: enab
+  gov: agy
+  reg: sand
+partial:
+  frame:
+    econ: 4
+  diff:
+    trust: 3
+  fund:
+    line: 3
+  sourcing:
+    cloud: 2
+low_confidence:
+- diff
+- sourcing
+- adopt

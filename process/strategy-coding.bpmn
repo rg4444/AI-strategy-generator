@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="aiStrategyCodingDefs"
+                  targetNamespace="https://github.com/rg4444/AI-strategy-generator">
+  <bpmn:process id="strategyCoding" name="Code and score an AI strategy on the decision axes" isExecutable="false">
+    <bpmn:documentation>Reference process for producing one data/strategies/&lt;id&gt;.yaml entry (or an
+organisation's own strategy in the generator's Configure view). The same axes and
+scoring apply to a national strategy and to an organisation's strategy; only the
+source documents and the reading of "national interest" change. See METHOD.md.</bpmn:documentation>
+
+    <bpmn:laneSet id="lanes">
+      <bpmn:lane id="laneAnalyst" name="Analyst (codes)">
+        <bpmn:flowNodeRef>start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>collectSources</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>textLayer</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>codeAxes</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>scoreStrategy</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="laneReviewer" name="Reviewer (challenges)">
+        <bpmn:flowNodeRef>review</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>gwAccepted</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>publish</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>end</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+
+    <bpmn:startEvent id="start" name="Strategy document(s) selected">
+      <bpmn:outgoing>f1</bpmn:outgoing>
+    </bpmn:startEvent>
+
+    <bpmn:userTask id="collectSources" name="Collect sources: strategy text, action plan, statute, official statements">
+      <bpmn:documentation>Record in `documents`. Only published, citable documents count; interviews and
+press framing may be noted as `interest.source` but do not by themselves code an axis.</bpmn:documentation>
+      <bpmn:incoming>f1</bpmn:incoming>
+      <bpmn:outgoing>f2</bpmn:outgoing>
+    </bpmn:userTask>
+
+    <bpmn:userTask id="textLayer" name="Write the text layer: national interest, vision quote, objectives, position">
+      <bpmn:documentation>`text.interest.status` is yes / part / no. `text.vision.quote` is verbatim or empty.
+`text.objectives` are the document's own list, numbered if the document numbers them.
+`text.position` is the analyst's one-paragraph reading.</bpmn:documentation>
+      <bpmn:incoming>f2</bpmn:incoming>
+      <bpmn:outgoing>f3</bpmn:outgoing>
+    </bpmn:userTask>
+
+    <bpmn:subProcess id="codeAxes" name="Code every axis">
+      <bpmn:documentation>Multi-instance over the axes in data/axes.yaml (20 at v1). One primary option per
+axis, or null when the document decides nothing. Optional partials for a second
+option the document leans to. Flag low confidence where the reading rests on inference.</bpmn:documentation>
+      <bpmn:incoming>f3</bpmn:incoming>
+      <bpmn:outgoing>f4</bpmn:outgoing>
+      <bpmn:multiInstanceLoopCharacteristics isSequential="false">
+        <bpmn:loopCardinality>20</bpmn:loopCardinality>
+      </bpmn:multiInstanceLoopCharacteristics>
+      <bpmn:startEvent id="axStart"><bpmn:outgoing>a1</bpmn:outgoing></bpmn:startEvent>
+      <bpmn:userTask id="readOptions" name="Read the axis method note and its options (gives / forecloses)">
+        <bpmn:incoming>a1</bpmn:incoming><bpmn:outgoing>a2</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:userTask id="findEvidence" name="Find the passage(s) that commit the document on this axis">
+        <bpmn:incoming>a2</bpmn:incoming><bpmn:outgoing>a3</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:exclusiveGateway id="gwDecides" name="Does the document decide?">
+        <bpmn:incoming>a3</bpmn:incoming><bpmn:outgoing>a4yes</bpmn:outgoing><bpmn:outgoing>a4no</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:userTask id="setPrimary" name="Set coding[axis] = option key; add partial[axis][key] = 1–4 for a secondary lean">
+        <bpmn:incoming>a4yes</bpmn:incoming><bpmn:outgoing>a5</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:userTask id="setNull" name="Set coding[axis] = null (undecided); score is 0, not a judgement">
+        <bpmn:incoming>a4no</bpmn:incoming><bpmn:outgoing>a6</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:exclusiveGateway id="gwJoin"><bpmn:incoming>a5</bpmn:incoming><bpmn:incoming>a6</bpmn:incoming><bpmn:outgoing>a7</bpmn:outgoing></bpmn:exclusiveGateway>
+      <bpmn:userTask id="flagConfidence" name="If the reading rests on inference, add axis to low_confidence">
+        <bpmn:incoming>a7</bpmn:incoming><bpmn:outgoing>a8</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:endEvent id="axEnd"><bpmn:incoming>a8</bpmn:incoming></bpmn:endEvent>
+      <bpmn:sequenceFlow id="a1" sourceRef="axStart" targetRef="readOptions"/>
+      <bpmn:sequenceFlow id="a2" sourceRef="readOptions" targetRef="findEvidence"/>
+      <bpmn:sequenceFlow id="a3" sourceRef="findEvidence" targetRef="gwDecides"/>
+      <bpmn:sequenceFlow id="a4yes" name="yes" sourceRef="gwDecides" targetRef="setPrimary"/>
+      <bpmn:sequenceFlow id="a4no" name="no" sourceRef="gwDecides" targetRef="setNull"/>
+      <bpmn:sequenceFlow id="a5" sourceRef="setPrimary" targetRef="gwJoin"/>
+      <bpmn:sequenceFlow id="a6" sourceRef="setNull" targetRef="gwJoin"/>
+      <bpmn:sequenceFlow id="a7" sourceRef="gwJoin" targetRef="flagConfidence"/>
+      <bpmn:sequenceFlow id="a8" sourceRef="flagConfidence" targetRef="axEnd"/>
+    </bpmn:subProcess>
+
+    <bpmn:businessRuleTask id="scoreStrategy" name="Score: decision/scoring.dmn (axis scores + weighted overall)">
+      <bpmn:documentation>Executed by decision/scoring.dmn or, equivalently, tools/score.py. Weights come from
+data/weights.yaml unless the reader overrides them in the generator's Score view.</bpmn:documentation>
+      <bpmn:incoming>f4</bpmn:incoming>
+      <bpmn:outgoing>f5</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+
+    <bpmn:userTask id="review" name="Review: challenge each coded option against the cited passage">
+      <bpmn:documentation>A second reader checks that every primary coding is supported by text the document
+actually contains, that null is used where nothing is decided, and that low_confidence
+flags are neither missing nor used to hedge a coding that is in fact clear.</bpmn:documentation>
+      <bpmn:incoming>f5</bpmn:incoming>
+      <bpmn:outgoing>f6</bpmn:outgoing>
+    </bpmn:userTask>
+
+    <bpmn:exclusiveGateway id="gwAccepted" name="Accepted?">
+      <bpmn:incoming>f6</bpmn:incoming>
+      <bpmn:outgoing>f7yes</bpmn:outgoing>
+      <bpmn:outgoing>f7no</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+
+    <bpmn:serviceTask id="publish" name="Publish: commit YAML, run tools/build.py, deploy dist/sg-data.js">
+      <bpmn:incoming>f7yes</bpmn:incoming>
+      <bpmn:outgoing>f8</bpmn:outgoing>
+    </bpmn:serviceTask>
+
+    <bpmn:endEvent id="end" name="Strategy comparable">
+      <bpmn:incoming>f8</bpmn:incoming>
+    </bpmn:endEvent>
+
+    <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="collectSources"/>
+    <bpmn:sequenceFlow id="f2" sourceRef="collectSources" targetRef="textLayer"/>
+    <bpmn:sequenceFlow id="f3" sourceRef="textLayer" targetRef="codeAxes"/>
+    <bpmn:sequenceFlow id="f4" sourceRef="codeAxes" targetRef="scoreStrategy"/>
+    <bpmn:sequenceFlow id="f5" sourceRef="scoreStrategy" targetRef="review"/>
+    <bpmn:sequenceFlow id="f6" sourceRef="review" targetRef="gwAccepted"/>
+    <bpmn:sequenceFlow id="f7yes" name="yes" sourceRef="gwAccepted" targetRef="publish"/>
+    <bpmn:sequenceFlow id="f7no" name="no — return to coding" sourceRef="gwAccepted" targetRef="codeAxes"/>
+    <bpmn:sequenceFlow id="f8" sourceRef="publish" targetRef="end"/>
+  </bpmn:process>
+
+  <bpmndi:BPMNDiagram id="diag">
+    <bpmndi:BPMNPlane id="plane" bpmnElement="strategyCoding">
+      <bpmndi:BPMNShape id="s_laneAnalyst" bpmnElement="laneAnalyst" isHorizontal="true"><dc:Bounds x="160" y="80" width="1240" height="360"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_laneReviewer" bpmnElement="laneReviewer" isHorizontal="true"><dc:Bounds x="160" y="440" width="1240" height="200"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_start" bpmnElement="start"><dc:Bounds x="200" y="122" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_collectSources" bpmnElement="collectSources"><dc:Bounds x="280" y="100" width="160" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_textLayer" bpmnElement="textLayer"><dc:Bounds x="480" y="100" width="160" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_codeAxes" bpmnElement="codeAxes" isExpanded="true"><dc:Bounds x="280" y="210" width="900" height="210"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_axStart" bpmnElement="axStart"><dc:Bounds x="300" y="302" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_readOptions" bpmnElement="readOptions"><dc:Bounds x="360" y="280" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_findEvidence" bpmnElement="findEvidence"><dc:Bounds x="520" y="280" width="140" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_gwDecides" bpmnElement="gwDecides" isMarkerVisible="true"><dc:Bounds x="685" y="295" width="50" height="50"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_setPrimary" bpmnElement="setPrimary"><dc:Bounds x="760" y="230" width="150" height="70"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_setNull" bpmnElement="setNull"><dc:Bounds x="760" y="340" width="150" height="70"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_gwJoin" bpmnElement="gwJoin"><dc:Bounds x="935" y="295" width="50" height="50"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_flagConfidence" bpmnElement="flagConfidence"><dc:Bounds x="1010" y="280" width="130" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_axEnd" bpmnElement="axEnd"><dc:Bounds x="1145" y="302" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_scoreStrategy" bpmnElement="scoreStrategy"><dc:Bounds x="1220" y="100" width="160" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_review" bpmnElement="review"><dc:Bounds x="1220" y="500" width="160" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_gwAccepted" bpmnElement="gwAccepted" isMarkerVisible="true"><dc:Bounds x="1005" y="515" width="50" height="50"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_publish" bpmnElement="publish"><dc:Bounds x="680" y="500" width="180" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_end" bpmnElement="end"><dc:Bounds x="560" y="522" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="236" y="140"/><di:waypoint x="280" y="140"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f2" bpmnElement="f2"><di:waypoint x="440" y="140"/><di:waypoint x="480" y="140"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f3" bpmnElement="f3"><di:waypoint x="560" y="180"/><di:waypoint x="560" y="210"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f4" bpmnElement="f4"><di:waypoint x="1180" y="315"/><di:waypoint x="1300" y="315"/><di:waypoint x="1300" y="180"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f5" bpmnElement="f5"><di:waypoint x="1380" y="140"/><di:waypoint x="1390" y="140"/><di:waypoint x="1390" y="540"/><di:waypoint x="1380" y="540"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f6" bpmnElement="f6"><di:waypoint x="1220" y="540"/><di:waypoint x="1055" y="540"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f7yes" bpmnElement="f7yes"><di:waypoint x="1005" y="540"/><di:waypoint x="860" y="540"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f7no" bpmnElement="f7no"><di:waypoint x="1030" y="515"/><di:waypoint x="1030" y="420"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f8" bpmnElement="f8"><di:waypoint x="680" y="540"/><di:waypoint x="596" y="540"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a1" bpmnElement="a1"><di:waypoint x="336" y="320"/><di:waypoint x="360" y="320"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a2" bpmnElement="a2"><di:waypoint x="500" y="320"/><di:waypoint x="520" y="320"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a3" bpmnElement="a3"><di:waypoint x="660" y="320"/><di:waypoint x="685" y="320"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a4yes" bpmnElement="a4yes"><di:waypoint x="710" y="295"/><di:waypoint x="710" y="265"/><di:waypoint x="760" y="265"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a4no" bpmnElement="a4no"><di:waypoint x="710" y="345"/><di:waypoint x="710" y="375"/><di:waypoint x="760" y="375"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a5" bpmnElement="a5"><di:waypoint x="910" y="265"/><di:waypoint x="960" y="265"/><di:waypoint x="960" y="295"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a6" bpmnElement="a6"><di:waypoint x="910" y="375"/><di:waypoint x="960" y="375"/><di:waypoint x="960" y="345"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a7" bpmnElement="a7"><di:waypoint x="985" y="320"/><di:waypoint x="1010" y="320"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_a8" bpmnElement="a8"><di:waypoint x="1140" y="320"/><di:waypoint x="1145" y="320"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,36 @@
+# Copy to <ID>.yaml, add <ID> to _order.yaml, run tools/score.py.
+id: XX
+name: {lv: Organizācija X, en: Organisation X}
+documents: "Which published documents were read (title, year)"
+text:
+  interest:
+    status: no            # yes | part | no — does the document state why it exists?
+    text: {lv: "", en: ""}
+  vision:
+    quote: ""             # verbatim vision sentence, or empty
+  objectives: []          # - {lv: "...", en: "...", numbered: true}
+  position: {lv: "", en: ""}   # analyst's one-paragraph reading
+coding:                   # one option key per axis (see docs/axes.md); null = undecided
+  frame: null
+  diff: null
+  interest: null
+  ambition: null
+  fund: null
+  sourcing: null
+  compute: null
+  lang: null
+  identity: null
+  knowledge: null
+  adopt: null
+  meas: null
+  eval: null
+  return: null
+  intl: null
+  doctype: null
+  horizon: null
+  decomp: null
+  gov: null
+  reg: null
+# partial:               # optional secondary leans, 1–4
+#   identity: {gw: 3}
+# low_confidence: [sourcing]

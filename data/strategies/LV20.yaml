@@ -1,0 +1,49 @@
+id: LV20
+name:
+  lv: Latvija 2020
+  en: Latvia 2020
+latvian: true
+documents: Informatīvais ziņojums “Par mākslīgā intelekta risinājumu attīstību” (MK, 04.02.2020.)
+text:
+  interest:
+    status: part
+    text:
+      lv: Tautsaimniecības produktivitāte. Nav eksistenciālas, demogrāfiskas vai suverenitātes intereses.
+      en: Economic productivity. No existential, demographic or sovereignty interest.
+  vision:
+    quote: ''
+    note:
+      lv: Vīzijas teikuma nav. Dokuments ir informatīvs ziņojums, nevis stratēģija ar gala stāvokli.
+      en: No vision sentence. The document is an informative report, not a strategy with an end state.
+  objectives:
+  - lv: Nav skaitlisku mērķu, budžeta vai termiņu
+    en: No numeric targets, budget or deadlines
+  position:
+    lv: Tikai lietojums. Nav nodoma veidot modeļus, jaudu vai eksporta nozari.
+    en: Use only. No stated ambition to build models, compute or an export industry.
+coding:
+  frame: tool
+  diff: none
+  interest: comp
+  ambition: null
+  fund: un
+  sourcing: dec
+  compute: none
+  lang: none
+  identity: pid
+  knowledge: none
+  adopt: vol
+  meas: none
+  eval: none
+  return: null
+  intl: fol
+  doctype: vision
+  horizon: none
+  decomp: enab
+  gov: min
+  reg: soft
+partial:
+  frame:
+    econ: 3
+  interest:
+    comp: 5
