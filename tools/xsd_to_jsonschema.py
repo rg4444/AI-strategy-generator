@@ -23,7 +23,9 @@ import xml.etree.ElementTree as ET
 
 XS = "{http://www.w3.org/2001/XMLSchema}"
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-PLURAL = {"axis": "axes", "source": "sources", "objective": "objectives", "partial": "partials"}
+PLURAL = {"axis": "axes", "source": "sources", "objective": "objectives", "partial": "partials",
+          "narrative": "narratives", "section": "sections", "paragraph": "paragraphs",
+          "assumption": "assumptions", "openQuestion": "openQuestions"}
 BUILTIN = {
     "xs:string": {"type": "string"}, "xs:anyURI": {"type": "string", "format": "uri"},
     "xs:boolean": {"type": "boolean"}, "xs:integer": {"type": "integer"},
@@ -189,7 +191,7 @@ class Conv:
         top = self.ref_type(root_el.get("type"))
         return {
             "$schema": "https://json-schema.org/draft/2020-12/schema",
-            "$id": "https://github.com/rg4444/AI-strategy-generator/schema/ai-strategy.schema.json",
+            "$id": "https://raw.githubusercontent.com/rg4444/AI-strategy-generator/main/schema/ai-strategy.schema.json",
             "title": "AI strategy document (JSON form of urn:pppa:ai-strategy:1.0)",
             "description": "GENERATED from schema/ai-strategy.xsd by tools/xsd_to_jsonschema.py — do not edit.",
             **top,

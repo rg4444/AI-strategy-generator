@@ -1,14 +1,14 @@
 [
  {
   "id": "urn:pppa:ai-strategy:ref:ee",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Estonia",
   "subject": {
    "name": {
@@ -303,14 +303,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:lt",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Lithuania",
   "subject": {
    "name": {
@@ -586,14 +586,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:fi",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Finland",
   "subject": {
    "name": {
@@ -851,14 +851,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:dk",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Denmark",
   "subject": {
    "name": {
@@ -1121,14 +1121,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:ie",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Ireland",
   "subject": {
    "name": {
@@ -1382,14 +1382,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:nl",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Netherlands",
   "subject": {
    "name": {
@@ -1648,14 +1648,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:si",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Slovenia",
   "subject": {
    "name": {
@@ -1909,14 +1909,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:no",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Norway",
   "subject": {
    "name": {
@@ -2170,14 +2170,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:cz",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Czechia",
   "subject": {
    "name": {
@@ -2430,14 +2430,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:pt",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Portugal",
   "subject": {
    "name": {
@@ -2691,14 +2691,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:sg",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Singapore",
   "subject": {
    "name": {
@@ -2979,14 +2979,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:kr",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "South Korea",
   "subject": {
    "name": {
@@ -3261,14 +3261,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:uk",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "United Kingdom",
   "subject": {
    "name": {
@@ -3557,14 +3557,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:ca",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Canada",
   "subject": {
    "name": {
@@ -3818,14 +3818,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:jp",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Japan",
   "subject": {
    "name": {
@@ -4074,14 +4074,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:ae",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "UAE",
   "subject": {
    "name": {
@@ -4346,14 +4346,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:eu",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "EU",
   "subject": {
    "name": {
@@ -4623,14 +4623,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:lv20",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Latvia 2020",
   "subject": {
    "name": {
@@ -4870,14 +4870,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:lv26",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "Latvia — VARAM draft",
   "subject": {
    "name": {
@@ -5173,14 +5173,14 @@
  },
  {
   "id": "urn:pppa:ai-strategy:ref:pppa",
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "kind": "national",
   "status": "final",
   "version": 1,
   "axesVersion": "1.0.0",
-  "axesSource": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
-  "createdAt": "2026-09-09T09:10:36Z",
-  "updatedAt": "2026-09-09T09:10:36Z",
+  "axesSource": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+  "createdAt": "2026-09-09T11:51:26Z",
+  "updatedAt": "2026-09-09T11:51:26Z",
   "title": "PPPA proposal",
   "subject": {
    "name": {

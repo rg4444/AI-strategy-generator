@@ -16,11 +16,14 @@ SCORING_VERSION is written into every computed <score scoringVersion=".."/>.
 from __future__ import annotations
 import datetime as _dt
 import json
+import re
 import uuid
 import xml.etree.ElementTree as ET
 
 SCORING_VERSION = "1.0"
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "1.1"
+SCHEMA_VERSIONS = ("1.0", "1.1")
+XSD_URL = "https://raw.githubusercontent.com/rg4444/AI-strategy-generator/main/schema/ai-strategy.xsd"
 XMLNS = "urn:pppa:ai-strategy:1.0"
 AXES_SOURCE = "https://github.com/rg4444/AI-strategy-generator"
 
@@ -107,8 +110,11 @@ def validate(doc: dict, bundle: dict) -> list:
     Returns a list of error strings; empty means valid."""
     errs = []
     ai = axes_index(bundle)
-    if doc.get("schemaVersion") != SCHEMA_VERSION:
-        errs.append(f"schemaVersion must be {SCHEMA_VERSION}")
+    if doc.get("schemaVersion") not in SCHEMA_VERSIONS:
+        errs.append(f"schemaVersion must be one of {SCHEMA_VERSIONS}")
+    for n in doc.get("narratives", []) or []:
+        if not re.fullmatch(r"[a-z]{2}", n.get("lang", "")):
+            errs.append("narrative.lang must be a two-letter code")
     if doc.get("kind") not in ("national", "organisation"):
         errs.append("kind must be national|organisation")
     seen = set()
@@ -218,7 +224,9 @@ def _text_el(parent, tag, text):
 
 def to_xml(doc: dict) -> bytes:
     ET.register_namespace("", XMLNS)
+    ET.register_namespace("xsi", "http://www.w3.org/2001/XMLSchema-instance")
     root = ET.Element(f"{{{XMLNS}}}aiStrategy")
+    root.set("{http://www.w3.org/2001/XMLSchema-instance}schemaLocation", XMLNS + " " + XSD_URL)
     for k in ("id", "schemaVersion", "kind", "status", "version", "axesVersion", "axesSource",
               "createdAt", "updatedAt", "title"):
         if doc.get(k) not in (None, ""):
@@ -279,6 +287,24 @@ def to_xml(doc: dict) -> bytes:
             sc.set("scoringVersion", doc["score"]["scoringVersion"])
         for a in doc["score"].get("axes", []):
             ET.SubElement(sc, "axis", axis=a["axis"], value=str(a["value"]))
+    for n in doc.get("narratives", []) or []:
+        ne = ET.SubElement(root, "narrative", lang=n["lang"])
+        for k in ("generatedAt", "model", "docVersion"):
+            if n.get(k) not in (None, ""):
+                ne.set(k, str(n[k]))
+        if n.get("title"):
+            ET.SubElement(ne, "title").text = n["title"]
+        if n.get("summary"):
+            ET.SubElement(ne, "summary").text = n["summary"]
+        for sec in n.get("sections", []) or []:
+            se = ET.SubElement(ne, "section")
+            ET.SubElement(se, "heading").text = sec.get("heading", "")
+            for p in sec.get("paragraphs", []) or []:
+                ET.SubElement(se, "paragraph").text = p
+        for a in n.get("assumptions", []) or []:
+            ET.SubElement(ne, "assumption").text = a
+        for q in n.get("openQuestions", []) or []:
+            ET.SubElement(ne, "openQuestion").text = q
     ET.indent(root, space="  ")
     return b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(root, encoding="utf-8")
 
@@ -332,6 +358,25 @@ def from_xml(data: bytes) -> dict:
         d["score"] = {"axes": [{"axis": a.get("axis"), "value": float(a.get("value"))} for a in sc.findall(N + "axis")],
                       **({"overall": float(sc.get("overall"))} if sc.get("overall") else {}),
                       **({"scoringVersion": sc.get("scoringVersion")} if sc.get("scoringVersion") else {})}
+    nars = []
+    for ne in root.findall(N + "narrative"):
+        n = {"lang": ne.get("lang")}
+        for k in ("generatedAt", "model"):
+            if ne.get(k):
+                n[k] = ne.get(k)
+        if ne.get("docVersion"):
+            n["docVersion"] = int(ne.get("docVersion"))
+        if ne.find(N + "title") is not None:
+            n["title"] = ne.findtext(N + "title") or ""
+        if ne.find(N + "summary") is not None:
+            n["summary"] = ne.findtext(N + "summary") or ""
+        n["sections"] = [{"heading": se.findtext(N + "heading") or "", "paragraphs": [p.text or "" for p in se.findall(N + "paragraph")]}
+                         for se in ne.findall(N + "section")]
+        n["assumptions"] = [a.text or "" for a in ne.findall(N + "assumption")]
+        n["openQuestions"] = [q.text or "" for q in ne.findall(N + "openQuestion")]
+        nars.append(n)
+    if nars:
+        d["narratives"] = nars
     return d
 
 

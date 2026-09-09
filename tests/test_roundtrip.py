@@ -64,6 +64,14 @@ def main():
         assert all(abs(a["value"] - py[sid]["axes"][a["axis"]]) < 0.011 for a in sc["axes"]), sid
         assert SD.validate(d, bundle) == [], (sid, SD.validate(d, bundle))
     print("ok: strategy_doc scoring == score.py; reference documents validate; XML round-trips")
+    # 1d. narrative survives the XML round trip and the JSON Schema
+    d = json.loads(json.dumps(ref[0]))
+    d["narratives"] = [{"lang": "lv", "generatedAt": "2026-09-09T12:00:00Z", "model": "test", "docVersion": 1, "title": "T", "summary": "S",
+                        "sections": [{"heading": "H", "paragraphs": ["p1", "p2"]}], "assumptions": ["a"], "openQuestions": ["q"]}]
+    assert SD.from_xml(SD.to_xml(d))["narratives"] == d["narratives"], "narrative XML round trip"
+    assert SD.validate(d, bundle) == []
+    assert b"xsi:schemaLocation" in SD.to_xml(d)
+    print("ok: narrative element round-trips through XML; schemaLocation present")
     org = SD.axes_for_kind(bundle, "organisation")
     assert len(org) == len(bundle["axes"]) and all(a["org"]["name"]["en"] for a in bundle["axes"])
     leftovers = [(a["id"], t) for a in org for t in (a["name"]["en"], a["method"]["en"]) if re.search(r"\b(the state|national|country|ministr)", t, re.I)]
@@ -75,7 +83,10 @@ def main():
         schema = json.load(open(os.path.join(ROOT, "schema", "ai-strategy.schema.json"), encoding="utf-8"))
         for d in ref:
             jsonschema.validate(d, schema)
-        print("ok: reference documents validate against schema/ai-strategy.schema.json")
+        d = json.loads(json.dumps(ref[0])); d["schemaVersion"] = "1.1"
+        d["narratives"] = [{"lang": "lv", "title": "T", "sections": [{"heading": "H", "paragraphs": ["p"]}], "assumptions": [], "openQuestions": []}]
+        jsonschema.validate(d, schema)
+        print("ok: reference documents (1.0) and a 1.1 document with narrative validate against schema/ai-strategy.schema.json")
     except ImportError:
         print("skip: jsonschema not installed")
     # 2. optional roundtrip against original export

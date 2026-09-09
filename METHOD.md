@@ -194,7 +194,11 @@ A coded strategy is a document conforming to
 [`schema/ai-strategy.schema.json`](schema/ai-strategy.schema.json). The same
 schema holds national and organisational strategies — `@kind` is the only
 difference. A document records the `@axesVersion` it was coded against, so
-a strategy stays interpretable after the axes change.
+a strategy stays interpretable after the axes change. Since schema 1.1 a
+document may also carry one `<narrative>` per language: the readable strategy
+text generated from the configuration (title, summary, sections, assumptions,
+open questions). The configuration remains the source; the narrative is derived
+from it and is marked with the document version it was generated for.
 
 Consumers (the pppa.lv generator, AI Register) take two things from this
 repository: the data bundle `dist/axes-bundle.json`, which they may update

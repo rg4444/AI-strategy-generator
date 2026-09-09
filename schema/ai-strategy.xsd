@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AI Strategy document — canonical schema (v1.0).
+  AI Strategy document — canonical schema (v1.1).
+  1.1 adds the optional <narrative> element: the readable strategy text generated
+  from the configuration (title, summary, sections, assumptions, open questions),
+  one per language. The namespace is unchanged: 1.1 documents validate against
+  this file and 1.0 documents still validate too (the element is optional).
+  Resolvable location: https://raw.githubusercontent.com/rg4444/AI-strategy-generator/main/schema/ai-strategy.xsd
   One schema for national and organisational strategies. A strategy is a
   configuration: one option per decision axis, optional partials, a text
   layer, weights, and the scores computed from them. Axis and option keys
@@ -13,7 +18,7 @@
            xmlns="urn:pppa:ai-strategy:1.0"
            targetNamespace="urn:pppa:ai-strategy:1.0"
            elementFormDefault="qualified" attributeFormDefault="unqualified"
-           version="1.0">
+           version="1.1">
 
   <!-- ============================================================ simple types -->
   <xs:simpleType name="KindType">
@@ -39,6 +44,13 @@
       <xs:enumeration value="yes"/>
       <xs:enumeration value="part"/>
       <xs:enumeration value="no"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SchemaVersionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1.0"/>
+      <xs:enumeration value="1.1"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -203,6 +215,28 @@
     <xs:attribute name="scoringVersion" type="xs:string" use="optional"/>
   </xs:complexType>
 
+  <xs:complexType name="NarrativeSectionType">
+    <xs:sequence>
+      <xs:element name="heading" type="xs:string"/>
+      <xs:element name="paragraph" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="NarrativeType">
+    <xs:annotation><xs:documentation>Readable strategy text generated from the configuration (a language model writes it; the configuration stays the source). One per language.</xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" minOccurs="0"/>
+      <xs:element name="summary" type="xs:string" minOccurs="0"/>
+      <xs:element name="section" type="NarrativeSectionType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="assumption" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="openQuestion" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="lang" type="LangType" use="required"/>
+    <xs:attribute name="generatedAt" type="xs:dateTime" use="optional"/>
+    <xs:attribute name="model" type="xs:string" use="optional"/>
+    <xs:attribute name="docVersion" type="xs:positiveInteger" use="optional"/>
+  </xs:complexType>
+
   <xs:complexType name="AIStrategyType">
     <xs:sequence>
       <xs:element name="subject" type="SubjectType"/>
@@ -229,9 +263,10 @@
         </xs:complexType>
       </xs:element>
       <xs:element name="score" type="ScoreType" minOccurs="0"/>
+      <xs:element name="narrative" type="NarrativeType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="id" type="xs:string" use="required"/>
-    <xs:attribute name="schemaVersion" type="xs:string" use="required" fixed="1.0"/>
+    <xs:attribute name="schemaVersion" type="SchemaVersionType" use="required"/>
     <xs:attribute name="kind" type="KindType" use="required"/>
     <xs:attribute name="status" type="StatusType" default="draft"/>
     <xs:attribute name="version" type="xs:positiveInteger" default="1"/>

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/rg4444/AI-strategy-generator/schema/ai-strategy.schema.json",
+  "$id": "https://raw.githubusercontent.com/rg4444/AI-strategy-generator/main/schema/ai-strategy.schema.json",
   "title": "AI strategy document (JSON form of urn:pppa:ai-strategy:1.0)",
   "description": "GENERATED from schema/ai-strategy.xsd by tools/xsd_to_jsonschema.py — do not edit.",
   "$ref": "#/$defs/AIStrategyType",
@@ -36,11 +36,17 @@
         "score": {
           "$ref": "#/$defs/ScoreType"
         },
+        "narratives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/NarrativeType"
+          }
+        },
         "id": {
           "type": "string"
         },
         "schemaVersion": {
-          "const": "1.0"
+          "$ref": "#/$defs/SchemaVersionType"
         },
         "kind": {
           "$ref": "#/$defs/KindType"
@@ -351,6 +357,83 @@
       "type": "number",
       "minimum": 0.0,
       "maximum": 5.0
+    },
+    "NarrativeType": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/NarrativeSectionType"
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "openQuestions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lang": {
+          "$ref": "#/$defs/LangType"
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "model": {
+          "type": "string"
+        },
+        "docVersion": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "lang"
+      ],
+      "description": "Readable strategy text generated from the configuration (a language model writes it; the configuration stays the source). One per language."
+    },
+    "NarrativeSectionType": {
+      "type": "object",
+      "properties": {
+        "heading": {
+          "type": "string"
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "heading"
+      ]
+    },
+    "LangType": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "SchemaVersionType": {
+      "type": "string",
+      "enum": [
+        "1.0",
+        "1.1"
+      ]
     },
     "KindType": {
       "type": "string",

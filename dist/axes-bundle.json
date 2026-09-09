@@ -2,9 +2,9 @@
  "bundle": "ai-strategy-axes",
  "version": "1.0.0",
  "scoring_version": "1.0",
- "schema_version": "1.0",
- "source": "https://github.com/rg4444/AI-strategy-generator@6b74f9b",
- "generated_at": "2026-09-09T09:10:36Z",
+ "schema_version": "1.1",
+ "source": "https://github.com/rg4444/AI-strategy-generator@5fe670e",
+ "generated_at": "2026-09-09T11:51:26Z",
  "readings": [
   "national",
   "organisation"

@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.3.0 — 2026-09-09
+
+- Schema 1.1: optional `<narrative lang>` element (title, summary, sections with
+  paragraphs, assumptions, open questions; generatedAt/model/docVersion) so the
+  readable strategy text generated from a configuration travels with the document
+  and survives XML/JSON export and import. Namespace unchanged; `schemaVersion`
+  is now `1.0 | 1.1`; 1.0 documents still validate.
+- Generated XML carries `xsi:schemaLocation` pointing at the raw GitHub XSD; the
+  JSON Schema `$id` is the raw GitHub URL, so both resolve.
+- `strategy_doc.py`: narratives in `to_xml`/`from_xml`, `XSD_URL`, `SCHEMA_VERSIONS`.
+
 ## 1.2.1 — 2026-09-09
 
 - pppa.lv consumer: one bilingual page `/ai-strategy-generator` (old URLs 301, share links carried over); storage v2 keeps every strategy as a schema document with versions, XML/JSON export and import; PHP scoring verified equal to `strategy_doc.py`. `tools/deploy_pppa.py` now also installs the bundle, reference and schema files.
