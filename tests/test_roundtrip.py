@@ -72,6 +72,13 @@ def main():
     assert SD.validate(d, bundle) == []
     assert b"xsi:schemaLocation" in SD.to_xml(d)
     print("ok: narrative element round-trips through XML; schemaLocation present")
+    # 1e. a document coded against an older axes version (axis missing) stays valid; a fresh one must be complete
+    d = json.loads(json.dumps(ref[0])); d["coding"] = [c for c in d["coding"] if c["axis"] != "access"]
+    d["axesVersion"] = "1.0.0"
+    assert SD.validate(d, bundle) == [], "older axes version with a missing axis must validate"
+    d["axesVersion"] = bundle["version"]
+    assert any("not coded" in e for e in SD.validate(d, bundle)), "current axes version must list every axis"
+    print("ok: missing axis tolerated for older axesVersion, required for the current one")
     org = SD.axes_for_kind(bundle, "organisation")
     assert len(org) == len(bundle["axes"]) and all(a["org"]["name"]["en"] for a in bundle["axes"])
     leftovers = [(a["id"], t) for a in org for t in (a["name"]["en"], a["method"]["en"]) if re.search(r"\b(the state|national|country|ministr)", t, re.I)]

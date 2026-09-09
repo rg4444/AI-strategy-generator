@@ -135,9 +135,13 @@ def validate(doc: dict, bundle: dict) -> list:
                 errs.append(f"axis {aid}: partial duplicates the primary option")
             if not (1 <= int(p.get("score", 0)) <= 4):
                 errs.append(f"axis {aid}: partial score must be 1–4")
-    for aid in ai:
-        if aid not in seen:
-            errs.append(f"axis {aid} not coded (use no option for undecided)")
+    # An axis missing from the document reads as undecided. It is an error only when the
+    # document claims the bundle's own axes version (a fresh document must list every axis);
+    # documents coded against an older axes version stay valid after an axis is added.
+    if str(doc.get("axesVersion", "")) == str(bundle.get("version", "")):
+        for aid in ai:
+            if aid not in seen:
+                errs.append(f"axis {aid} not coded (use no option for undecided)")
     for e in doc.get("weights", []) or []:
         if e.get("axis") not in ai or not bundle["groups"][ai[e["axis"]]["group"]]["scored"]:
             errs.append(f"weight on non-scored axis {e.get('axis')}")
