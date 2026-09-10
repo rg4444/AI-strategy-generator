@@ -10,7 +10,7 @@ strings:
     matrix: Matrica
     mxnote: Vērtējums no 0 līdz 5 attiecīgajā lēmumu asī. Pēdējā rinda — svērtais kopvērtējums pēc īpatsvariem, kas redzams sadaļā Novērtējums.
     yours: Jūsu konfigurācija
-    hint_browse: Publiski pieejamas dažādu valstu nacionālo MI stratēģiju analīze.
+    hint_browse: Publiski pieejamo dažādu valstu nacionālo MI stratēģiju analīze.
     hint_compare: Izvēlieties līdz 3 stratēģijām salīdzināšanai.
     hint_score: Izvēlieties stratēģiju, lai novērtētu pēc lēmumu asīm — stratēģiskie vai pārvaldības lēmumi.
     hint_matrix: Vērtējums no 0 līdz 5 attiecīgajā lēmumu asī. Pēdējā rinda — svērtais kopvērtējums pēc īpatsvariem, kas redzams sadaļā Novērtējums.

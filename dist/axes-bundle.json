@@ -3,8 +3,8 @@
  "version": "1.1.1",
  "scoring_version": "1.0",
  "schema_version": "1.1",
- "source": "https://github.com/rg4444/AI-strategy-generator@13ef60d",
- "generated_at": "2026-09-10T09:02:30Z",
+ "source": "https://github.com/rg4444/AI-strategy-generator@9a2629b",
+ "generated_at": "2026-09-10T09:10:35Z",
  "readings": [
   "national",
   "organisation"
@@ -24,8 +24,8 @@
    },
    "org": {
     "description": {
-     "lv": "Ko organizācija apņemas darīt.",
-     "en": "What the organisation commits to."
+     "en": "What the organisation commits to.",
+     "lv": "Ko organizācija apņemas darīt."
     }
    }
   },
@@ -42,8 +42,8 @@
    },
    "org": {
     "description": {
-     "lv": "Kāda veida dokuments ir stratēģija.",
-     "en": "What kind of artefact the strategy document is."
+     "en": "What kind of artefact the strategy document is.",
+     "lv": "Kāda veida dokuments ir stratēģija."
     }
    }
   }
@@ -166,8 +166,8 @@
    ],
    "org": {
     "name": {
-     "lv": "Kā organizācija redz MI",
-     "en": "How the organisation frames AI"
+     "en": "How the organisation frames AI",
+     "lv": "Kā organizācija redz MI"
     },
     "method": {
      "lv": "Vērtē, cik skaidru nostāju dokuments ieņem par MI. Neitrāls rīks — 0; ekonomiska iespēja — 2; atpalikšanas draudi vai riska avots — 3; pārveidojošs spēks vai atkarības draudi — 4. Augstāks vērtējums nozīmē skaidrāku nostāju, ne pareizāku.",
@@ -433,8 +433,8 @@
      "en": "Competitive differentiator"
     },
     "method": {
-     "lv": "Vai organizācija nosauc kaut ko, ar ko tā atšķiras. Nav norādīts — 0; uzticēšanās (pārpildīts lauks) — 2; nozares dati vai pētniecība — 3; ieviešanas ātrums, jauda vai kapitāls — 4; standartu veidošana — 5, jo dod vislielāko ietekmi attiecībā pret izmaksām.",
-     "en": "Whether the organisation names something it is distinctively good at. None 0; trust (a crowded claim) 2; domain data or research 3; deployment speed, compute or capital 4; standard-setting 5, as it buys the most reach per euro."
+     "en": "Whether the organisation names something it is distinctively good at. None 0; trust (a crowded claim) 2; domain data or research 3; deployment speed, compute or capital 4; standard-setting 5, as it buys the most reach per euro.",
+     "lv": "Vai organizācija nosauc kaut ko, ar ko tā atšķiras. Nav norādīts — 0; uzticēšanās (pārpildīts lauks) — 2; nozares dati vai pētniecība — 3; ieviešanas ātrums, jauda vai kapitāls — 4; standartu veidošana — 5, jo dod vislielāko ietekmi attiecībā pret izmaksām."
     },
     "options": {
      "none": {
@@ -481,8 +481,8 @@
      },
      "lang": {
       "label": {
-       "lv": "nozare un pašu dati",
-       "en": "domain and proprietary data"
+       "en": "domain and proprietary data",
+       "lv": "nozare un pašu dati"
       },
       "gives": {
        "lv": "Mazai valodai neapstrīdēts lauks. To nevar atņemt.",
@@ -734,12 +734,12 @@
    ],
    "org": {
     "name": {
-     "lv": "Organizācijas interese",
-     "en": "Organisational interest"
+     "en": "Organisational interest",
+     "lv": "Organizācijas interese"
     },
     "method": {
-     "lv": "Vai nosaukts konkrēts iemesls, kāpēc organizācijai tas rūp. Nav norādīts — 0; vispārīga konkurētspēja — 2; atpalikšana vai uzticēšanās — 3; neatkarība, pakalpojumu ilgtspēja, diversifikācija vai zināšanu saglabāšana — 4.",
-     "en": "Whether an organisation-specific reason is stated. Not stated 0; generic competitiveness 2; falling behind or trust 3; independence, service sustainability, diversification or knowledge retention 4."
+     "en": "Whether an organisation-specific reason is stated. Not stated 0; generic competitiveness 2; falling behind or trust 3; independence, service sustainability, diversification or knowledge retention 4.",
+     "lv": "Vai nosaukts konkrēts iemesls, kāpēc organizācijai tas rūp. Nav norādīts — 0; vispārīga konkurētspēja — 2; atpalikšana vai uzticēšanās — 3; neatkarība, pakalpojumu ilgtspēja, diversifikācija vai zināšanu saglabāšana — 4."
     },
     "options": {
      "none": {
@@ -758,8 +758,8 @@
      },
      "demo": {
       "label": {
-       "lv": "darbaspēka trūkums",
-       "en": "workforce shortage"
+       "en": "workforce shortage",
+       "lv": "darbaspēka trūkums"
       },
       "gives": {
        "lv": "Sasaista MI ar problēmu, ko organizācijas jau izjūt un nevar atlikt. Neviena salīdzinātā organizācijas to nav pieteikusi.",
@@ -814,8 +814,8 @@
      },
      "svc": {
       "label": {
-       "lv": "pakalpojumu un izmaksu ilgtspēja",
-       "en": "service and cost sustainability"
+       "en": "service and cost sustainability",
+       "lv": "pakalpojumu un izmaksu ilgtspēja"
       },
       "gives": {
        "lv": "Sasaista MI ar problēmu, ko darbinieki un klienti jau izjūt.",
@@ -856,8 +856,8 @@
      },
      "lang": {
       "label": {
-       "lv": "nozares zināšanu saglabāšana",
-       "en": "retention of domain knowledge"
+       "en": "retention of domain knowledge",
+       "lv": "nozares zināšanu saglabāšana"
       },
       "gives": {
        "lv": "Neviens to nav pieteicis. Mazai valodai īpaši aizstāvams.",
@@ -1125,8 +1125,8 @@
      },
      "ppp": {
       "label": {
-       "lv": "partnera vai kopuzņēmuma instruments",
-       "en": "partner / joint-venture vehicle"
+       "en": "partner / joint-venture vehicle",
+       "lv": "partnera vai kopuzņēmuma instruments"
       },
       "gives": {
        "lv": "Privātais kapitāls sedz lielāko daļu izmaksu.",
@@ -1261,8 +1261,8 @@
      "en": "Model sourcing"
     },
     "method": {
-     "lv": "Cik noteikti pateikts, kā struktūrvienības iegūst modeļus. Decentralizēti pēc noklusējuma — 1; konsorcija līdzfinansējums — 3; brokeris vai pašmitināšana — 4; pašu robežmodelis — 5. Mēra izlemtību, ne izpildāmību.",
-     "en": "How decidedly the document says where models come from. Decentralised by default 1; consortium co-funding 3; central broker or self-hosting 4; own frontier model 5. Measures decidedness, not feasibility."
+     "en": "How decidedly the document says where models come from. Decentralised by default 1; consortium co-funding 3; central broker or self-hosting 4; own frontier model 5. Measures decidedness, not feasibility.",
+     "lv": "Cik noteikti pateikts, kā struktūrvienības iegūst modeļus. Decentralizēti pēc noklusējuma — 1; konsorcija līdzfinansējums — 3; brokeris vai pašmitināšana — 4; pašu robežmodelis — 5. Mēra izlemtību, ne izpildāmību."
     },
     "options": {
      "dec": {
@@ -1309,8 +1309,8 @@
      },
      "natl": {
       "label": {
-       "lv": "pašu robežmodelis",
-       "en": "own frontier model"
+       "en": "own frontier model",
+       "lv": "pašu robežmodelis"
       },
       "gives": {
        "lv": "Pilnīga kontrole pār visu tehnoloģiju kaudzi.",
@@ -1337,8 +1337,8 @@
      },
      "bloc": {
       "label": {
-       "lv": "konsorcija līdzfinansējums",
-       "en": "consortium co-funding"
+       "en": "consortium co-funding",
+       "lv": "konsorcija līdzfinansējums"
       },
       "gives": {
        "lv": "Daļa no kaut kā lielāka, nekā varētu uzbūvēt viens pats.",
@@ -1456,8 +1456,8 @@
      "en": "Compute"
     },
     "method": {
-     "lv": "Kāda skaitļošanas jauda ir nodrošināta. Nav — 0; tikai komerciāls mākonis — 1; kopīga vai grupas jauda — 3; īpaša partnera jauda — 4; pašu klasteris — 5.",
-     "en": "What compute is secured. None 0; commercial cloud only 1; shared or group capacity 3; dedicated partner capacity 4; own cluster 5."
+     "en": "What compute is secured. None 0; commercial cloud only 1; shared or group capacity 3; dedicated partner capacity 4; own cluster 5.",
+     "lv": "Kāda skaitļošanas jauda ir nodrošināta. Nav — 0; tikai komerciāls mākonis — 1; kopīga vai grupas jauda — 3; īpaša partnera jauda — 4; pašu klasteris — 5."
     },
     "options": {
      "none": {
@@ -1476,8 +1476,8 @@
      },
      "nat": {
       "label": {
-       "lv": "pašu GPU/HPC klasteris",
-       "en": "own GPU/HPC cluster"
+       "en": "own GPU/HPC cluster",
+       "lv": "pašu GPU/HPC klasteris"
       },
       "gives": {
        "lv": "Sava jauda un savas prioritātes rindā.",
@@ -1490,8 +1490,8 @@
      },
      "euro": {
       "label": {
-       "lv": "kopīga vai grupas jauda",
-       "en": "shared or group capacity"
+       "en": "shared or group capacity",
+       "lv": "kopīga vai grupas jauda"
       },
       "gives": {
        "lv": "Piekļuve par daļu no izmaksām — 8,4 miljoni eiro nopērk vietu.",
@@ -1504,8 +1504,8 @@
      },
      "ppp": {
       "label": {
-       "lv": "īpaša partnera jauda",
-       "en": "dedicated partner capacity"
+       "en": "dedicated partner capacity",
+       "lv": "īpaša partnera jauda"
       },
       "gives": {
        "lv": "Suverēna mēroga jauda galvenokārt par privātu naudu.",
@@ -1633,12 +1633,12 @@
    ],
    "org": {
     "name": {
-     "lv": "Valodas un nozares modeļu stratēģija",
-     "en": "Language and domain model strategy"
+     "en": "Language and domain model strategy",
+     "lv": "Valodas un nozares modeļu stratēģija"
     },
     "method": {
-     "lv": "Cik tālu iet organizācijas valodas un nozares nodrošinājums. Nav — 0; datu ieguldījums — 2; pielāgošana — 3; nozares konsorcijs — 4; pašu nozares modelis — 5.",
-     "en": "How far the provision for the organisation's language and domain goes. None 0; data contribution 2; fine-tuning 3; industry consortium 4; own domain model 5."
+     "en": "How far the provision for the organisation's language and domain goes. None 0; data contribution 2; fine-tuning 3; industry consortium 4; own domain model 5.",
+     "lv": "Cik tālu iet organizācijas valodas un nozares nodrošinājums. Nav — 0; datu ieguldījums — 2; pielāgošana — 3; nozares konsorcijs — 4; pašu nozares modelis — 5."
     },
     "options": {
      "none": {
@@ -1685,8 +1685,8 @@
      },
      "natl": {
       "label": {
-       "lv": "pašu nozares modelis",
-       "en": "own domain model"
+       "en": "own domain model",
+       "lv": "pašu nozares modelis"
       },
       "gives": {
        "lv": "Spēja, ko nevar atņemt. Īsts suverenitātes aktīvs.",
@@ -1699,8 +1699,8 @@
      },
      "reg": {
       "label": {
-       "lv": "nozares konsorcijs",
-       "en": "industry consortium"
+       "en": "industry consortium",
+       "lv": "nozares konsorcijs"
       },
       "gives": {
        "lv": "Dala izmaksas ar valodām, kurām ir tā pati problēma.",
@@ -1831,12 +1831,12 @@
    ],
    "org": {
     "name": {
-     "lv": "MI aģentu identitātes nodrošinājums",
-     "en": "AI agent identity provision"
+     "en": "AI agent identity provision",
+     "lv": "MI aģentu identitātes nodrošinājums"
     },
     "method": {
-     "lv": "Cik tālu organizācija ir tikusi ar identitāti MI aģentiem — kas ir aģents, kam tas pieder un ko drīkst darīt. Nav — 0; tikai politikas līmenī — 1; ir personu identitāte, aģentiem nekas — 2; aģentu identitātes pilotprojekts — 3; organizācijas mēroga aģentu identitāte — 4; ārējās verifikācijas vārteja — 5.",
-     "en": "How far the organisation has got with identity for AI agents — who the agent is, who owns it, what it may do. None 0; policy talk only 1; person identity exists but nothing for agents 2; agent identity pilot 3; organisation-wide agent identity 4; external verification gateway 5."
+     "en": "How far the organisation has got with identity for AI agents — who the agent is, who owns it, what it may do. None 0; policy talk only 1; person identity exists but nothing for agents 2; agent identity pilot 3; organisation-wide agent identity 4; external verification gateway 5.",
+     "lv": "Cik tālu organizācija ir tikusi ar identitāti MI aģentiem — kas ir aģents, kam tas pieder un ko drīkst darīt. Nav — 0; tikai politikas līmenī — 1; ir personu identitāte, aģentiem nekas — 2; aģentu identitātes pilotprojekts — 3; organizācijas mēroga aģentu identitāte — 4; ārējās verifikācijas vārteja — 5."
     },
     "options": {
      "none": {
@@ -1869,8 +1869,8 @@
      },
      "pid": {
       "label": {
-       "lv": "tikai personu identitāte, aģentiem nekas",
-       "en": "person identity only, nothing for agents"
+       "en": "person identity only, nothing for agents",
+       "lv": "tikai personu identitāte, aģentiem nekas"
       },
       "gives": {
        "lv": "Uzticamības enkurs jau pastāv — aģentu identitāti var uzbūvēt uz tā.",
@@ -1883,8 +1883,8 @@
      },
      "pilot": {
       "label": {
-       "lv": "aģentu identitātes pilotprojekts",
-       "en": "agent identity pilot project"
+       "en": "agent identity pilot project",
+       "lv": "aģentu identitātes pilotprojekts"
       },
       "gives": {
        "lv": "Pārbauda ideju ar reālu gadījumu, pirms tā tiek nostiprināta.",
@@ -1897,8 +1897,8 @@
      },
      "natid": {
       "label": {
-       "lv": "organizācijas mēroga aģentu identitāte",
-       "en": "organisation-wide agent identity"
+       "en": "organisation-wide agent identity",
+       "lv": "organizācijas mēroga aģentu identitāte"
       },
       "gives": {
        "lv": "Aģents rīkojas piešķirto pilnvaru robežās, ar pilnu izsekojamību.",
@@ -1911,8 +1911,8 @@
      },
      "gw": {
       "label": {
-       "lv": "ārējās verifikācijas vārteja",
-       "en": "external verification gateway"
+       "en": "external verification gateway",
+       "lv": "ārējās verifikācijas vārteja"
       },
       "gives": {
        "lv": "Verificē arī citās jurisdikcijās izdotus aģentus. Tas ir eksportējamais produkts, nevis pati identitāte.",
@@ -2047,8 +2047,8 @@
      "en": "Knowledge accumulation"
     },
     "method": {
-     "lv": "Vai organizācija uzkrāj un atkārtoti izmanto to, ko tās struktūrvienības zina un iemācās, nevis sāk katru reizi no nulles. Nav — 0; dokumentu digitalizācija — 1; mašīnlasāmi ieraksti un datu katalogs — 2; koplietojami komponenti — 3; organizācijas zināšanu bāze — 4; federēta zināšanu apmaiņa starp struktūrvienībām — 5.",
-     "en": "Whether the organisation accumulates and reuses what its units know and learn, instead of starting from zero each time. None 0; document digitisation 1; machine-readable records and a data catalogue 2; reusable shared components 3; organisational knowledge base 4; federated knowledge exchange between units 5."
+     "en": "Whether the organisation accumulates and reuses what its units know and learn, instead of starting from zero each time. None 0; document digitisation 1; machine-readable records and a data catalogue 2; reusable shared components 3; organisational knowledge base 4; federated knowledge exchange between units 5.",
+     "lv": "Vai organizācija uzkrāj un atkārtoti izmanto to, ko tās struktūrvienības zina un iemācās, nevis sāk katru reizi no nulles. Nav — 0; dokumentu digitalizācija — 1; mašīnlasāmi ieraksti un datu katalogs — 2; koplietojami komponenti — 3; organizācijas zināšanu bāze — 4; federēta zināšanu apmaiņa starp struktūrvienībām — 5."
     },
     "options": {
      "none": {
@@ -2117,8 +2117,8 @@
        "en": "Institutional knowledge becomes a system that outlives staff turnover."
       },
       "forecloses": {
-       "lv": "Katra struktūrvienība savā silosā — organizācijas mērogā zināšanas joprojām nesarunājas.",
-       "en": "Each unit in its own silo — across the organisation, knowledge still does not talk."
+       "en": "Each unit in its own silo — across the organisation, knowledge still does not talk.",
+       "lv": "Katra struktūrvienība savā silosā — organizācijas mērogā zināšanas joprojām nesarunājas."
       }
      },
      "fed": {
@@ -2242,8 +2242,8 @@
      "en": "Adoption mechanism"
     },
     "method": {
-     "lv": "Cik tālu ieviešanas mehānisms sniedzas organizācijā. Brīvprātīgi — 1; stimuli — 2; pienākums — 3; iepirkuma noteikumi — 4; centrāla platforma — 5.",
-     "en": "How far the adoption mechanism reaches into the organisation. Voluntary 1; incentives 2; mandates 3; procurement rules 4; central platform 5."
+     "en": "How far the adoption mechanism reaches into the organisation. Voluntary 1; incentives 2; mandates 3; procurement rules 4; central platform 5.",
+     "lv": "Cik tālu ieviešanas mehānisms sniedzas organizācijā. Brīvprātīgi — 1; stimuli — 2; pienākums — 3; iepirkuma noteikumi — 4; centrāla platforma — 5."
     },
     "options": {
      "vol": {
@@ -2262,8 +2262,8 @@
      },
      "vou": {
       "label": {
-       "lv": "stimuli / budžeta vaučeri",
-       "en": "incentives / budget vouchers"
+       "en": "incentives / budget vouchers",
+       "lv": "stimuli / budžeta vaučeri"
       },
       "gives": {
        "lv": "Sasniedz mazos uzņēmumus un struktūrvienības tieši.",
@@ -2290,12 +2290,12 @@
      },
      "proc": {
       "label": {
-       "lv": "iepirkuma noteikumi",
-       "en": "procurement rules"
+       "en": "procurement rules",
+       "lv": "iepirkuma noteikumi"
       },
       "gives": {
-       "lv": "Spēcīgākais vadības rīks. Nosaka noteikumus vienreiz un visiem iepirkumiem.",
-       "en": "The strongest lever management has. Sets terms once, for every purchase."
+       "en": "The strongest lever management has. Sets terms once, for every purchase.",
+       "lv": "Spēcīgākais vadības rīks. Nosaka noteikumus vienreiz un visiem iepirkumiem."
       },
       "forecloses": {
        "lv": "Lēni maināms; prasa iepirkuma kompetenci, kas jāizveido.",
@@ -2436,12 +2436,12 @@
    ],
    "org": {
     "name": {
-     "lv": "Darbinieku piekļuve MI",
-     "en": "Employee access to AI"
+     "en": "Employee access to AI",
+     "lv": "Darbinieku piekļuve MI"
     },
     "method": {
-     "lv": "Vai organizācija ir izlēmusi, kam ir piekļuve vispārējas nozīmes MI un kas par to maksā. Katrs pats — 1; apmācība bez rīkiem — 2; MI tikai iekšējās sistēmās — 3; licences noteiktām lomām — 4; vispārējas nozīmes MI visiem darbiniekiem par organizācijas līdzekļiem — 5.",
-     "en": "Whether the organisation has decided who gets general-purpose AI and who pays for it. Individuals bring their own 1; training without tools 2; AI only inside internal systems 3; licences for defined roles 4; general-purpose AI for every employee, paid by the organisation 5."
+     "en": "Whether the organisation has decided who gets general-purpose AI and who pays for it. Individuals bring their own 1; training without tools 2; AI only inside internal systems 3; licences for defined roles 4; general-purpose AI for every employee, paid by the organisation 5.",
+     "lv": "Vai organizācija ir izlēmusi, kam ir piekļuve vispārējas nozīmes MI un kas par to maksā. Katrs pats — 1; apmācība bez rīkiem — 2; MI tikai iekšējās sistēmās — 3; licences noteiktām lomām — 4; vispārējas nozīmes MI visiem darbiniekiem par organizācijas līdzekļiem — 5."
     },
     "options": {
      "none": {
@@ -2460,72 +2460,72 @@
      },
      "market": {
       "label": {
-       "lv": "katrs pats — darbinieki lieto, ko atrod",
-       "en": "individuals bring their own"
+       "en": "individuals bring their own",
+       "lv": "katrs pats — darbinieki lieto, ko atrod"
       },
       "gives": {
-       "lv": "Nav jāfinansē; nav jāizvēlas.",
-       "en": "Nothing to fund; nothing to choose."
+       "en": "Nothing to fund; nothing to choose.",
+       "lv": "Nav jāfinansē; nav jāizvēlas."
       },
       "forecloses": {
-       "lv": "Nav kontroles pār rīkiem un datu plūsmu — ēnu MI pēc noklusējuma.",
-       "en": "No control over which tools are used or where the data goes — shadow AI by default."
+       "en": "No control over which tools are used or where the data goes — shadow AI by default.",
+       "lv": "Nav kontroles pār rīkiem un datu plūsmu — ēnu MI pēc noklusējuma."
       }
      },
      "skills": {
       "label": {
-       "lv": "apmācība bez rīkiem",
-       "en": "training without tools"
+       "en": "training without tools",
+       "lv": "apmācība bez rīkiem"
       },
       "gives": {
-       "lv": "Lēti, ātri, mērāmi.",
-       "en": "Cheap, quick, measurable."
+       "en": "Cheap, quick, measurable.",
+       "lv": "Lēti, ātri, mērāmi."
       },
       "forecloses": {
-       "lv": "Prasmes bez rīkiem izgaist; cilvēki atgriežas pie tā, kas sasniedzams.",
-       "en": "Skills without tools fade; people go back to whatever they can reach."
+       "en": "Skills without tools fade; people go back to whatever they can reach.",
+       "lv": "Prasmes bez rīkiem izgaist; cilvēki atgriežas pie tā, kas sasniedzams."
       }
      },
      "services": {
       "label": {
-       "lv": "MI tikai iekšējās sistēmās",
-       "en": "AI only inside internal systems"
+       "en": "AI only inside internal systems",
+       "lv": "MI tikai iekšējās sistēmās"
       },
       "gives": {
-       "lv": "Konkrēts lietojums kontrolētās sistēmās — asistents, meklēšana, dokumentu apstrāde.",
-       "en": "Concrete use inside controlled systems — assistant, search, document handling."
+       "en": "Concrete use inside controlled systems — assistant, search, document handling.",
+       "lv": "Konkrēts lietojums kontrolētās sistēmās — asistents, meklēšana, dokumentu apstrāde."
       },
       "forecloses": {
-       "lv": "Vispārējas nozīmes darbs joprojām notiek personīgos rīkos, ko organizācija neredz.",
-       "en": "General-purpose work still happens in personal tools the organisation cannot see."
+       "en": "General-purpose work still happens in personal tools the organisation cannot see.",
+       "lv": "Vispārējas nozīmes darbs joprojām notiek personīgos rīkos, ko organizācija neredz."
       }
      },
      "targeted": {
       "label": {
-       "lv": "licences noteiktām lomām",
-       "en": "licences for defined roles"
+       "en": "licences for defined roles",
+       "lv": "licences noteiktām lomām"
       },
       "gives": {
-       "lv": "Universālā modeļa ieguvumi tur, kur tie visvairāk vajadzīgi, par daļu no izmaksām.",
-       "en": "The universal model's gains where they matter most, at a fraction of the cost."
+       "en": "The universal model's gains where they matter most, at a fraction of the cost.",
+       "lv": "Universālā modeļa ieguvumi tur, kur tie visvairāk vajadzīgi, par daļu no izmaksām."
       },
       "forecloses": {
-       "lv": "Kam ir un kam nav — pastāvīgs strīds.",
-       "en": "Who is in and who is out becomes a standing argument."
+       "en": "Who is in and who is out becomes a standing argument.",
+       "lv": "Kam ir un kam nav — pastāvīgs strīds."
       }
      },
      "universal": {
       "label": {
-       "lv": "vispārējas nozīmes MI visiem darbiniekiem par organizācijas līdzekļiem",
-       "en": "general-purpose AI for every employee, paid by the organisation"
+       "en": "general-purpose AI for every employee, paid by the organisation",
+       "lv": "vispārējas nozīmes MI visiem darbiniekiem par organizācijas līdzekļiem"
       },
       "gives": {
-       "lv": "Vienlīdzīga piekļuve; kontrole pār rīkiem un datu plūsmu; ēnu MI zaudē attaisnojumu.",
-       "en": "Equal access; control over which tools and where data goes; shadow AI loses its excuse."
+       "en": "Equal access; control over which tools and where data goes; shadow AI loses its excuse.",
+       "lv": "Vienlīdzīga piekļuve; kontrole pār rīkiem un datu plūsmu; ēnu MI zaudē attaisnojumu."
       },
       "forecloses": {
-       "lv": "Pastāvīgas licenču izmaksas; organizācija izvēlas piegādātāju visiem.",
-       "en": "A permanent licence cost; the organisation picks the vendor for everyone."
+       "en": "A permanent licence cost; the organisation picks the vendor for everyone.",
+       "lv": "Pastāvīgas licenču izmaksas; organizācija izvēlas piegādātāju visiem."
       }
      }
     }
@@ -2666,8 +2666,8 @@
      },
      "trk": {
       "label": {
-       "lv": "publisks izpildes izsekotājs (redzams valdei)",
-       "en": "public delivery tracker (board-visible)"
+       "en": "public delivery tracker (board-visible)",
+       "lv": "publisks izpildes izsekotājs (redzams valdei)"
       },
       "gives": {
        "lv": "Ārējais spiediens veic izpildes kontroli jūsu vietā.",
@@ -3095,18 +3095,18 @@
    ],
    "org": {
     "name": {
-     "lv": "Ārējā nostāja (standarti un ekosistēma)",
-     "en": "External posture (standards and ecosystem)"
+     "en": "External posture (standards and ecosystem)",
+     "lv": "Ārējā nostāja (standarti un ekosistēma)"
     },
     "method": {
-     "lv": "Cik aktīva organizācija ir ārpus savām sienām. Standartu sekotāja — 1; divpusējas partnerības vai konsorcija līdzfinansējums — 3; standartu veidotāja — 5.",
-     "en": "How active the organisation is beyond its own walls. Standards follower 1; bilateral partnerships or consortium co-funding 3; standard-setter 5."
+     "en": "How active the organisation is beyond its own walls. Standards follower 1; bilateral partnerships or consortium co-funding 3; standard-setter 5.",
+     "lv": "Cik aktīva organizācija ir ārpus savām sienām. Standartu sekotāja — 1; divpusējas partnerības vai konsorcija līdzfinansējums — 3; standartu veidotāja — 5."
     },
     "options": {
      "fol": {
       "label": {
-       "lv": "standartu sekotāja",
-       "en": "standards follower"
+       "en": "standards follower",
+       "lv": "standartu sekotāja"
       },
       "gives": {
        "lv": "Droši, lēti un saskaņoti ar finansējumu.",
@@ -3147,8 +3147,8 @@
      },
      "bloc": {
       "label": {
-       "lv": "konsorcija līdzfinansētāja",
-       "en": "consortium co-funder"
+       "en": "consortium co-funder",
+       "lv": "konsorcija līdzfinansētāja"
       },
       "gives": {
        "lv": "Nopērk vietu pie galda, ko pats nevarētu uzklāt.",
@@ -3283,12 +3283,12 @@
      },
      "statute": {
       "label": {
-       "lv": "saistoša politika",
-       "en": "binding policy"
+       "en": "binding policy",
+       "lv": "saistoša politika"
       },
       "gives": {
-       "lv": "Saistoša, pārdzīvo vadītājus, rada reālas funkcijas.",
-       "en": "Binding, survives executives, creates real functions."
+       "en": "Binding, survives executives, creates real functions.",
+       "lv": "Saistoša, pārdzīvo vadītājus, rada reālas funkcijas."
       },
       "forecloses": {
        "lv": "Lēns, grozījumiem pakļauts, pēc pieņemšanas grūti vadāms.",
@@ -3297,8 +3297,8 @@
      },
      "rolling": {
       "label": {
-       "lv": "rotējošs iniciatīvu portfelis",
-       "en": "rolling portfolio of initiatives"
+       "en": "rolling portfolio of initiatives",
+       "lv": "rotējošs iniciatīvu portfelis"
       },
       "gives": {
        "lv": "Pielāgojas ik pēc diviem trim gadiem, neatverot stratēģiju.",
@@ -3440,8 +3440,8 @@
        "en": "5yr"
       },
       "gives": {
-       "lv": "Sakrīt ar budžeta un grupas plānošanas cikliem.",
-       "en": "Matches budget and group planning cycles."
+       "en": "Matches budget and group planning cycles.",
+       "lv": "Sakrīt ar budžeta un grupas plānošanas cikliem."
       },
       "forecloses": {
        "lv": "Vienā ciklā paspēs nomainīties divas modeļu paaudzes.",
@@ -3464,8 +3464,8 @@
      },
      "stat": {
       "label": {
-       "lv": "valdes vai statūtu cikls",
-       "en": "board / charter cycle"
+       "en": "board / charter cycle",
+       "lv": "valdes vai statūtu cikls"
       },
       "gives": {
        "lv": "Pārskatīšana notiek arī tad, ja neviens to nevirza.",
@@ -3590,18 +3590,18 @@
        "en": "enablers only"
       },
       "gives": {
-       "lv": "Pārskatāmi, salīdzināmi, atbilst grupas atskaitēm.",
-       "en": "Clean, comparable, matches group reporting."
+       "en": "Clean, comparable, matches group reporting.",
+       "lv": "Pārskatāmi, salīdzināmi, atbilst grupas atskaitēm."
       },
       "forecloses": {
-       "lv": "Neviena struktūrvienība neko neuzņemas; departamenti var piekrist, neko neapņemoties.",
-       "en": "No business unit owns anything; departments can nod without committing."
+       "en": "No business unit owns anything; departments can nod without committing.",
+       "lv": "Neviena struktūrvienība neko neuzņemas; departamenti var piekrist, neko neapņemoties."
       }
      },
      "sect": {
       "label": {
-       "lv": "tikai struktūrvienības",
-       "en": "business units only"
+       "en": "business units only",
+       "lv": "tikai struktūrvienības"
       },
       "gives": {
        "lv": "Katrai nozarei ir konkrēts vārds pretī.",
@@ -3614,8 +3614,8 @@
      },
      "matrix": {
       "label": {
-       "lv": "iespējotāji × struktūrvienības",
-       "en": "enablers × business units"
+       "en": "enablers × business units",
+       "lv": "iespējotāji × struktūrvienības"
       },
       "gives": {
        "lv": "Parāda, kā pamati baro nozares. Uz papīra pilnīgi.",
@@ -3730,28 +3730,28 @@
      "en": "Governance locus"
     },
     "method": {
-     "lv": "Cik liela vara vadīt citas struktūrvienības. Nozares departaments — 2; centrālais digitālais/MI birojs — 4; valdes līmeņa padome vai statūtos noteikta struktūra — 5.",
-     "en": "How much power there is to direct other units. Line department 2; central digital/AI office 4; executive-board council or charter body 5."
+     "en": "How much power there is to direct other units. Line department 2; central digital/AI office 4; executive-board council or charter body 5.",
+     "lv": "Cik liela vara vadīt citas struktūrvienības. Nozares departaments — 2; centrālais digitālais/MI birojs — 4; valdes līmeņa padome vai statūtos noteikta struktūra — 5."
     },
     "options": {
      "min": {
       "label": {
-       "lv": "nozares departaments",
-       "en": "line department"
+       "en": "line department",
+       "lv": "nozares departaments"
       },
       "gives": {
        "lv": "Izmanto esošu pilnvarojumu; jauna struktūrvienība nav jāveido.",
        "en": "Uses an existing mandate; no new business unit needed."
       },
       "forecloses": {
-       "lv": "Nevar uzlikt pienākumus citiem departamentiem. Koordinācija paliek brīvprātīga.",
-       "en": "Cannot compel other departments. Coordination stays voluntary."
+       "en": "Cannot compel other departments. Coordination stays voluntary.",
+       "lv": "Nevar uzlikt pienākumus citiem departamentiem. Koordinācija paliek brīvprātīga."
       }
      },
      "agy": {
       "label": {
-       "lv": "centrālais digitālais / MI birojs",
-       "en": "central digital / AI office"
+       "en": "central digital / AI office",
+       "lv": "centrālais digitālais / MI birojs"
       },
       "gives": {
        "lv": "Var būvēt un uzturēt koplietošanas pakalpojumus, ne tikai rakstīt politiku.",
@@ -3764,22 +3764,22 @@
      },
      "coun": {
       "label": {
-       "lv": "valdes līmeņa padome",
-       "en": "executive-board council"
+       "en": "executive-board council",
+       "lv": "valdes līmeņa padome"
       },
       "gives": {
-       "lv": "Sasaukšanas vara pār departamentiem. Uzmanība augšgalā.",
-       "en": "Convening power over departments. Attention at the top."
+       "en": "Convening power over departments. Attention at the top.",
+       "lv": "Sasaukšanas vara pār departamentiem. Uzmanība augšgalā."
       },
       "forecloses": {
-       "lv": "Atkarīgs no viena vadītāja intereses; izgaist pie vadības maiņas.",
-       "en": "Depends on one executive's interest; fades when leadership changes."
+       "en": "Depends on one executive's interest; fades when leadership changes.",
+       "lv": "Atkarīgs no viena vadītāja intereses; izgaist pie vadības maiņas."
       }
      },
      "stat": {
       "label": {
-       "lv": "statūtos noteikta struktūra",
-       "en": "charter-mandated body"
+       "en": "charter-mandated body",
+       "lv": "statūtos noteikta struktūra"
       },
       "gives": {
        "lv": "Pastāvīga, finansēta, klusi nelikvidējama.",
@@ -3872,22 +3872,22 @@
    ],
    "org": {
     "name": {
-     "lv": "Atbilstības nostāja",
-     "en": "Compliance posture"
+     "en": "Compliance posture",
+     "lv": "Atbilstības nostāja"
     },
     "method": {
-     "lv": "Cik noteikta ir atbilstības nostāja. Tikai MI akta minimums — 1; iekšējās vadlīnijas — 2; smilškaste vispirms — 4; saistošs iekšējais regulējums — 5.",
-     "en": "How settled the compliance stance is. AI Act minimum only 1; internal guidelines 2; sandbox-first 4; binding internal framework 5."
+     "en": "How settled the compliance stance is. AI Act minimum only 1; internal guidelines 2; sandbox-first 4; binding internal framework 5.",
+     "lv": "Cik noteikta ir atbilstības nostāja. Tikai MI akta minimums — 1; iekšējās vadlīnijas — 2; smilškaste vispirms — 4; saistošs iekšējais regulējums — 5."
     },
     "options": {
      "stat": {
       "label": {
-       "lv": "saistošs iekšējais regulējums",
-       "en": "binding internal framework"
+       "en": "binding internal framework",
+       "lv": "saistošs iekšējais regulējums"
       },
       "gives": {
-       "lv": "Izpildāms; rada funkcijas ar reālām pilnvarām.",
-       "en": "Enforceable; creates functions with real mandate."
+       "en": "Enforceable; creates functions with real mandate.",
+       "lv": "Izpildāms; rada funkcijas ar reālām pilnvarām."
       },
       "forecloses": {
        "lv": "Lēns; kamēr noteikumi nostabilizējas, var bremzēt ieviešanu.",
@@ -3910,8 +3910,8 @@
      },
      "soft": {
       "label": {
-       "lv": "iekšējās vadlīnijas",
-       "en": "internal guidelines"
+       "en": "internal guidelines",
+       "lv": "iekšējās vadlīnijas"
       },
       "gives": {
        "lv": "Ātri, elastīgi, ar mazu atbilstības slogu.",
@@ -3924,16 +3924,16 @@
      },
      "eu": {
       "label": {
-       "lv": "tikai MI akta minimums",
-       "en": "AI Act minimum only"
+       "en": "AI Act minimum only",
+       "lv": "tikai MI akta minimums"
       },
       "gives": {
        "lv": "Minimāli nepieciešamā atbilstība; nav atšķirības riska.",
        "en": "Minimum viable compliance; no divergence risk."
       },
       "forecloses": {
-       "lv": "Tīri reaktīvi. Nav savas nostājas.",
-       "en": "Purely reactive. No position of its own."
+       "en": "Purely reactive. No position of its own.",
+       "lv": "Tīri reaktīvi. Nav savas nostājas."
       }
      }
     }
