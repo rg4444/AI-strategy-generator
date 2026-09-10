@@ -19,7 +19,7 @@ Scores how clearly the document takes a position on AI. Neutral tool 0; economic
 | `behind` | 3 | threat of falling behind | UK · JP | Creates urgency with a measurable gap. | Casts the country as a follower and sets a race it may not win. |
 | `risk` | 3 | source of risk | NO · EU (MI akts) | Puts rights and safety first; builds public trust before deployment. | Slows adoption. Reads as defensive if it is the only frame. |
 
-### `diff` — Competitive differentiator / Konkurences priekšrocība · default weight 8
+### `diff` — Competitive differentiator / Konkurences priekšrocība · default weight 7
 
 Whether the country names something it is distinctively good at. None 0; trust (a crowded claim) 2; language or research 3; deployment speed, compute or capital 4; standard-setting 5, as it buys the most reach per euro.
 
@@ -35,7 +35,7 @@ Whether the country names something it is distinctively good at. None 0; trust (
 | `cap` | 4 | scale of capital | KR · AE | Buys position quickly. | Unavailable to most states. Not a strategy Latvia can copy. |
 | `mkt` | 3 | market access and investment | IE · NL | Hosts others' capability without building your own. | Dependent on tax and regulatory arbitrage that can change. |
 
-### `interest` — National interest / Nacionālā interese · default weight 10
+### `interest` — National interest / Nacionālā interese · default weight 9
 
 Whether a country-specific reason is stated. Not stated 0; generic competitiveness 2; falling behind or trust 3; independence, service sustainability, diversification or language 4.
 
@@ -51,7 +51,7 @@ Whether a country-specific reason is stated. Not stated 0; generic competitivene
 | `trust` | 3 | trust as advantage | NO | Turns a regulatory constraint into a selling point. | Hard to measure; easy for others to claim too. |
 | `lang` | 4 | language and cultural survival | — | Nobody has claimed it. Uniquely defensible for a small language. | Narrow on its own; needs an economic clause beside it. |
 
-### `ambition` — Ambition type / Ambīcijas veids · default weight 8
+### `ambition` — Ambition type / Ambīcijas veids · default weight 7
 
 The form the end state takes. Reputation 1; capability 3; a number with a year 5. This measures testability, not ambition level.
 
@@ -61,7 +61,7 @@ The form the end state takes. Reputation 1; capability 3; a number with a year 5
 | `cap` | 3 | capability | EE · NO · CZ · JP · SG | Names something the country will be able to do. | Still no threshold; success stays a matter of opinion. |
 | `quant` | 5 | material / quantified | IE · LT · UK · AE · PT · CA · KR | Justifies budget, enables audit, forces prioritisation. | Public failure becomes possible. Needs a baseline you may not have. |
 
-### `fund` — Funding model / Finansējuma modelis · default weight 12
+### `fund` — Funding model / Finansējuma modelis · default weight 11
 
 Whether money is attached. Unfunded 0; budget line 3; PPP vehicle 4; dedicated multi-year fund 5.
 
@@ -72,7 +72,7 @@ Whether money is attached. Unfunded 0; budget line 3; PPP vehicle 4; dedicated m
 | `fund` | 5 | dedicated fund | SG · KR · UK · CA · AE · EU · LT | Multi-year certainty; can commit to infrastructure. | Requires a scale you may not reach alone. |
 | `ppp` | 4 | PPP vehicle | DK (Gefion, 85% private) | Private capital carries most of the cost. | Governance shared with a funder whose priorities are not yours. |
 
-### `sourcing` — Model sourcing / Modeļu iegāde · default weight 10
+### `sourcing` — Model sourcing / Modeļu iegāde · default weight 9
 
 How decidedly the document says where models come from. Decentralised by default 1; bloc co-funding 3; broker or self-hosting 4; national model 5. Measures decidedness, not feasibility.
 
@@ -97,7 +97,7 @@ What compute is secured. None 0; commercial cloud only 1; EuroHPC antenna 3; sov
 | `ppp` | 4 | sovereign PPP | DK · AE | Sovereign-scale capacity on mostly private money. | Founder priorities shape access. |
 | `cloud` | 1 | commercial cloud only | NL · IE in practice | Elastic, no capital cost, current hardware. | Dependency is total. No answer if terms or export rules change. |
 
-### `lang` — Language strategy / Valodas stratēģija · default weight 5
+### `lang` — Language strategy / Valodas stratēģija · default weight 4
 
 How far the national-language provision goes. None 0; data contribution 2; fine-tuning 3; regional consortium 4; national model 5.
 
@@ -109,7 +109,7 @@ How far the national-language provision goes. None 0; data contribution 2; fine-
 | `natl` | 5 | national model | NL · SI · TW · JP · KR · LV draft | A capability that cannot be withdrawn. A real sovereignty asset. | Will not beat frontier models on general reasoning. Say what it is for. |
 | `reg` | 4 | regional consortium | EU · Nordic-Baltic potential | Shares cost across languages with the same problem. | Slower; your language competes for attention inside the consortium. |
 
-### `identity` — AI identity provision / MI identitātes nodrošinājums · default weight 6
+### `identity` — AI identity provision / MI identitātes nodrošinājums · default weight 5
 
 How far the state has got with identity for AI agents — who the agent is, who owns it, what it may do. None 0; policy talk only 1; person e-identity exists but nothing for agents 2; agent identity pilot 3; national agent identity 4; cross-border verification gateway 5.
 
@@ -122,7 +122,7 @@ How far the state has got with identity for AI agents — who the agent is, who 
 | `natid` | 4 | national AI agent identity | EE (2026. g. jūnijs) | The agent acts within granted authority, fully traceable. | Works only inside your own jurisdiction without an interoperability layer. |
 | `gw` | 5 | cross-border verification gateway | PPPA (uzticamības vārteja) — vēl neviena valsts | Verifies agents issued elsewhere too. This is the exportable layer, not the identity itself. | Only valuable if others recognise it — needs standards work, not just code. |
 
-### `knowledge` — Knowledge accumulation / Zināšanu uzkrāšana · default weight 5
+### `knowledge` — Knowledge accumulation / Zināšanu uzkrāšana · default weight 4
 
 Whether the state accumulates and reuses what institutions know and learn, instead of starting from zero each time. None 0; document digitisation 1; machine-readable records and a data catalogue 2; reusable shared components 3; organisational knowledge base 4; federated knowledge exchange between institutions 5. Distinct from “Evaluation & memory”: that axis is what worked, this one is the corpus itself.
 
@@ -135,7 +135,7 @@ Whether the state accumulates and reuses what institutions know and learn, inste
 | `orgkb` | 4 | organisational knowledge base | SG (AIBots, 115 iestādes) · UK (AI Knowledge Hub) | Institutional knowledge becomes a system that outlives staff turnover. | Each institution in its own silo — nationally the knowledge still does not talk. |
 | `fed` | 5 | federated knowledge exchange | PPPA — vēl neviena valsts | Institutions keep their own but exchange on a shared standard: one learns from another without pooling the data. | Needs a standard and governance before it pays off. The hardest step of the set. |
 
-### `adopt` — Adoption mechanism / Ieviešanas mehānisms · default weight 8
+### `adopt` — Adoption mechanism / Ieviešanas mehānisms · default weight 7
 
 How far the adoption mechanism reaches into institutions. Voluntary 1; vouchers 2; mandates 3; procurement 4; central platform 5.
 
@@ -147,7 +147,7 @@ How far the adoption mechanism reaches into institutions. Voluntary 1; vouchers 
 | `proc` | 4 | procurement-led | EU (buy European) | The strongest lever a state has. Sets terms once, everywhere. | Slow to change; needs procurement expertise you must build. |
 | `plat` | 5 | central platform | SG (Pair) · UK (Humphrey) · EE (Bürokratt) | Adoption becomes a login. Singapore: ~80% of 150,000 officers. | Single point of failure; you own support and trust permanently. |
 
-### `access` — Citizen access to AI / Iedzīvotāju piekļuve MI · default weight 8
+### `access` — Citizen access to AI / Iedzīvotāju piekļuve MI · default weight 7
 
 What the state commits to on citizens' access to general-purpose AI — a market matter, a skills matter, part of public services, or a public service the state funds for everyone. Market 1; skills 2; AI inside public services 3; free access for target groups 4; universal free access 5.
 
@@ -156,11 +156,11 @@ What the state commits to on citizens' access to general-purpose AI — a market
 | `none` | 0 | not stated | NO · CA · LV 2020 | — | The question of who pays for citizens' access to AI stays unanswered. |
 | `market` | 1 | market provides | — | Nothing to fund; no winners to pick. | The state has no lever over which AI products citizens use or where the data goes. |
 | `skills` | 2 | skills and awareness | FI (Elements of AI) · EU (MI akta 4. p.) · UK · DK · IE · NL · SI · CZ · PT · LT · JP · LV draft | Cheap, quick to start, measurable — courses, campaigns, skills frameworks. | Access stays paid and unequal; skills without tools fade. |
-| `services` | 3 | AI inside public services | EE (Bürokratt) · SG · AE · PPPA priekšlikums | Concrete use — assistants and agents inside public services, tied to existing infrastructure. | General-purpose AI use stays commercial; the state does not shape what citizens work with daily. |
+| `services` | 3 | AI inside public services | EE (Bürokratt) · SG · AE · Latvija — PPPA projekts | Concrete use — assistants and agents inside public services, tied to existing infrastructure. | General-purpose AI use stays commercial; the state does not shape what citizens work with daily. |
 | `targeted` | 4 | free access for target groups | — | The universal model's gains where they matter most — students, seniors, SMEs — at a fraction of the cost. | No universality; the boundaries between groups are a standing political fight. |
 | `universal` | 5 | universal free access | KR (AI for All, 2026) | Equal access regardless of income or skills; steers use toward domestic models and data sovereignty; scale for the domestic AI industry. | A permanent operating cost in the state budget; the state picks operators and models; dependence on the state if the programme ends. |
 
-### `meas` — Measurement / Mērīšana · default weight 8
+### `meas` — Measurement / Mērīšana · default weight 7
 
 Whether the strategy can be tested. None 0; activity KPIs 2; outcome KPIs 4; public delivery tracker 5.
 
@@ -171,7 +171,7 @@ Whether the strategy can be tested. None 0; activity KPIs 2; outcome KPIs 4; pub
 | `out` | 4 | outcome KPIs | IE (75% by 2030) · NO · SI · AE · SG · KR | One number and one year makes the strategy testable. | Needs a baseline. You may not like the first reading. |
 | `trk` | 5 | public delivery tracker | UK (delivery.ai.gov.uk) | External pressure does the enforcement for you. | Failures are visible in real time. |
 
-### `eval` — Evaluation & memory / Novērtēšana un atmiņa · default weight 5
+### `eval` — Evaluation & memory / Novērtēšana un atmiņa · default weight 4
 
 Whether learning accumulates. None 0; solution catalogue 2; evaluation function 4; what-works centre 5.
 
@@ -182,7 +182,7 @@ Whether learning accumulates. None 0; solution catalogue 2; evaluation function 
 | `fn` | 4 | evaluation function | UK (Evaluation Task Force) | Pilots produce evidence instead of anecdotes. | Needs method and staff, and the answers are sometimes unwelcome. |
 | `ww` | 5 | what-works centre | UK (What Works Network) | Institutional memory outliving ministers. Nobody has this for AI. | Only pays off across years, past the political horizon. |
 
-### `return` — How return is evaluated / Kā vērtē atdevi · default weight 6
+### `return` — How return is evaluated / Kā vērtē atdevi · default weight 5
 
 Whether the strategy says how and when to measure the return on AI investment. None 0; one measure (ROI) for everything 2; operational return at 90 days (ROAI) 3; price before signature (EVC) 3; three instruments by horizon — EVC before signature, ROAI at 90 days, ROI at 12 months — 5. Higher means a clearer method, not a larger return. Below the axis: the three questions that pick the instrument.
 
@@ -194,7 +194,7 @@ Whether the strategy says how and when to measure the return on AI investment. N
 | `evc` | 3 | price before signature (EVC) | procurement practice | A ceiling on what to pay — compared with hiring or outsourcing, not with doing nothing. | Says nothing about return. Presenting EVC as a return case is the commonest category error in AI procurement. |
 | `layered` | 5 | three instruments by horizon: EVC → ROAI → ROI | PPPA — no country yet | Each question gets its own instrument at its own moment: price before signature, operational signal at 90 days, cash movement at 12 months. Infrastructure travels inside another project's scope, not on a business case of its own. | Needs baselines before the start and a capture route named in advance — a discipline most institutions do not have. |
 
-### `intl` — International posture / Starptautiskā nostāja · default weight 5
+### `intl` — International posture / Starptautiskā nostāja · default weight 4
 
 How active the international role is. EU follower 1; bilateral or bloc co-funding 3; standard-setter 5.
 
@@ -288,4 +288,4 @@ How settled the regulatory stance is. EU transposition only 1; soft law 2; sandb
 | `EU` | EU | AI Continent Action Plan · Apply AI Strategy (2025) |
 | `LV20` | Latvia 2020 | Informatīvais ziņojums “Par mākslīgā intelekta risinājumu attīstību” (MK, 04.02.2020.) |
 | `LV26` | Latvia — VARAM draft | MI plāna stratēģiskais kartējums (2026) |
-| `PPPA` | PPPA proposal | pppa.lv/mi-strategija-2 · darba versija v2 · 3 pīlāri, 4 mērķi, 12 rīcības |
+| `PPPA` | Latvia — PPPA draft | pppa.lv/mi-strategija-2 · darba versija v2 · 3 pīlāri, 4 mērķi, 12 rīcības |

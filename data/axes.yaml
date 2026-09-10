@@ -1,4 +1,4 @@
-version: 1.1.0
+version: 1.1.1
 groups:
   A:
     kind: par
@@ -942,7 +942,7 @@ axes:
     label:
       lv: MI valsts pakalpojumos
       en: AI inside public services
-    chosen_by: EE (Bürokratt) · SG · AE · PPPA priekšlikums
+    chosen_by: EE (Bürokratt) · SG · AE · Latvija — PPPA projekts
     gives:
       lv: Konkrēts lietojums — sarunboti un aģenti iestāžu pakalpojumos, piesaistīti esošai infrastruktūrai.
       en: Concrete use — assistants and agents inside public services, tied to existing infrastructure.

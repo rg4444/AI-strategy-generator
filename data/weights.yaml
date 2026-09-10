@@ -2,18 +2,18 @@ version: 1
 note: Default weights for group-A axes (percent points; they need not sum to 100). Group-B axes are never weighted.
 default:
   frame: 5
-  diff: 8
-  interest: 10
-  ambition: 8
-  fund: 12
-  sourcing: 10
+  diff: 7
+  interest: 9
+  ambition: 7
+  fund: 11
+  sourcing: 9
   compute: 5
-  lang: 5
-  identity: 6
-  knowledge: 5
-  adopt: 8
-  access: 8
-  meas: 8
-  eval: 5
-  intl: 5
-  return: 6
+  lang: 4
+  identity: 5
+  knowledge: 4
+  adopt: 7
+  access: 7
+  meas: 7
+  eval: 4
+  intl: 4
+  return: 5

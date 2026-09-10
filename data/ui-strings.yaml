@@ -3,13 +3,23 @@ strings:
   lv:
     title: MI stratēģijas — teksts un konfigurācija
     sub: Ko dokuments saka · un kādus 21 lēmumu tas pieņem
-    browse: Aplūkot
+    browse: Nacionālās stratēģijas
     compare: Salīdzināt
-    build: Konfigurēt
+    build: Jauna stratēģija
     score: Novērtējums
     matrix: Matrica
-    mxnote: 'Visas valstis vienlaikus. Katra šūna — vērtējums no 0 līdz 5 attiecīgajā asī. Sarkanie cipari ir nulles: šajā asī dokuments neko neizlemj. Pēdējā rinda — svērtais kopvērtējums pēc īpatsvariem, kas iestatīti sadaļā Novērtējums.'
+    mxnote: Vērtējums no 0 līdz 5 attiecīgajā lēmumu asī. Pēdējā rinda — svērtais kopvērtējums pēc īpatsvariem, kas redzams sadaļā Novērtējums.
     yours: Jūsu konfigurācija
+    hint_browse: Publiski pieejamas dažādu valstu nacionālo MI stratēģiju analīze.
+    hint_compare: Izvēlieties līdz 3 stratēģijām salīdzināšanai.
+    hint_score: Izvēlieties stratēģiju, lai novērtētu pēc lēmumu asīm — stratēģiskie vai pārvaldības lēmumi.
+    hint_matrix: Vērtējums no 0 līdz 5 attiecīgajā lēmumu asī. Pēdējā rinda — svērtais kopvērtējums pēc īpatsvariem, kas redzams sadaļā Novērtējums.
+    hint_build: Izveidojiet jaunu stratēģijas projektu, dodiet tai nosaukumu, izvēlieties parametrus un saglabājiet, eksportējiet vai kopīgojiet saiti vēlākai izmantošanai.
+    hint_about: Metodoloģija, struktūra, dokumenta shēma un selektori.
+    name: Nosaukums
+    name_ph: Piemēram, Latvijas MI stratēģija 2027–2030
+    untitled: Bez nosaukuma
+    wtsum: Īpatsvari kopā
     wt: Īpatsvars
     sv: Vērtējums
     overall: Kopā
@@ -20,7 +30,7 @@ strings:
     - noteikts
     - apņemšanās
     - īstenots
-    sclg: Vērtējums katrā asī = augstākā izvēle tajā asī (0–5). Īpatsvarus var mainīt. Kopvērtējums ir svērtais vidējais.
+    sclg: Vērtējums katrā asī = augstākā izvēle tajā asī (0–5). Īpatsvari veido 100 % — mainot vienu, pārējie mainās proporcionāli. Kopvērtējums ir svērtais vidējais.
     gA: A. Stratēģiskie lēmumi
     gAs: Ko valsts apņemas darīt un būt. Katrā asī iespējamas vairākas izvēles vienlaikus, novērtētas no 1 līdz 5. Zem katras — ko šī izvēle dod un ko tā liedz.
     gB: B. Forma un pārvaldība
@@ -52,14 +62,24 @@ strings:
     foot: Citāti sniegti publicētajā valodā vai oficiālajā angļu versijā; neoficiāli tulkojumi un ministru paziņojumi atzīmēti pie katra. Asu kodējums ir interpretācija, nevis citāts — daudzas stratēģijas šos lēmumus neizsaka tieši, un tur, kur kodējums ir secinājums, tas atzīmēts. Vērtējumi no 1 līdz 5 un “ko iegūst / ko zaudē” apraksti ir mūsu vērtējums, nevis citāts no dokumenta — tie ir apspriežami un maināmi.
   en:
     title: AI strategies — text and configuration
-    sub: What the document says · and which 15 decisions it makes
-    browse: Browse
+    sub: What the document says · and which 21 decisions it makes
+    browse: National strategies
     compare: Compare
-    build: Configure
+    build: New strategy
     score: Scorecard
     matrix: Matrix
-    mxnote: 'Every country at once. Each cell is a 0–5 score on that axis. Red figures are zeros: the document decides nothing on that axis. The last row is the weighted overall, using the weights set in Scorecard.'
+    mxnote: Score from 0 to 5 on each decision axis. The last row is the weighted overall by the weights shown under Scorecard.
     yours: Your configuration
+    hint_browse: Publicly available analysis of national AI strategies of different countries.
+    hint_compare: Pick up to 3 strategies to compare.
+    hint_score: Pick a strategy to score it on the decision axes — strategic or governance decisions.
+    hint_matrix: Score from 0 to 5 on each decision axis. The last row is the weighted overall by the weights shown under Scorecard.
+    hint_build: Create a new strategy draft, give it a name, choose the parameters, then save, export or share the link for later.
+    hint_about: Methodology, structure, document schema and selectors.
+    name: Name
+    name_ph: For example, Latvia's AI strategy 2027–2030
+    untitled: Untitled
+    wtsum: Weights total
     wt: Weight
     sv: Score
     overall: Overall
@@ -70,7 +90,7 @@ strings:
     - stated
     - committed
     - delivered
-    sclg: Each axis scores as its strongest option (0–5). Weights are editable. The overall is the weighted mean.
+    sclg: Axis score = the highest option on that axis (0–5). Weights form 100 % — change one and the others move proportionally. The overall is the weighted mean.
     gA: A. Strategic decisions
     gAs: 'What the country commits to do and be. Each axis can hold several choices at once, scored 1 to 5. Under each: what it gains you and what it costs.'
     gB: B. Form and governance

@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.1 — 2026-09-10 (axes 1.1.1)
+
+- Default weights are now a percentage distribution (sum 100). Scores are unchanged
+  (the formula normalises); consumers rebalance the other group-A weights proportionally
+  when one is edited.
+- Reference "PPPA priekšlikums" renamed "Latvija — PPPA projekts" / "Latvia — PPPA draft".
+- UI strings: tab "Nacionālās stratēģijas", per-view explanatory hints, matrix note, name
+  field labels, weights legend.
+
 ## 1.4.0 — 2026-09-09 (axes 1.1.0)
 
 - New group-A axis `access` — *Iedzīvotāju piekļuve MI / Citizen access to AI* — at

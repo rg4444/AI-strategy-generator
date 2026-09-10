@@ -749,6 +749,6 @@
     <informationRequirement id="ir_overall_eval"><requiredDecision href="#score_eval"/></informationRequirement>
     <informationRequirement id="ir_overall_return"><requiredDecision href="#score_return"/></informationRequirement>
     <informationRequirement id="ir_overall_intl"><requiredDecision href="#score_intl"/></informationRequirement>
-    <literalExpression id="le_overall"><text>if (5 + 8 + 10 + 8 + 12 + 10 + 5 + 5 + 6 + 5 + 8 + 8 + 8 + 5 + 6 + 5) = 0 then null else ((5 * score_frame) + (8 * score_diff) + (10 * score_interest) + (8 * score_ambition) + (12 * score_fund) + (10 * score_sourcing) + (5 * score_compute) + (5 * score_lang) + (6 * score_identity) + (5 * score_knowledge) + (8 * score_adopt) + (8 * score_access) + (8 * score_meas) + (5 * score_eval) + (6 * score_return) + (5 * score_intl)) / (5 + 8 + 10 + 8 + 12 + 10 + 5 + 5 + 6 + 5 + 8 + 8 + 8 + 5 + 6 + 5)</text></literalExpression>
+    <literalExpression id="le_overall"><text>if (5 + 7 + 9 + 7 + 11 + 9 + 5 + 4 + 5 + 4 + 7 + 7 + 7 + 4 + 5 + 4) = 0 then null else ((5 * score_frame) + (7 * score_diff) + (9 * score_interest) + (7 * score_ambition) + (11 * score_fund) + (9 * score_sourcing) + (5 * score_compute) + (4 * score_lang) + (5 * score_identity) + (4 * score_knowledge) + (7 * score_adopt) + (7 * score_access) + (7 * score_meas) + (4 * score_eval) + (5 * score_return) + (4 * score_intl)) / (5 + 7 + 9 + 7 + 11 + 9 + 5 + 4 + 5 + 4 + 7 + 7 + 7 + 4 + 5 + 4)</text></literalExpression>
   </decision>
 </definitions>
